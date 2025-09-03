@@ -1,0 +1,27 @@
+# Archivos de entorno y configuración sensible
+ai_news_digest/config_keys.py
+
+# Entornos virtuales
+venv/
+.env/
+*.env
+
+# Archivos temporales / cachés
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Archivos de build / dist
+build/
+dist/
+*.egg-info/
+
+# IDEs
+.vscode/
+.idea/
