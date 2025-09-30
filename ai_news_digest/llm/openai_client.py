@@ -16,7 +16,8 @@ class OpenAIClient:
         resp = self.client.chat.completions.create(
             model=self.model_relevance,
             messages=[
-                {"role": "system", "content": "Respondé con un entero 0..10. Sin comentarios."},
+                #{"role": "system", "content": "Respondé con un entero 0..10. Sin comentarios."},
+                {"role": "system", "content": "Sos un analista de IA que clasifica artículos por relevancia."},
                 {"role": "user", "content": prompt},
             ],
             temperature=0.0,

@@ -4,9 +4,9 @@ from ai_news_digest.pipeline import collect_articles, rank_and_select, summarize
 
 # Parámetros de corrida
 DAYS = 30
-TOP_N = 15
+TOP_N = 20
 ENSURE_SOURCES = []
-MONTH_NAME = "Septiembre"
+MONTH_NAME = "Octubre"
 LANG = "es"
 OUT_PATH = "Highlights_AI.txt"
 
