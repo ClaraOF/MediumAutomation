@@ -10,27 +10,76 @@
 # Texto (recortado):
 # {content_snippet}
 # """
+# RELEVANCE_PROMPT  = """
+# Estás evaluando artículos relacionados con inteligencia artificial. 
+# Asignales un puntaje de relevancia del 1 al 10 (siendo 10 el más relevante), según estos criterios:
+
+# - Si presenta un nuevo desarrollo tecnológico en IA
+# - Si muestra aplicaciones innovadoras o disruptivas
+# - Si tiene impacto potencial alto en la industria o sociedad
+# - Si trata sobre etica, politica, economia o inversiones asignarle un puntaje igual a 1
+
+# Respondé SOLO con un número del 1 al 10. No des explicaciones.
+
+# Título: {title}
+
+# Texto (recortado):
+# {content_snippet}
+# """
+
+# SUMMARY_PROMPT = """\
+# Redactá un resumen narrativo en {lang} de esta noticia sobre inteligencia artificial.
+# Estilo: técnico, claro y periodístico (medios de tecnología en Argentina).
+# Generá un TÍTULO atractivo y profesional (no clickbait) y un RESUMEN de 220-300 palabras.
+# Cerrá con: "Seguí leyendo en este enlace: {url}".
+
+# Título original: {title}
+
+# Texto:
+# {content_snippet}
+# """
+
 RELEVANCE_PROMPT  = """
-Estás evaluando artículos relacionados con inteligencia artificial. 
-Asignales un puntaje de relevancia del 1 al 10 (siendo 10 el más relevante), según estos criterios:
+You are evaluating articles related to Artificial Intelligence. Assign a relevance score from 1 to 10 (10 being the most relevant) based on these criteria:
 
-- Si presenta un nuevo desarrollo tecnológico en IA
-- Si muestra aplicaciones innovadoras o disruptivas
-- Si tiene impacto potencial alto en la industria o sociedad
-- Si trata sobre etica, politica, economia o inversiones asignarle un puntaje igual a 1
+- Novelty and innovation: Does the article present a new technological development, method, or architecture in AI?
+- Innovative applications: Does it showcase disruptive or creative uses of AI in emerging or unconventional domains?
+- High potential impact: Could this have a transformative effect on industry, science, or society through its technical implementation?
+- Exclude certain topics: If the article is mainly about ethics, politics, corporate strategy, funding rounds, leadership changes, or market positioning, assign a score of 1.
+- Avoid hype: If the article uses vague or promotional language without describing concrete technical advances or applications, assign a score of 1.
 
-Respondé SOLO con un número del 1 al 10. No des explicaciones.
+Respond ONLY with a single number from 1 to 10. Do not provide explanations.
 
 Título: {title}
 
 Texto (recortado):
 {content_snippet}
 """
+
 SUMMARY_PROMPT = """\
-Redactá un resumen narrativo en {lang} de esta noticia sobre inteligencia artificial.
-Estilo: técnico, claro y periodístico (medios de tecnología en Argentina).
-Generá un TÍTULO atractivo y profesional (no clickbait) y un RESUMEN de 220-300 palabras.
-Cerrá con: "Seguí leyendo en este enlace: {url}".
+Write a narrative summary in {lang} of this news article about Artificial Intelligence.
+
+Style: technical, clear, and journalistic (similar to leading technology media).
+Title: create an attractive, professional, and descriptive headline (avoid clickbait).
+Summary: between 220 and 300 words, integrating:
+
+- Context and background of the news
+- Main development or announcement
+- Its relevance and potential impact
+
+Do not use section headers like 'Context:', 'Development:', or 'Relevance and Impact:'. Instead, weave these elements naturally into the narrative.
+
+Closing: end the summary with one of the following phrases (chosen naturally based on tone and flow):
+- "Seguí leyendo en este link: {url}"
+- "Seguí leyendo en este enlace: {url}"
+- "Conocé más en este enlace: {url}"
+
+Additional instructions:
+
+- Keep an objective tone, avoid personal opinions.
+- Include key facts, figures, and examples if mentioned in the article.
+- Use natural, fluent language while maintaining technical accuracy.
+- Ensure the summary is coherent and flows well from one point to the next.
 
 Título original: {title}
 

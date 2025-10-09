@@ -1,0 +1,321 @@
+# 🧠 Los Highlights de Octubre en Inteligencia Artificial
+
+Te compartimos las noticias más destacadas del mes.
+
+### **IA Prevé Desplomes Volcánicos y Tsunamis: Un Avance en la Predicción de Desastres Naturales**
+
+![**IA Prevé Desplomes Volcánicos y Tsunamis: Un Avance en la Predicción de Desastres Naturales**](https://es.gizmodo.com/app/uploads/2025/10/Gizmodo-8-2-1200x675.jpg)
+
+**IA Prevé Desplomes Volcánicos y Tsunamis: Un Avance en la Predicción de Desastres Naturales**
+
+La inestabilidad de los volcanes activos, especialmente el riesgo de colapso de sus flancos, representa una amenaza considerable, capaz de desencadenar tsunamis devastadores. Hasta ahora, la predicción de estos eventos, que ocurren en cuestión de minutos, era prácticamente imposible. Sin embargo, un equipo de científicos de Pensilvania ha desarrollado un innovador modelo tridimensional impulsado por inteligencia artificial que promete cambiar esta realidad.
+
+Este nuevo sistema analiza datos complejos para anticipar cuándo un volcán podría sufrir un colapso lateral. El proceso se basa en la identificación de señales de inestabilidad interna, como el movimiento del magma, la acumulación de fluidos y el debilitamiento de fallas preexistentes dentro de la estructura volcánica. La IA procesa esta información, permitiendo a los expertos evaluar el riesgo de deslizamientos que podrían desplazar millones de toneladas de roca al mar, generando olas gigantes.
+
+Los colapsos laterales volcánicos, aunque considerados raros en el pasado, estudios recientes sugieren que podrían ser más frecuentes de lo que se pensaba, particularmente en regiones insulares y costeras erosionadas. La capacidad de predecir estos eventos con antelación es crucial para implementar medidas de seguridad y evacuar áreas potencialmente afectadas, reduciendo así el impacto de estos desastres naturales. El nuevo modelo representa un avance significativo en la mitigación de riesgos, proporcionando una herramienta valiosa para científicos y autoridades en la gestión de emergencias.
+
+Conocé más en este enlace: https://es.gizmodo.com/una-nueva-herramienta-predice-colapsos-volcanicos-y-tsunamis-con-inteligencia-artificial-2000196787
+
+---
+
+### **OpenAI Impulsa a los Desarrolladores con Modelos Más Potentes en su API**
+
+![**OpenAI Impulsa a los Desarrolladores con Modelos Más Potentes en su API**](https://techcrunch.com/wp-content/uploads/2025/10/Screenshot-2025-10-06-at-3.05.51PM.png?resize=1200,527)
+
+**OpenAI Impulsa a los Desarrolladores con Modelos Más Potentes en su API**
+
+En su reciente Dev Day, OpenAI presentó una serie de actualizaciones significativas para su API, marcando un claro esfuerzo por fortalecer su ecosistema de desarrolladores. La novedad principal es la introducción de GPT-5 Pro, su modelo de lenguaje más avanzado hasta la fecha, diseñado para ofrecer mayor precisión y profundidad de razonamiento, especialmente relevante para sectores como finanzas, legal y salud, según declaró el CEO de OpenAI, Sam Altman.
+
+Además de GPT-5 Pro, OpenAI anunció el lanzamiento de Sora 2 en la API, su nuevo modelo de generación de video. Esta versión, que sigue a la reciente presentación de la aplicación Sora, un competidor de TikTok, permitirá a los desarrolladores integrar capacidades de generación de video de alta calidad en sus propias aplicaciones. Sora 2 mejora la generación anterior, ofreciendo escenas más realistas, consistentes físicamente y con sonido sincronizado, además de un mayor control creativo sobre la dirección de la cámara y los estilos visuales. En paralelo, se lanzó una herramienta para la creación de agentes y la posibilidad de construir aplicaciones directamente en ChatGPT.
+
+Para complementar estas mejoras, OpenAI también presentó "gpt-realtime mini", un modelo de voz más pequeño y económico en la API. Este modelo, que mantiene la misma calidad y expresividad que su predecesor pero con un costo un 70% menor, está diseñado para interacciones de audio y voz en tiempo real y baja latencia, un aspecto crucial, según Altman, a medida que la voz se convierte en una forma primordial de interacción con la IA. Conocé más en este enlace: https://techcrunch.com/2025/10/06/openai-ramps-up-developer-push-with-more-powerful-models-in-its-api/
+
+---
+
+### Google DeepMind Avanza en Robótica: IA Busca en la Web para Tareas Complejas
+
+## Google DeepMind Avanza en Robótica: IA Busca en la Web para Tareas Complejas
+
+Google DeepMind ha anunciado un avance significativo en su investigación de inteligencia artificial aplicada a la robótica. Según un reciente comunicado, los nuevos modelos de IA de la empresa, Gemini Robotics 1.5 y Gemini Robotics-ER 1.5, ahora permiten a los robots ejecutar tareas más complejas y, lo que es crucial, acceder a información en la web para obtener ayuda. Esta actualización de los modelos presentados en marzo representa un cambio fundamental en la capacidad de los robots para interactuar con el mundo físico.
+
+La Dra. Carolina Parada, jefa de robótica de Google DeepMind, explicó que el sistema permite a los robots "pensar varios pasos por delante" antes de actuar. Esto se logra mediante la combinación de Gemini Robotics-ER 1.5, que interpreta el entorno, y Gemini Robotics 1.5, que ejecuta las acciones. La integración con la web, a través de Google Search, permite a los robots obtener información específica y relevante para sus tareas, como clasificar la ropa sucia por colores o empacar una maleta basándose en el pronóstico del tiempo. Anteriormente, los modelos solo podían ejecutar una instrucción a la vez. Ahora, comprenden y resuelven problemas en tareas físicas reales. Un ejemplo práctico es la capacidad de un robot para clasificar residuos en función de las regulaciones locales, utilizando la información obtenida de una búsqueda web.
+
+Este avance implica un salto cualitativo en la autonomía y adaptabilidad de los robots, abriendo nuevas posibilidades en diversos campos, desde la logística y la manufactura hasta la asistencia personal. Conocé más en este enlace: https://www.theverge.com/news/785193/google-deepmind-gemini-ai-robotics-web-search
+
+---
+
+### **DeepSeek Lanza Modelo de Atención Esparsa que Reduce los Costos de API a la Mitad**
+
+![**DeepSeek Lanza Modelo de Atención Esparsa que Reduce los Costos de API a la Mitad**](https://techcrunch.com/wp-content/uploads/2025/01/GettyImages-2196333417_75e106.jpg?resize=1200,901)
+
+**DeepSeek Lanza Modelo de Atención Esparsa que Reduce los Costos de API a la Mitad**
+
+DeepSeek, una empresa china emergente en el campo de la Inteligencia Artificial, anunció el lanzamiento de su nuevo modelo experimental V3.2-exp, diseñado para reducir significativamente los costos de inferencia, especialmente en operaciones de contexto largo. El anuncio, realizado a través de una publicación en Hugging Face y un artículo académico en GitHub, destaca la innovación principal del modelo: la "Atención Esparsa DeepSeek".
+
+Este sistema, descrito en detalle en la documentación, emplea un "indexador relámpago" que prioriza fragmentos específicos dentro de la ventana de contexto. Luego, un "sistema de selección de tokens de grano fino" selecciona tokens específicos de esos fragmentos para cargarlos en la ventana de atención limitada del módulo. Esta arquitectura permite que los modelos de Atención Esparsa operen sobre porciones extensas de contexto con una carga de servidor comparativamente menor.
+
+Las pruebas preliminares de DeepSeek sugieren que el nuevo enfoque podría reducir el precio de una simple llamada a la API hasta en un 50% en escenarios de contexto largo. Aunque se requerirán pruebas adicionales para una evaluación más completa, la naturaleza de código abierto y la disponibilidad del modelo en Hugging Face permitirán a terceros evaluar rápidamente las afirmaciones presentadas. El desarrollo de DeepSeek se suma a una serie de avances recientes que buscan optimizar los costos de inferencia, un aspecto crucial en la operación de modelos de IA pre-entrenados.
+
+Conocé más en este enlace: https://techcrunch.com/2025/09/29/deepseek-releases-sparse-attention-model-that-cuts-api-costs-in-half/
+
+---
+
+### **Inteligencia Artificial Desentraña el Papel de *Homo habilis*: ¿Cazador o Presa?**
+
+![**Inteligencia Artificial Desentraña el Papel de *Homo habilis*: ¿Cazador o Presa?**](https://es.gizmodo.com/app/uploads/2025/09/Gizmodo-49-2-1200x675.jpg)
+
+**Inteligencia Artificial Desentraña el Papel de *Homo habilis*: ¿Cazador o Presa?**
+
+El campo de la paleoantropología ha sido sacudido por un reciente estudio que utiliza inteligencia artificial (IA) para reevaluar el rol de *Homo habilis* en la evolución humana. Durante mucho tiempo, se ha considerado a esta especie como el primer gran cazador, gracias al uso de herramientas de piedra y una posición dominante en la cadena alimentaria. Sin embargo, una nueva investigación, publicada en *The Annals of the New York Academy of Sciences*, desafía esta narrativa.
+
+El estudio, liderado por la Universidad de Alcalá, empleó modelos de visión por computadora para analizar los fósiles OH 7 y OH 65, hallados en la Garganta de Olduvai, Tanzania. Se entrenó un algoritmo con más de 1.400 imágenes de marcas dentales de carnívoros contemporáneos, incluyendo leones, hienas, y leopardos. El objetivo era identificar patrones sutiles en los fósiles que indicaran la causa de la muerte. El análisis reveló que las marcas dentales en los restos de *Homo habilis* coincidían en más del 90% con mordeduras de leopardo, sugiriendo que estos homínidos eran, en realidad, presas.
+
+Este hallazgo pone en duda la tradicional visión de *Homo habilis* como un depredador exitoso y plantea que el verdadero ascenso en la cadena trófica ocurrió posteriormente, con *Homo erectus*, una especie con mayores adaptaciones y capacidades tecnológicas. Este estudio, aunque con limitaciones inherentes a la interpretación de datos fósiles, abre un nuevo debate sobre la evolución humana y el momento crucial en que nuestros antepasados lograron una posición más segura en el ecosistema.
+
+Conocé más en este enlace: https://es.gizmodo.com/homo-habilis-fue-cazador-o-presa-la-inteligencia-artificial-reabre-un-viejo-debate-evolutivo-2000194254
+
+---
+
+### La Brecha del Refuerzo: Por Qué Algunas Habilidades de IA Avanzan Más Rápido
+
+![La Brecha del Refuerzo: Por Qué Algunas Habilidades de IA Avanzan Más Rápido](https://techcrunch.com/wp-content/uploads/2025/10/GettyImages-1575097396.jpg?resize=1200,675)
+
+## La Brecha del Refuerzo: Por Qué Algunas Habilidades de IA Avanzan Más Rápido
+
+El panorama de la inteligencia artificial se encuentra en un estado de transformación constante, con avances que, si bien son generalizados, no se distribuyen de manera uniforme. Herramientas de codificación basadas en IA, como GPT-5, Gemini 2.5 y, más recientemente, Sonnet 4.5, están experimentando una mejora exponencial, permitiendo la automatización de tareas complejas y el desarrollo de nuevas técnicas. Sin embargo, otras áreas, como la redacción de correos electrónicos o el desempeño de chatbots multifuncionales, muestran un progreso mucho más lento.
+
+La clave de esta disparidad radica en el aprendizaje por refuerzo (RL, por sus siglas en inglés), la metodología que impulsa gran parte del progreso en IA en los últimos seis meses. El RL se beneficia enormemente de la capacidad de realizar pruebas masivas y fácilmente medibles. En el caso de la codificación, esto se traduce en la evaluación de miles de millones de pruebas para determinar la funcionalidad del código, lo que permite un aprendizaje rápido y eficiente. Habilidades como la corrección de errores y la resolución de problemas matemáticos, que se prestan a una evaluación automatizada, avanzan con rapidez.
+
+Contrariamente, las habilidades que requieren una evaluación más subjetiva o que no cuentan con métricas claras de éxito, como la escritura creativa o la interacción en chatbots con múltiples propósitos, muestran un avance más incremental. Esta diferencia en la capacidad de aprendizaje y mejora, impulsada por la facilidad o dificultad de aplicar el RL, está creando una "brecha de refuerzo" que define, cada vez más, lo que la IA puede y no puede hacer. Esta brecha se convierte en un factor crucial para entender la evolución de la IA.
+
+Conocé más en este enlace: https://techcrunch.com/2025/10/05/the-reinforcement-gap-or-why-some-ai-skills-improve-faster-than-others/
+
+---
+
+### **La IA Revela la Furia Volcánica de Ío: El James Webb y la UNAM Desentrañan los Secretos de la Luna Joviana**
+
+![**La IA Revela la Furia Volcánica de Ío: El James Webb y la UNAM Desentrañan los Secretos de la Luna Joviana**](https://es.gizmodo.com/app/uploads/2025/09/Diseno-sin-titulo-37-24-1200x675.jpg)
+
+**La IA Revela la Furia Volcánica de Ío: El James Webb y la UNAM Desentrañan los Secretos de la Luna Joviana**
+
+La luna Ío, un cuerpo celeste dominado por la actividad volcánica sin igual en nuestro sistema solar, ha sido objeto de fascinación y estudio durante décadas. Su superficie, un mosaico de flujos de lava y cráteres en constante cambio, siempre ha presentado un desafío para su observación detallada. Sin embargo, un reciente avance, producto de la colaboración entre el telescopio espacial James Webb, la Universidad Nacional Autónoma de México (UNAM) y técnicas de inteligencia artificial, ha logrado un hito significativo en el estudio de esta luna infernal.
+
+El proyecto, liderado por Joel Sánchez Bermúdez del Instituto de Astronomía de la UNAM, implementó una técnica innovadora: la interferometría con enmascaramiento de apertura. Este método, que implica el uso de una máscara metálica con siete aberturas para bloquear parte de la pupila del telescopio, permite aumentar la resolución efectiva de las observaciones. El resultado es un patrón de interferencia que, tras un análisis exhaustivo, revela detalles más finos de la superficie de Ío, superando las limitaciones de los telescopios individuales.
+
+Pero la complejidad de la imagen de Ío, con un tamaño similar al campo de visión del interferómetro, requería un procesamiento avanzado. Aquí es donde la inteligencia artificial entró en juego. Redes neuronales, entrenadas para reconocer patrones de luz y morfología, fueron utilizadas para reconstruir imágenes de alta fidelidad. Este sistema de deconvolución permitió identificar y caracterizar con precisión siete volcanes en erupción, revelando puntos calientes y regiones de emisión con una nitidez sin precedentes. Este trabajo demuestra el potencial de la IA en la astronomía, permitiendo desentrañar secretos de cuerpos celestes complejos y dinámicos.
+
+Conocé más en este enlace: https://es.gizmodo.com/siete-volcanes-en-erupcion-bajo-la-mirada-del-james-webb-la-unam-y-la-inteligencia-artificial-revelan-secretos-de-io-la-luna-mas-volcanica-del-sistema-solar-2000194203
+
+---
+
+### **Microsoft Transforma Fábrica Abandonada de Foxconn en un Centro de Datos de IA de Vanguardia**
+
+**Microsoft Transforma Fábrica Abandonada de Foxconn en un Centro de Datos de IA de Vanguardia**
+
+En una apuesta audaz por liderar la carrera de la inteligencia artificial, Microsoft ha anunciado la creación de Fairwater, un centro de datos de IA que la compañía califica como "el más potente del mundo". Este proyecto, con una inversión de $3.3 mil millones, se ubicará en Wisconsin, aprovechando las instalaciones abandonadas de la fallida fábrica de pantallas LCD que Foxconn planeó construir en 2017. La decisión de Microsoft de convertir este espacio en desuso en un centro de IA de última generación subraya la creciente demanda de infraestructura para el procesamiento de datos de IA.
+
+El centro de datos Fairwater, con una extensión de 1.2 millones de pies cuadrados distribuidos en tres edificios sobre un terreno de 315 acres, albergará una infraestructura masiva. Satya Nadella, CEO de Microsoft, ha revelado que el centro contará con "cientos de miles" de GPU Nvidia GB200, conectadas por una red de fibra óptica con capacidad para rodear la Tierra 4.5 veces. Microsoft asegura que este conjunto de GPU interconectadas superará en diez veces la potencia de la supercomputadora más rápida disponible actualmente, impulsando significativamente sus esfuerzos de entrenamiento de IA. La compañía también ha confirmado que están en construcción múltiples centros de datos Fairwater adicionales en todo Estados Unidos.
+
+Además del poder de procesamiento, Microsoft destaca el diseño sostenible de Fairwater, que incluye un sistema de enfriamiento de circuito cerrado para minimizar el desperdicio de agua, un aspecto crucial dado el alto consumo energético asociado con la IA. La iniciativa refleja el compromiso de Microsoft con la sostenibilidad, un factor cada vez más importante en el desarrollo de tecnologías de IA. Conocé más en este enlace: https://www.theverge.com/news/781052/microsoft-foxconn-fairwater-worlds-most-powerful-ai-data-center
+
+---
+
+### **Nvidia Libera Audio2Face: Animación Facial Impulsada por IA para Todos**
+
+**Nvidia Libera Audio2Face: Animación Facial Impulsada por IA para Todos**
+
+En un movimiento significativo para la comunidad de desarrollo, Nvidia ha anunciado la apertura del código fuente de Audio2Face, su avanzada herramienta basada en inteligencia artificial para la creación de animaciones faciales realistas en avatares 3D. Esta decisión democratiza el acceso a una tecnología previamente reservada, abriendo nuevas posibilidades para desarrolladores de juegos, aplicaciones y contenido digital en general.
+
+Audio2Face opera mediante el análisis de las "características acústicas" de una voz, permitiendo la generación de datos de animación que se mapean a las expresiones faciales y movimientos labiales del avatar 3D. La herramienta, que ya ha demostrado su eficacia en proyectos como Chernobylite 2: Exclusion Zone y Alien: Rogue Incursion Evolved Edition, facilita la creación de personajes 3D realistas tanto para contenido pre-escrito como para transmisiones en vivo.
+
+El impacto de esta liberación es sustancial. Los desarrolladores ahora podrán integrar Audio2Face y su marco subyacente en sus propios proyectos, acelerando el proceso de creación de personajes y mejorando la calidad del contenido. Además de abrir el código fuente de los modelos y los kits de desarrollo de software (SDK), Nvidia también ofrece el marco de entrenamiento de la herramienta, permitiendo a los usuarios personalizar los modelos para adaptarlos a necesidades específicas. Esto amplía aún más las aplicaciones potenciales de la tecnología, desde el entretenimiento hasta la comunicación virtual.
+
+Conocé más en este enlace: https://www.theverge.com/news/785981/nvidia-audio2face-ai-voice-animation-open-source
+
+---
+
+### **Anthropic Presenta Claude Sonnet 4.5: Su Modelo de IA Más Avanzado para Codificación**
+
+![**Anthropic Presenta Claude Sonnet 4.5: Su Modelo de IA Más Avanzado para Codificación**](https://techcrunch.com/wp-content/uploads/2025/02/Claude_3-7_illustration.jpg?resize=1200,675)
+
+**Anthropic Presenta Claude Sonnet 4.5: Su Modelo de IA Más Avanzado para Codificación**
+
+Anthropic ha anunciado el lanzamiento de Claude Sonnet 4.5, su nuevo modelo de IA que, según la compañía, establece un nuevo estándar en el rendimiento de la codificación. Este anuncio llega en un momento crucial, con la creciente competencia en el campo de la inteligencia artificial y el interés creciente de las empresas por integrar la IA en sus flujos de trabajo. Claude Sonnet 4.5 se presenta como una herramienta capaz de construir aplicaciones "listas para producción", superando la fase prototipo y ofreciendo una mayor fiabilidad en comparación con modelos anteriores.
+
+El modelo estará disponible a través de la API de Claude y en el chatbot Claude, manteniendo el mismo precio que Claude Sonnet 4: $3 por millón de tokens de entrada (aproximadamente 750,000 palabras) y $15 por millón de tokens de salida. Esta estrategia de precios busca facilitar el acceso a desarrolladores y empresas.
+
+En el último año, los modelos de Anthropic han ganado popularidad entre desarrolladores e industrias, especialmente gracias a su buen desempeño en tareas de ingeniería de software. Empresas como Apple y Meta ya utilizan internamente los modelos Claude. El nuevo modelo destaca por su rendimiento en múltiples benchmarks, incluyendo SWE-Bench Verified. La compañía ha enfatizado que el rendimiento de Claude Sonnet 4.5 va más allá de los benchmarks, mostrando su capacidad de codificar de forma autónoma durante largos períodos, llegando a construir aplicaciones completas, incluyendo la configuración de bases de datos y auditorías de seguridad. Líderes de la industria, como el CEO de Cursor, han elogiado el modelo por su capacidad para tareas de largo alcance, considerándolo un avance significativo.
+
+Conocé más en este enlace: https://techcrunch.com/2025/09/29/anthropic-launches-claude-sonnet-4-5-its-best-ai-model-for-coding/
+
+---
+
+### **Instacrops Presentará su IA para la Optimización del Riego Agrícola en TechCrunch Disrupt 2025**
+
+![**Instacrops Presentará su IA para la Optimización del Riego Agrícola en TechCrunch Disrupt 2025**](https://techcrunch.com/wp-content/uploads/2025/10/GettyImages-1007976994.jpeg?resize=1200,740)
+
+**Instacrops Presentará su IA para la Optimización del Riego Agrícola en TechCrunch Disrupt 2025**
+
+La agricultura, un sector intensivo en consumo de agua, representa un desafío crucial a nivel global, especialmente en regiones como Chile, donde la escasez hídrica es una realidad apremiante. Instacrops, una startup chilena, ha desarrollado una solución basada en inteligencia artificial (IA) para abordar esta problemática. Originalmente enfocada en sensores IoT para la detección de heladas, la empresa pivotó hacia el software y la optimización del riego agrícola, reconociendo la creciente necesidad de eficiencia hídrica.
+
+Actualmente, Instacrops está ayudando a 260 granjas a reducir su consumo de agua hasta en un 30%, además de aumentar los rendimientos de los cultivos hasta en un 20%. La clave reside en sus modelos de lenguaje de gran tamaño (LLM), que analizan más de 80 parámetros, incluyendo la humedad del suelo, la temperatura, la presión y el Índice de Vegetación de Diferencia Normalizada (NDVI).  Estos datos, combinados con información de sensores IoT, permiten a la IA asesorar a los agricultores sobre los momentos y las cantidades óptimas de riego, enviando las recomendaciones directamente a sus teléfonos móviles, incluso a través de WhatsApp.
+
+El cambio estratégico hacia la IA ha transformado a Instacrops, permitiendo un procesamiento de datos masivo: actualmente, gestionan aproximadamente 15 millones de puntos de datos por hora, una cifra que antes tomaba un año. La startup, que participa en Startup Battlefield, presentará su solución en TechCrunch Disrupt a finales de este mes en San Francisco.  La tecnología de Instacrops, que se centra en cultivos de alto valor en América Latina, como manzanas, aguacates y arándanos, promete un impacto significativo en la sostenibilidad agrícola.
+
+Conocé más en este enlace: https://techcrunch.com/2025/10/04/instacrops-will-demo-its-water-saving-crop-boosting-ai-at-techcrunch-disrupt-2025/
+
+---
+
+### Hance presentará software de procesamiento de audio con IA de tamaño kilobyte en TechCrunch Disrupt 2025
+
+![Hance presentará software de procesamiento de audio con IA de tamaño kilobyte en TechCrunch Disrupt 2025](https://techcrunch.com/wp-content/uploads/2025/09/GettyImages-2236545821.jpg?resize=1200,736)
+
+## Hance presentará software de procesamiento de audio con IA de tamaño kilobyte en TechCrunch Disrupt 2025
+
+La startup noruega Hance, con su tecnología innovadora, se prepara para captar la atención en TechCrunch Disrupt 2025, que se celebrará del 27 al 29 de octubre en el Moscone Center de San Francisco. Con un equipo de alrededor de diez empleados, la compañía ha desarrollado un software de procesamiento de audio basado en inteligencia artificial que destaca por su sorprendente eficiencia y tamaño reducido.
+
+En un contexto donde la claridad del audio es crucial, como en las comunicaciones de la Fórmula 1, donde Hance ya tiene clientes como Intel y Riedel Communications, la tecnología de la empresa ofrece una solución notable. La clave de su éxito reside en modelos de IA compactos, con un tamaño de solo 242 kB, que posibilitan el procesamiento en el dispositivo, evitando la necesidad de la nube. Este diseño optimizado se traduce en una latencia mínima, de tan solo 10 milisegundos, y un bajo consumo de energía.
+
+El equipo de Hance, con experiencia en la industria del audio, incluyendo al cofundador Stian Aagedal, también CEO de Acon Digital, y Peder Jørgensen, de la biblioteca de efectos de sonido Soundly, ha aprovechado el auge de la IA para optimizar el procesamiento de audio, especialmente en la reducción de ruido y el aislamiento de sonidos. Han entrenado sus propios modelos con grabaciones de alta calidad, desde el rugido de los coches de F1 hasta los sonidos de volcanes islandeses. Este enfoque les permite ofrecer soluciones que separan sonidos, eliminan ruido, eco y reverberación, y mejoran la claridad del habla, todo en tiempo real y en una amplia gama de dispositivos.
+
+Conocé más en este enlace: https://techcrunch.com/2025/09/30/hance-will-demo-its-kilobyte-size-ai-audio-processing-software-at-techcrunch-disrupt-2025/
+
+---
+
+### **Proyecto facilita acceso de IA a datos de Wikipedia**
+
+![**Proyecto facilita acceso de IA a datos de Wikipedia**](https://techcrunch.com/wp-content/uploads/2025/09/printed-wikipedia.jpg?w=640)
+
+**Proyecto facilita acceso de IA a datos de Wikipedia**
+
+En un anuncio relevante para el ecosistema de la Inteligencia Artificial, Wikimedia Deutschland presentó una nueva base de datos que revoluciona el acceso a la vasta información de Wikipedia para modelos de IA. Denominado "Proyecto de Incrustación de Wikidata," el sistema emplea búsqueda semántica basada en vectores, una técnica que permite a las computadoras comprender el significado y las relaciones entre palabras. Esta tecnología se aplica a los más de 120 millones de entradas existentes en Wikipedia y plataformas asociadas.
+
+La iniciativa, que se beneficia del soporte del Protocolo de Contexto de Modelo (MCP), un estándar para la comunicación de sistemas de IA con fuentes de datos, facilita la consulta en lenguaje natural por parte de modelos lingüísticos de gran escala (LLMs). Este proyecto es fruto de la colaboración entre la rama alemana de Wikimedia, la empresa de búsqueda neuronal Jina.AI y DataStax, compañía de datos de entrenamiento en tiempo real de IBM.
+
+A diferencia de las herramientas previas de Wikidata, que solo permitían búsquedas por palabras clave y consultas SPARQL, el nuevo sistema optimiza el uso de sistemas de generación aumentada por recuperación (RAG), permitiendo a los modelos de IA extraer información externa. Esto ofrece a los desarrolladores la posibilidad de basar sus modelos en el conocimiento verificado por los editores de Wikipedia. Por ejemplo, al buscar la palabra "científico", el sistema proporciona listas de científicos nucleares destacados, científicos de los Laboratorios Bell, traducciones de la palabra en diferentes idiomas, imágenes autorizadas por Wikimedia y extrapolaciones a conceptos relacionados como "investigador" y "académico". La base de datos es de acceso público a través de Toolforge.
+
+Este lanzamiento llega en un momento crucial, donde los desarrolladores de IA buscan desesperadamente fuentes de datos de alta calidad para afinar sus modelos.
+
+Conocé más en este enlace: https://techcrunch.com/2025/10/01/new-project-makes-wikipedia-data-more-accessible-to-ai/
+
+---
+
+### **Clarifai Lanza Nuevo Motor de Razonamiento para Acelerar y Reducir Costos en Modelos de IA**
+
+![**Clarifai Lanza Nuevo Motor de Razonamiento para Acelerar y Reducir Costos en Modelos de IA**](https://techcrunch.com/wp-content/uploads/2024/03/GettyImages-1862779720.jpg?resize=1200,738)
+
+**Clarifai Lanza Nuevo Motor de Razonamiento para Acelerar y Reducir Costos en Modelos de IA**
+
+En un anuncio reciente, la plataforma de inteligencia artificial Clarifai presentó un nuevo motor de razonamiento diseñado para optimizar la ejecución de modelos de IA. Según la compañía, esta innovación promete duplicar la velocidad de procesamiento y reducir los costos hasta en un 40%. El sistema, adaptable a diversos modelos y proveedores de nube, utiliza una serie de optimizaciones para maximizar el rendimiento en el hardware existente.
+
+Matthew Zeiler, CEO de Clarifai, explicó que el motor implementa "una variedad de optimizaciones diferentes, desde núcleos CUDA hasta técnicas avanzadas de decodificación especulativa". Los resultados de estas optimizaciones fueron verificados por la firma independiente Artificial Analysis, que registró récords en la industria tanto en rendimiento como en latencia.
+
+El enfoque principal del motor es la inferencia, es decir, las demandas computacionales necesarias para operar un modelo de IA ya entrenado. Este requerimiento computacional se ha intensificado con el auge de los modelos de razonamiento y agentes, que requieren múltiples pasos en respuesta a una sola instrucción. Clarifai, inicialmente enfocada en servicios de visión por computadora, ha ampliado su enfoque a la orquestación de cómputo, impulsada por el creciente interés en las GPU y los centros de datos que las alojan.
+
+El lanzamiento llega en un momento de intensa presión sobre la infraestructura de IA, que ha generado acuerdos multimillonarios. OpenAI, por ejemplo, planea invertir hasta un billón de dólares en nuevos centros de datos, anticipando una demanda futura casi ilimitada de capacidad de cómputo. Sin embargo, Zeiler cree que aún hay margen para mejorar la infraestructura existente, enfocándose en optimizaciones de software y avances algorítmicos.
+
+Conocé más en este enlace: https://techcrunch.com/2025/09/25/clarifais-new-reasoning-engine-makes-ai-models-faster-and-less-expensive/
+
+---
+
+### **India Explora el Comercio Electrónico Impulsado por IA con Chatbots y Gigantes Tecnológicos**
+
+![**India Explora el Comercio Electrónico Impulsado por IA con Chatbots y Gigantes Tecnológicos**](https://techcrunch.com/wp-content/uploads/2025/10/india-chatgpt.jpg?resize=1200,800)
+
+**India Explora el Comercio Electrónico Impulsado por IA con Chatbots y Gigantes Tecnológicos**
+
+En un movimiento audaz que redefine el panorama del comercio electrónico, India ha lanzado un programa piloto para permitir a los consumidores comprar y pagar directamente a través de chatbots basados en inteligencia artificial. Liderando este despliegue se encuentra ChatGPT de OpenAI, con integraciones en desarrollo de Gemini de Google y Claude de Anthropic, marcando a la nación del sur de Asia como un mercado clave para las compañías globales de IA.
+
+La iniciativa, fruto de una colaboración entre la National Payments Corporation of India (NPCI), la entidad federal detrás del ampliamente utilizado Unified Payments Interface (UPI) del país, OpenAI y la fintech Razorpay, permitirá a los usuarios realizar compras y pagos directamente dentro de ChatGPT. El protocolo UPI Reserve Pay, que permite bloquear fondos para futuros débitos, y UPI Circle, que delega la autenticación UPI, son elementos clave para esta experiencia integrada. Razorpay ha desarrollado la capa de integración para comerciantes, facilitando las transacciones a través de estos chatbots de IA.
+
+BigBasket, el supermercado en línea propiedad del Grupo Tata, y el operador de telecomunicaciones Vi son los primeros socios comerciales en este piloto, ofreciendo a los clientes la posibilidad de comprar comestibles o recargar sus planes móviles directamente a través de ChatGPT. Axis Bank y Airtel Payments Bank están brindando el soporte bancario.
+
+India, con más de mil millones de suscriptores de internet, es ya uno de los principales mercados de OpenAI para ChatGPT. Este programa piloto de comercio es parte de un esfuerzo más amplio para profundizar la participación y aprovechar la creciente economía digital de la India, ofreciendo una nueva experiencia de descubrimiento y comercio, según Harshil Mathur, cofundador y CEO de Razorpay.
+
+Conocé más en este enlace: https://techcrunch.com/2025/10/09/india-pilots-ai-chatbot-led-e-commerce-with-chatgpt-gemini-claude-in-the-mix/
+
+---
+
+### Meta Llama: Un Modelo de IA Generativa Abierto para Desarrolladores
+
+![Meta Llama: Un Modelo de IA Generativa Abierto para Desarrolladores](https://techcrunch.com/wp-content/uploads/2024/06/GettyImages-959993436-e1718640411389.jpg?resize=1200,675)
+
+## Meta Llama: Un Modelo de IA Generativa Abierto para Desarrolladores
+
+En un panorama tecnológico dominado por la inteligencia artificial generativa, Meta ha posicionado a Llama como su modelo insignia, destacándose por su enfoque "abierto". A diferencia de modelos como Claude de Anthropic, Gemini de Google, Grok de xAI y la mayoría de los modelos ChatGPT de OpenAI, que se acceden principalmente a través de APIs, Llama permite a los desarrolladores descargar y utilizar el modelo a su antojo, sujeto a ciertas limitaciones. Esta apertura fomenta la creatividad y la experimentación, ofreciendo a los desarrolladores una mayor flexibilidad en la implementación de soluciones de IA.
+
+Meta, reconociendo la importancia de la accesibilidad, también ha establecido asociaciones estratégicas con proveedores de nube líderes, incluyendo AWS, Google Cloud y Microsoft Azure, para ofrecer versiones alojadas de Llama. Además, la compañía proporciona herramientas, bibliotecas y una "Llama cookbook" para ayudar a los desarrolladores a ajustar, evaluar y adaptar los modelos a sus necesidades específicas. Las últimas generaciones, como Llama 3 y Llama 4, han expandido estas capacidades, incluyendo soporte multimodal nativo y una mayor disponibilidad en la nube. El modelo Llama 4, lanzado en abril de 2025, se presenta en tres versiones.
+
+El contexto de un modelo, es decir, la cantidad de datos que considera antes de generar una respuesta, es un factor clave. Llama 4 Scout, por ejemplo, promete una ventana de contexto de 10 millones. Esta capacidad de retener una gran cantidad de información es crucial para evitar que el modelo "olvide" detalles recientes en la conversación y para mejorar la precisión general. Sin embargo, también plantea desafíos en términos de seguridad, ya que una ventana de contexto más grande puede hacer que el modelo sea más susceptible a generar contenido no deseado.
+
+Conocé más en este enlace: https://techcrunch.com/2025/10/06/meta-llama-everything-you-need-to-know-about-the-open-generative-ai-model/
+
+---
+
+### **Google Drive Refuerza la Defensa Contra Ransomware con Inteligencia Artificial**
+
+**Google Drive Refuerza la Defensa Contra Ransomware con Inteligencia Artificial**
+
+En un esfuerzo por combatir la creciente amenaza del ransomware, Google Drive para escritorio está implementando una nueva función impulsada por inteligencia artificial. Este desarrollo llega en un momento crítico, dado que los ataques de ransomware globalmente han experimentado un aumento del 15% en 2024, según informes de la Oficina del Director de Inteligencia Nacional, con un total de 5,289 ataques detectados.
+
+La nueva función de detección, que se lanza hoy en beta abierta, utiliza un modelo de IA especializado entrenado con "millones de muestras de ransomware del mundo real". Este modelo analiza continuamente los cambios en los archivos y se adapta a las nuevas variantes de ransomware, incorporando información de amenazas de VirusTotal. La IA busca señales específicas que indiquen la modificación maliciosa de archivos en sistemas Windows y macOS.
+
+Cuando la IA detecta actividad sospechosa, como intentos de cifrar o corromper archivos de forma masiva, Google Drive detendrá automáticamente la sincronización de archivos, alertará a los usuarios tanto en el escritorio como por correo electrónico, y permitirá la restauración de los archivos a una versión anterior. Luke Camery de Google ha indicado que la compañía planea hacer que esta función esté disponible de forma generalizada para finales de año. Esta iniciativa representa un paso significativo en la protección de datos y la continuidad del trabajo en un entorno digital cada vez más amenazado.
+
+Conocé más en este enlace: https://www.theverge.com/news/787815/google-ai-ransomware-drive-detect
+
+---
+
+### Robots Adaptables: La IA que Aprende a Sobrevivir a Cualquier Desafío Físico
+
+![Robots Adaptables: La IA que Aprende a Sobrevivir a Cualquier Desafío Físico](https://media.wired.com/photos/68d30cffc168663520a7b446/191:100/w_1280,c_limit/AI-Lab-Robots-Adapt-After-Chainsaaw-Their-Legs-Business.jpg)
+
+## Robots Adaptables: La IA que Aprende a Sobrevivir a Cualquier Desafío Físico
+
+La investigación en inteligencia artificial (IA) para robótica está experimentando un notable avance, con el objetivo de crear modelos más robustos y adaptables. El enfoque tradicional, basado en la teleoperación o la simulación para entrenar algoritmos en tareas específicas, se enfrenta a la limitación de la cantidad de datos disponibles. Una nueva empresa, Skild, está desafiando esta norma con un enfoque innovador para el entrenamiento de IA robótica.
+
+Su método se centra en un único algoritmo, denominado "Skild Brain", que aprende a controlar una amplia variedad de robots físicos y tareas. Este proceso, que involucra la exposición a múltiples formas físicas y escenarios, permite al modelo desarrollar una capacidad de adaptación generalizada. Los investigadores crearon una versión más pequeña del modelo, llamada LocoFormer, para un artículo académico que describe su enfoque.
+
+La clave reside en la capacidad del modelo para adaptarse rápidamente a nuevas circunstancias, como la pérdida de una extremidad o terrenos irregulares. Esta adaptabilidad se inspira en las capacidades de los modelos de lenguaje de gran tamaño, que pueden abordar problemas complejos mediante la descomposición y la retroalimentación en su contexto.
+
+Un experimento demostró la eficacia de Skild Brain. El algoritmo, tras ser entrenado en una variedad de robots caminantes de diferentes formas, fue capaz de controlar con éxito los movimientos de robots bípedos y cuadrúpedos reales, incluso aquellos que no formaban parte de los datos de entrenamiento originales.  En una demostración sorprendente, un robot cuadrúpedo, adaptó su movimiento cuando se le colocó sobre sus patas traseras, revelando la capacidad del algoritmo para responder a cambios inesperados en el entorno.  Empresas como Toyota Research Institute y la startup Physical Intelligence también están trabajando en el desarrollo de modelos de IA robótica más versátiles, pero Skild destaca por su enfoque en la generalización a través de una diversidad de hardware.
+
+Conocé más en este enlace: https://www.wired.com/story/this-ai-powered-robot-keeps-going-even-if-you-attack-it-with-a-chainsaw/
+
+---
+
+### **Thinking Machines Lab Lanza Tinker: Una Herramienta para Democratizar el Ajuste Fino de Modelos de IA de Vanguardia**
+
+![**Thinking Machines Lab Lanza Tinker: Una Herramienta para Democratizar el Ajuste Fino de Modelos de IA de Vanguardia**](https://media.wired.com/photos/68dc3f2dc39f3e48235a90a8/191:100/w_1280,c_limit/Exclusive-Mira-Murati-AI-lab-launches-first-product-Business2188124187.jpg)
+
+**Thinking Machines Lab Lanza Tinker: Una Herramienta para Democratizar el Ajuste Fino de Modelos de IA de Vanguardia**
+
+En un movimiento significativo para el panorama de la Inteligencia Artificial, Thinking Machines Lab, una startup respaldada con una importante financiación y cofundada por destacados investigadores de OpenAI, ha presentado su primer producto: Tinker. Esta herramienta automatiza el proceso de creación de modelos de IA personalizados y de vanguardia, prometiendo democratizar el acceso a capacidades hasta ahora reservadas para grandes empresas y laboratorios académicos.
+
+El ajuste fino, que implica adaptar modelos de IA de código abierto para tareas específicas como la resolución de problemas matemáticos o la redacción de documentos legales, es un proceso complejo. Requiere recursos computacionales significativos, como clústeres de GPU, y experiencia en el manejo de diversas herramientas de software para garantizar la estabilidad y eficiencia del entrenamiento a gran escala. Tinker busca simplificar este proceso, permitiendo a empresas, investigadores e incluso entusiastas de la IA, ajustar sus propios modelos con facilidad.
+
+Dirigido por investigadores clave en la creación de ChatGPT, Thinking Machines Lab apuesta a que el ajuste fino de modelos de vanguardia será el próximo gran avance en IA. Según pruebas beta, Tinker se destaca por su potencia y facilidad de uso en comparación con herramientas similares en el mercado. La CEO de Thinking Machines, Mira Murati, enfatiza la importancia de hacer que las capacidades de IA de vanguardia sean accesibles para todos, con el objetivo de potenciar la investigación y el desarrollo en este campo. Actualmente, Tinker permite a los usuarios ajustar los modelos de código abierto Llama de Meta y Qwen de Alibaba con tan solo unas líneas de código.
+
+Conocé más en este enlace: https://www.wired.com/story/thinking-machines-lab-first-product-fine-tune/
+
+---
+
+### **Emiratos Árabes Unidos irrumpe en la escena de la IA con un modelo de razonamiento compacto pero potente**
+
+![**Emiratos Árabes Unidos irrumpe en la escena de la IA con un modelo de razonamiento compacto pero potente**](https://media.wired.com/photos/68c01de75520754e03844388/191:100/w_1280,c_limit/GettyImages-1817371216.jpg)
+
+**Emiratos Árabes Unidos irrumpe en la escena de la IA con un modelo de razonamiento compacto pero potente**
+
+En un movimiento que marca un hito en su ambicioso plan de convertirse en un líder global en inteligencia artificial, Emiratos Árabes Unidos (EAU) ha presentado K2 Think, un modelo de código abierto diseñado para el razonamiento avanzado. Este anuncio llega como una clara señal de que las significativas inversiones del país en IA están empezando a dar frutos, compitiendo directamente con las ofertas de Estados Unidos y China, los actuales titanes del sector.
+
+Desarrollado por investigadores de la Universidad de Inteligencia Artificial Mohamed bin Zayed (MBZUAI) en Abu Dabi, K2 Think se distingue por ser uno de los primeros modelos de IA "soberanos", incorporando avances técnicos esenciales para el razonamiento. El modelo, respaldado por G42, un conglomerado tecnológico emiratí, está disponible gratuitamente y funciona en un clúster de chips Cerebras, una alternativa al hardware de Nvidia.
+
+A pesar de su tamaño relativamente modesto, con 32 mil millones de parámetros, K2 Think demuestra un rendimiento comparable a modelos de razonamiento más grandes, como los de OpenAI y DeepSeek, que superan los 200 mil millones de parámetros. El modelo se especializa en la resolución de problemas complejos a través de una simulación de deliberación, en lugar de la síntesis rápida de información. Eric Xing, presidente de MBZUAI y líder de investigación en IA, describe esta innovación como una "disrupción" técnica, resaltando la combinación efectiva de avances recientes en su desarrollo, como el ajuste fino en largas secuencias de razonamiento simulado y un proceso de planificación agentiva.
+
+Este lanzamiento posiciona a los EAU en la creciente carrera global por el dominio de la IA, una tecnología con profundas implicaciones económicas y geopolíticas.
+
+Conocé más en este enlace: https://www.wired.com/story/uae-releases-a-tiny-but-powerful-reasoning-model/
+
+---
+
+¿Querés seguir leyendo más? Volvemos el mes que viene con un nuevo resumen.
