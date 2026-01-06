@@ -79,9 +79,11 @@ def rank_and_select(df: pd.DataFrame, settings: Settings, top_n: int = 15, ensur
         if client:
              try:
                  score = client.score_relevance(title, content)
-             except Exception:
+             except Exception as e:
+                 print(f"Error scoring relevance with LLM: {e}")
                  score = _heuristic_score(title, content)
         else:
+             print("No LLM client available, using heuristic scoring.")
              score = _heuristic_score(title, content)
         scores.append(score)
 
