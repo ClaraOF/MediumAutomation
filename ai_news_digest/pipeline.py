@@ -40,7 +40,7 @@ def _heuristic_score(title: str, content: str) -> int:
 def _get_llm(settings: Settings):
     """Devuelve instancia de LLM: OpenAI si hay key, si no OpenRouter si hay key, si no None."""
     # Intenta OpenAIClient primero
-    if settings.has_llm and OpenAIClient is not None:
+    if settings.has_llm:
         try:
             print("Trying OpenAIClient...")
             return OpenAIClient(
@@ -51,6 +51,8 @@ def _get_llm(settings: Settings):
         except Exception as e:
             print(f"Error initializing OpenAIClient: {e}")
             print("Continuando con OpenRouterClient...")
+    else:
+        print("No OpenAI key found, trying OpenRouterClient...")
 
     # Si falla OpenAIClient o no hay key, intenta OpenRouterClient
     if getattr(settings, "openrouter_api_key", None):

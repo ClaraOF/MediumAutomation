@@ -27,10 +27,7 @@ class Settings:
     @property
     def has_llm(self) -> bool:
         # Sólo consideramos OpenAI si defini la api key
-        return bool(self.openai_api_key not in (None, "", "PONER_AQUI"))
-    # def has_llm(self) -> bool:
-    #     # Sólo consideramos OpenAI
-    #     return bool(self.openai_api_key)
+        return bool(self.openai_api_key and self.openai_api_key.strip())
 
     def validate(self) -> None:
         # No exigimos NEWSAPI si lo tenés desactivado
