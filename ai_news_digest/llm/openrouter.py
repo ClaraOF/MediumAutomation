@@ -1,6 +1,23 @@
+import json as _json
+import re as _re
+
 import requests
 import backoff
-from ..prompts import RELEVANCE_PROMPT, SUMMARY_PROMPT
+from ..prompts import BATCH_RELEVANCE_PROMPT, RELEVANCE_PROMPT, SUMMARY_PROMPT
+
+
+def _parse_batch_scores(text: str, n: int) -> list[int] | None:
+    """Parsea la respuesta del LLM para batch scoring. Retorna None si falla."""
+    match = _re.search(r'\[[\d\s,]+\]', text)
+    if not match:
+        return None
+    try:
+        scores = _json.loads(match.group(0))
+        if len(scores) == n:
+            return [max(1, min(10, int(s))) for s in scores]
+    except Exception:
+        pass
+    return None
 
 OPENROUTER_ENDPOINT = "https://openrouter.ai/api/v1/chat/completions"
 
@@ -40,6 +57,38 @@ class OpenRouterClient:
         msg = r.json()["choices"][0]["message"]["content"].strip()
         digits = "".join(ch for ch in msg if ch.isdigit())
         return int(digits[:2]) if digits else 0
+
+    def score_relevance_batch(self, articles: list[tuple[str, str]]) -> list[int]:
+        """
+        Puntúa una lista de (titulo, contenido) en una sola llamada al LLM.
+        Retorna lista de scores 1-10 en el mismo orden que `articles`.
+        Si el LLM falla o devuelve una respuesta no parseable, retorna lista de ceros.
+        """
+        if not articles:
+            return []
+        articles_text = "\n".join(
+            f"{i + 1}. Title: {(title or '')[:120]}\n   Snippet: {(snippet or '')[:200]}"
+            for i, (title, snippet) in enumerate(articles)
+        )
+        prompt = BATCH_RELEVANCE_PROMPT.format(n=len(articles), articles_list=articles_text)
+        payload = {
+            "model": self.model_relevance,
+            "messages": [
+                {"role": "system", "content": "You are an AI content analyst. Respond only with a JSON array of integers."},
+                {"role": "user", "content": prompt},
+            ],
+            "temperature": 0.0,
+        }
+        try:
+            r = requests.post(OPENROUTER_ENDPOINT, headers=self._headers(), json=payload, timeout=60)
+            r.raise_for_status()
+            msg = r.json()["choices"][0]["message"]["content"].strip()
+            scores = _parse_batch_scores(msg, len(articles))
+            if scores is not None:
+                return scores
+        except Exception:
+            pass
+        return [0] * len(articles)
 
     @backoff.on_exception(backoff.expo, (requests.exceptions.RequestException,), max_tries=3)
     def summarize(self, title: str, url: str, content: str, lang: str = "es"):

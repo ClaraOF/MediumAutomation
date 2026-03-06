@@ -87,6 +87,13 @@ def parse_args(argv=None) -> argparse.Namespace:
         help="CSV de artículos ya recolectados (saltea el paso 1 y no consume NewsAPI). "
              "Usar el .csv generado por una ejecución anterior.",
     )
+    parser.add_argument(
+        "--exclude-source", type=str, action="append", default=[], dest="exclude_sources",
+        metavar="SOURCE",
+        help="Fuente a excluir de la recolección (repetible). "
+             "Valores válidos: newsapi, techcrunch, rss. "
+             "Ej: --exclude-source newsapi --exclude-source techcrunch",
+    )
     return parser.parse_args(argv)
 
 
@@ -103,6 +110,8 @@ def run(argv=None):
 
     if args.articles_csv:
         print(f"[Config] articles_csv={args.articles_csv} (saltando recolección)")
+    if args.exclude_sources:
+        print(f"[Config] exclude_sources={args.exclude_sources}")
 
     settings = Settings()
     result = run_agentic_pipeline(
@@ -114,6 +123,7 @@ def run(argv=None):
         out_path=out_path,
         ensure_sources=args.ensure_sources,
         articles_csv=args.articles_csv,
+        exclude_sources=args.exclude_sources,
     )
 
     if result.get("status") == "success":

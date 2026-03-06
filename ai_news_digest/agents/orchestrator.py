@@ -54,6 +54,7 @@ def run_agentic_pipeline(
     out_path: str = "Highlights_AI.txt",
     ensure_sources: list[str] | None = None,
     articles_csv: str | None = None,
+    exclude_sources: list[str] | None = None,
 ) -> dict:
     """
     Orquesta el pipeline agéntico completo.
@@ -63,6 +64,7 @@ def run_agentic_pipeline(
     """
     import json
     ensure_sources = ensure_sources or []
+    exclude_sources = exclude_sources or []
 
     # Paso 0: Configurar el cliente LLM del SDK
     model = configure_agents_llm(settings)
@@ -78,7 +80,13 @@ def run_agentic_pipeline(
         print(f"   -> {len(df_loaded)} artículos cargados desde CSV")
     else:
         print("[1/4] Recolectando artículos...")
-        collector = make_collector_agent(model=model, newsapi_key=settings.newsapi_key)
+        if exclude_sources:
+            print(f"   -> Fuentes excluidas: {exclude_sources}")
+        collector = make_collector_agent(
+            model=model,
+            newsapi_key=settings.newsapi_key,
+            exclude_sources=exclude_sources,
+        )
         collect_result = Runner.run_sync(
             collector,
             input=f"Recolectá artículos de IA. Llamá a collect_all_articles con days={days} y max_pages=5.",
@@ -96,6 +104,20 @@ def run_agentic_pipeline(
     except Exception:
         print("   WARNING: JSON del collector no es un array válido. Abortando.")
         return {"status": "error", "reason": "no_articles_collected"}
+
+    # Auto-guardar CSV de artículos recolectados antes de rankear.
+    # Si el pipeline falla en pasos posteriores, podés reutilizarlos con --articles-csv.
+    if not articles_csv:
+        import io
+        import pandas as pd
+        from pathlib import Path
+        raw_csv_path = str(Path(out_path).with_suffix("")) + "_articles_raw.csv"
+        try:
+            pd.read_json(io.StringIO(articles_json), orient="records").to_csv(raw_csv_path, index=False)
+            print(f"   -> Artículos guardados en: {raw_csv_path}")
+            print(f"   -> Para reutilizar sin recolectar: --articles-csv {raw_csv_path}")
+        except Exception as e:
+            print(f"   -> WARNING: No se pudo auto-guardar el CSV de artículos: {e}")
 
     # Paso 2: Rankear artículos — datos por closure, LLM solo recibe parámetros
     print("[2/4] Rankeando artículos...")

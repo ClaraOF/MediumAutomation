@@ -32,20 +32,46 @@ def make_ranker_agent(model, settings: Settings, articles_json: str) -> Agent:
         if df.empty:
             return json.dumps([])
 
-        scores = []
-        for _, row in df.iterrows():
-            title = row.get("titulo", "") or row.get("title", "")
-            content = row.get("contenido", "") or row.get("content", "")
-            if llm_client:
+        n = len(df)
+        if llm_client and hasattr(llm_client, "score_relevance_batch"):
+            # Batch scoring: agrupa BATCH_SIZE artículos por llamada LLM.
+            # ~n/BATCH_SIZE llamadas totales (ej: 317 artículos → 16 llamadas).
+            # Sin pre-filtro heurístico — el LLM evalúa todos los artículos.
+            BATCH_SIZE = 20
+            articles_list = [
+                (row.get("titulo", "") or "", row.get("contenido", "") or "")
+                for _, row in df.iterrows()
+            ]
+            n_batches = (n + BATCH_SIZE - 1) // BATCH_SIZE
+            print(f"   [Ranker] Batch LLM scoring: {n} artículos en {n_batches} batches de {BATCH_SIZE}...")
+            all_scores = []
+            for i in range(n_batches):
+                batch = articles_list[i * BATCH_SIZE: (i + 1) * BATCH_SIZE]
+                print(f"   [Ranker] Batch {i + 1}/{n_batches}...")
+                batch_scores = llm_client.score_relevance_batch(batch)
+                # Si el batch devolvió todos ceros (fallo de parseo), usar heurístico como fallback
+                if all(s == 0 for s in batch_scores):
+                    batch_scores = [_heuristic_score(t, c) for t, c in batch]
+                all_scores.extend(batch_scores)
+            df = df.assign(relevancia=all_scores)
+        elif llm_client:
+            # Fallback: scoring individual (un call por artículo) con log de progreso
+            print(f"   [Ranker] Scoring individual: {n} artículos...")
+            scores = []
+            for i, (_, row) in enumerate(df.iterrows(), 1):
+                if i == 1 or i % 20 == 0 or i == n:
+                    print(f"   [Ranker] Scoring {i}/{n}...")
+                title = row.get("titulo", "") or ""
+                content = row.get("contenido", "") or ""
                 try:
-                    score = llm_client.score_relevance(title, content)
+                    scores.append(llm_client.score_relevance(title, content))
                 except Exception:
-                    score = _heuristic_score(title, content)
-            else:
-                score = _heuristic_score(title, content)
-            scores.append(score)
-
-        df = df.assign(relevancia=scores)
+                    scores.append(_heuristic_score(title, content))
+            df = df.assign(relevancia=scores)
+        else:
+            # Sin LLM: solo heurístico
+            scores = [_heuristic_score(row.get("titulo", ""), row.get("contenido", "")) for _, row in df.iterrows()]
+            df = df.assign(relevancia=scores)
 
         # Garantizar al menos un artículo de cada fuente especificada
         ensure_sources = json.loads(ensure_sources_json) if ensure_sources_json else []

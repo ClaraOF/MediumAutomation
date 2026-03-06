@@ -22,6 +22,7 @@ dependencies = [
   "backoff>=2.2.1",
   "newsapi-python>=0.2.7",
   "newspaper3k>=0.2.8",
+  "feedparser>=6.0.11",
   "openai-agents>=0.0.7",
 ]
 

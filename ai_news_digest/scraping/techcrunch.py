@@ -19,9 +19,15 @@ def scrape_techcrunch_ai(max_pages: int = 5) -> pd.DataFrame:
         url = base_url if page == 1 else f"{base_url}page/{page}/"
         print(f"Procesando {url}...")
 
-        resp = requests.get(url, headers=HEADERS, verify=False, timeout=20)
+        try:
+            resp = requests.get(url, headers=HEADERS, verify=False, timeout=20)
+        except Exception as e:
+            print(f"[TechCrunch] Error de conexión en página {page}: {e}. Saltando.")
+            continue
+
         if resp.status_code != 200:
-            break
+            print(f"[TechCrunch] Página {page} devolvió {resp.status_code}. Saltando.")
+            continue
 
         soup = BeautifulSoup(resp.text, "html.parser")
         links = soup.find_all("a", class_="loop-card__title-link")
