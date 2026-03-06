@@ -1,40 +1,131 @@
+"""
+Entry point del pipeline agéntico de AI News Digest.
+
+Uso básico:
+    python main.py --month "OpenAI_Marzo_26"
+
+Parámetros completos:
+    python main.py \
+        --days 28 \
+        --top-n 20 \
+        --month "OpenAI_Marzo_26" \
+        --lang es \
+        --ensure-source Kdnuggets.com \
+        --ensure-source TechCrunch \
+        --out-path outputs/mi_articulo.txt
+"""
+
+import argparse
+import sys
+from datetime import datetime
 from pathlib import Path
+
+from ai_news_digest.agents import run_agentic_pipeline
 from ai_news_digest.config import Settings
-from ai_news_digest.pipeline import collect_articles, rank_and_select, summarize_and_build
 
-# Parámetros de corrida
-DAYS = 30
-TOP_N = 20
-ENSURE_SOURCES = []
-MONTH_NAME = "Octubre"
-LANG = "es"
-OUT_PATH = "Highlights_AI.txt"
+# Para volver al pipeline original (sin agentes), reemplazar la línea de arriba por:
+# from ai_news_digest.pipeline import collect_articles, rank_and_select, summarize_and_build
 
-def run():
+
+def _default_month() -> str:
+    """Genera un nombre de mes por defecto basado en la fecha actual (ej: 'Marzo_26')."""
+    months_es = {
+        1: "Enero", 2: "Febrero", 3: "Marzo", 4: "Abril",
+        5: "Mayo", 6: "Junio", 7: "Julio", 8: "Agosto",
+        9: "Septiembre", 10: "Octubre", 11: "Noviembre", 12: "Diciembre",
+    }
+    now = datetime.now()
+    return f"{months_es[now.month]}_{str(now.year)[2:]}"
+
+
+def _build_out_path(month_name: str) -> str:
+    """Genera la ruta de salida con timestamp (ej: outputs/Highlights_AI_Marzo_26_20260302_143022.txt)."""
+    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    out_dir = Path("outputs")
+    out_dir.mkdir(exist_ok=True)
+    return str(out_dir / f"Highlights_AI_{month_name}_{ts}.txt")
+
+
+def parse_args(argv=None) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Genera un artículo de Medium con las noticias de IA del mes.",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog=__doc__,
+    )
+    parser.add_argument(
+        "--days", type=int, default=28,
+        help="Ventana de días hacia atrás para recolectar artículos (default: 28).",
+    )
+    parser.add_argument(
+        "--top-n", type=int, default=20, dest="top_n",
+        help="Cantidad máxima de artículos a incluir (default: 20).",
+    )
+    parser.add_argument(
+        "--month", type=str, default=None, dest="month_name",
+        help="Nombre descriptivo del mes, usado en el título y la ruta de salida "
+             "(default: auto-generado, ej: 'Marzo_26'). "
+             "Podés usar un nombre descriptivo como 'OpenAI_Marzo_26'.",
+    )
+    parser.add_argument(
+        "--lang", type=str, default="es",
+        help="Idioma de los resúmenes: 'es' o 'en' (default: 'es').",
+    )
+    parser.add_argument(
+        "--ensure-source", type=str, action="append", default=[], dest="ensure_sources",
+        metavar="SOURCE",
+        help="Fuente que debe aparecer al menos una vez en el ranking. "
+             "Repetir para múltiples fuentes (ej: --ensure-source Kdnuggets.com --ensure-source TechCrunch).",
+    )
+    parser.add_argument(
+        "--out-path", type=str, default=None, dest="out_path",
+        help="Ruta del archivo de salida .txt. Si no se especifica, se auto-genera como "
+             "'outputs/Highlights_AI_<month>_<timestamp>.txt'.",
+    )
+    parser.add_argument(
+        "--articles-csv", type=str, default=None, dest="articles_csv",
+        metavar="PATH",
+        help="CSV de artículos ya recolectados (saltea el paso 1 y no consume NewsAPI). "
+             "Usar el .csv generado por una ejecución anterior.",
+    )
+    return parser.parse_args(argv)
+
+
+def run(argv=None):
+    args = parse_args(argv)
+
+    month_name = args.month_name or _default_month()
+    out_path = args.out_path or _build_out_path(month_name)
+
+    print(f"[Config] days={args.days}, top_n={args.top_n}, month='{month_name}', lang={args.lang}")
+    if args.ensure_sources:
+        print(f"[Config] ensure_sources={args.ensure_sources}")
+    print(f"[Config] out_path={out_path}")
+
+    if args.articles_csv:
+        print(f"[Config] articles_csv={args.articles_csv} (saltando recolección)")
+
     settings = Settings()
+    result = run_agentic_pipeline(
+        settings=settings,
+        days=args.days,
+        top_n=args.top_n,
+        month_name=month_name,
+        lang=args.lang,
+        out_path=out_path,
+        ensure_sources=args.ensure_sources,
+        articles_csv=args.articles_csv,
+    )
 
-    print("🔎 [1/4] Recolectando artículos...")
-    df_all = collect_articles(settings, days=DAYS)
-    print(f"   → Artículos recolectados: {len(df_all)}")
-    if df_all.empty:
-        print("   ⚠️  No se encontraron artículos.")
-        return
+    if result.get("status") == "success":
+        print(f"\nPipeline completado exitosamente.")
+        print(f"  Artículo : {result.get('txt_path')}")
+        print(f"  CSV      : {result.get('csv_path')}")
+        print(f"  Longitud : {result.get('article_length_chars')} caracteres")
+        print(f"  Artículos: {result.get('articles_count')}")
+    else:
+        print(f"\nPipeline finalizado con estado: {result}", file=sys.stderr)
+        sys.exit(1)
 
-    print("📊 [2/4] Rankeando artículos por relevancia...")
-    df_top = rank_and_select(df_all, settings, top_n=TOP_N, ensure_source=ENSURE_SOURCES)
-    print(f"   → Seleccionados top {len(df_top)} artículos")
-
-    print("📝 [3/4] Generando resúmenes y armando artículo...")
-    article, df_res = summarize_and_build(df_top, settings, month_name=MONTH_NAME, lang=LANG)
-    print("   → Resúmenes generados")
-
-    print("💾 [4/4] Guardando resultados...")
-    Path(OUT_PATH).write_text(article, encoding="utf-8")
-    csv_path = Path(OUT_PATH).with_suffix(".csv")
-    csv_path.write_text(df_res.to_csv(index=False), encoding="utf-8")
-    print(f"   → Guardado {OUT_PATH} y {csv_path.name}")
-
-    print("✅ Pipeline finalizado con éxito.")
 
 if __name__ == "__main__":
     run()

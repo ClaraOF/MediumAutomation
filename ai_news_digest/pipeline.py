@@ -3,10 +3,12 @@ import pandas as pd
 from ai_news_digest.config import Settings
 from ai_news_digest.scraping.techcrunch import scrape_techcrunch_ai
 from ai_news_digest.scraping.newsapi_fetch import fetch_newsapi_articles  # <- reactivado
+from ai_news_digest.llm.base import BaseLLMClient
+from ai_news_digest.llm.openai_client import OpenAIClient
 from ai_news_digest.llm.openrouter import OpenRouterClient
+from ai_news_digest.llm.azure_client import AzureOpenAIClient
 from ai_news_digest.builder.images import og_image
 from ai_news_digest.builder.medium import build_medium_article
-from ai_news_digest.llm.openai_client import OpenAIClient
 
 def collect_articles(settings, days: int = 30):
     print("Collecting articles with NewsAPI...")
@@ -37,10 +39,22 @@ def _heuristic_score(title: str, content: str) -> int:
     # Normalizamos a 0..10 (cap a 10)
     return min(10, hits // 2 + (1 if hits > 0 else 0))
 
-def _get_llm(settings: Settings):
-    """Devuelve instancia de LLM: OpenAI si hay key, si no OpenRouter si hay key, si no None."""
-    # Intenta OpenAIClient primero
-    if settings.has_llm:
+def _get_llm(settings: Settings) -> BaseLLMClient | None:
+    """Devuelve un LLM client. Orden de prioridad: Azure → OpenAI → OpenRouter → None."""
+    if settings.has_azure:
+        try:
+            print("Trying AzureOpenAIClient...")
+            return AzureOpenAIClient(
+                api_key=settings.azure_api_key,
+                endpoint=settings.azure_endpoint,
+                deployment_relevance=settings.azure_deployment_relevance,
+                deployment_summary=settings.azure_deployment_summary,
+                api_version=settings.azure_api_version,
+            )
+        except Exception as e:
+            print(f"Error initializing AzureOpenAIClient: {e}")
+
+    if settings.has_openai:
         try:
             print("Trying OpenAIClient...")
             return OpenAIClient(
@@ -50,12 +64,8 @@ def _get_llm(settings: Settings):
             )
         except Exception as e:
             print(f"Error initializing OpenAIClient: {e}")
-            print("Continuando con OpenRouterClient...")
-    else:
-        print("No OpenAI key found, trying OpenRouterClient...")
 
-    # Si falla OpenAIClient o no hay key, intenta OpenRouterClient
-    if getattr(settings, "openrouter_api_key", None):
+    if settings.openrouter_api_key:
         try:
             print("Trying OpenRouterClient...")
             return OpenRouterClient(
@@ -65,7 +75,7 @@ def _get_llm(settings: Settings):
             )
         except Exception as e:
             print(f"Error initializing OpenRouterClient: {e}")
-            return None
+
     return None
 
 def rank_and_select(df: pd.DataFrame, settings: Settings, top_n: int = 15, ensure_source=None) -> pd.DataFrame:
