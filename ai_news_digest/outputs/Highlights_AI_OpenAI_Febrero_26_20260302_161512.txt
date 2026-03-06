@@ -1,0 +1,321 @@
+# 🧠 Los Highlights de OpenAI_Febrero_26 en Inteligencia Artificial
+
+Te compartimos las noticias más destacadas del mes.
+
+### Guide Labs Presenta un Nuevo LLM Interpretable: Un Avance en la Transparencia de la IA
+
+![Guide Labs Presenta un Nuevo LLM Interpretable: Un Avance en la Transparencia de la IA](https://techcrunch.com/wp-content/uploads/2026/02/Screenshot-2026-02-23-at-9.31.05-AM.png?resize=1200,639)
+
+## Guide Labs Presenta un Nuevo LLM Interpretable: Un Avance en la Transparencia de la IA
+
+La opacidad de los modelos de lenguaje de gran tamaño (LLM) ha sido un desafío constante en el campo de la Inteligencia Artificial. La dificultad para comprender por qué un modelo toma una decisión específica, desde los sesgos políticos hasta las alucinaciones, ha limitado su adopción y generado preocupaciones éticas. En respuesta a esta problemática, Guide Labs, una startup con sede en San Francisco, ha presentado una solución innovadora.
+
+La compañía, fundada por Julius Adebayo y Aya Abdelsalam Ismail, ha liberado el código fuente de Steerling-8B, un LLM de 8 mil millones de parámetros. Este modelo se distingue por su arquitectura, diseñada para facilitar la interpretación de sus acciones. Cada token generado por el modelo puede ser rastreado hasta su origen en los datos de entrenamiento, lo que permite una mayor transparencia. Esto implica la posibilidad de identificar las fuentes de información utilizadas por el modelo para respaldar sus afirmaciones o comprender cómo procesa conceptos complejos como el humor o el género.
+
+La investigación que sustenta este desarrollo comenzó en MIT, donde Adebayo co-escribió un artículo seminal de 2018 que cuestionaba la fiabilidad de los métodos existentes para interpretar modelos de aprendizaje profundo. La solución de Guide Labs implica la introducción de una capa conceptual dentro del modelo, que organiza los datos en categorías rastreables. Si bien esto requiere una mayor anotación inicial de datos, la compañía utilizó otros modelos de IA para agilizar el proceso de entrenamiento. El resultado es un modelo interpretado desde su base, lo que elimina la necesidad de técnicas de "neurociencia inversa" para analizar su funcionamiento. Conocé más en este enlace: https://techcrunch.com/2026/02/23/guide-labs-debuts-a-new-kind-of-interpretable-llm/
+
+---
+
+### AxiomProver: Una IA Revoluciona la Resolución de Problemas Matemáticos
+
+![AxiomProver: Una IA Revoluciona la Resolución de Problemas Matemáticos](https://media.wired.com/photos/69826734b1483a13eb667d4f/191:100/w_1280,c_limit/AI-Lab-Axiom-Solves-Previously-Unsolvable-Math-Problem-Business.jpg)
+
+## AxiomProver: Una IA Revoluciona la Resolución de Problemas Matemáticos
+
+En un campo donde los enigmas perduran durante décadas, la inteligencia artificial (IA) está demostrando su potencial para desafiar los límites del conocimiento matemático. La startup Axiom, fundada por Carina Hong, ha desarrollado AxiomProver, una herramienta de IA que ha logrado resolver cuatro problemas matemáticos previamente irresolubles. Este anuncio representa un hito significativo en el avance de la IA en la resolución de problemas complejos.
+
+El contexto de esta noticia se remonta a años de investigación. Matemáticos como Dawei Chen y Quentin Gendron, al enfrentarse a problemas en geometría algebraica, se encontraron con obstáculos que requerían soluciones de otras áreas, como la teoría de números. La incapacidad de resolver estas incógnitas llevó a la formulación de conjeturas en lugar de teoremas comprobados.
+
+AxiomProver, al abordar estos desafíos, ha demostrado una capacidad notable. En un ejemplo concreto, la IA logró resolver un problema que había eludido a expertos durante años, estableciendo una conexión con un fenómeno numérico estudiado en el siglo XIX. Según Ken Ono, matemático que se unió a Axiom, la IA "encontró algo que todos los humanos habían pasado por alto". La herramienta no solo encontró la solución, sino que también la verificó, lo que subraya su precisión y fiabilidad. Si bien no ha abordado los problemas matemáticos más famosos, AxiomProver ha demostrado su valía resolviendo problemas que han desconcertado a expertos en diversas áreas.
+
+Este logro, que se suma a otros avances recientes en el uso de herramientas de IA en matemáticas, sugiere un futuro prometedor para la colaboración entre humanos y máquinas en la exploración y resolución de problemas matemáticos. Conocé más en este enlace: https://www.wired.com/story/a-new-ai-math-ai-startup-just-cracked-4-previously-unsolved-problems/
+
+---
+
+### **Cohere presenta una familia de modelos multilingües abiertos: Potenciando la IA en múltiples idiomas**
+
+![**Cohere presenta una familia de modelos multilingües abiertos: Potenciando la IA en múltiples idiomas**](https://techcrunch.com/wp-content/uploads/2024/08/GettyImages-1757707025.jpg?w=1024)
+
+**Cohere presenta una familia de modelos multilingües abiertos: Potenciando la IA en múltiples idiomas**
+
+La empresa de IA para empresas, Cohere, ha anunciado el lanzamiento de una nueva familia de modelos multilingües, denominada Tiny Aya, en el marco de la Cumbre de IA de India. Estos modelos, de peso abierto —cuyo código subyacente es accesible públicamente para su uso y modificación—, destacan por su capacidad para soportar más de 70 idiomas, incluyendo lenguas del sur de Asia como bengalí, hindi, punjabi, urdu, gujarati, tamil, telugu y marathi.
+
+El modelo base, con 3.35 mil millones de parámetros, ha sido desarrollado por Cohere Labs, el brazo de investigación de la compañía. Además del modelo base, se ha presentado TinyAya-Global, optimizado para una mejor adaptación a los comandos del usuario, ideal para aplicaciones con amplio soporte lingüístico. La familia se completa con variantes regionales: TinyAya-Earth para lenguas africanas, TinyAya-Fire para lenguas del sur de Asia y TinyAya-Water para Asia Pacífico, Asia Occidental y Europa.
+
+Estos modelos, entrenados en un clúster de 64 GPUs H100 (chips de alto rendimiento de Nvidia), están diseñados para investigadores y desarrolladores que buscan crear aplicaciones para audiencias que hablan sus idiomas nativos. Su capacidad para funcionar directamente en dispositivos permite la traducción sin conexión, una característica clave para países lingüísticamente diversos como India. Cohere ha optimizado su software subyacente para el uso en dispositivos, reduciendo la necesidad de potencia computacional en comparación con otros modelos.
+
+Conocé más en este enlace: https://techcrunch.com/2026/02/17/cohere-launches-a-family-of-open-multilingual-models/
+
+---
+
+### **Anthropic Impulsa su Modelo Sonnet con la Versión 4.6: Mayor Rendimiento y Ventana de Contexto Ampliada**
+
+![**Anthropic Impulsa su Modelo Sonnet con la Versión 4.6: Mayor Rendimiento y Ventana de Contexto Ampliada**](https://techcrunch.com/wp-content/uploads/2025/08/Claude-Chrome-Ext_email-hero-hero.png?w=1200)
+
+**Anthropic Impulsa su Modelo Sonnet con la Versión 4.6: Mayor Rendimiento y Ventana de Contexto Ampliada**
+
+Anthropic, uno de los principales actores en el campo de la inteligencia artificial, ha presentado la versión 4.6 de su modelo Sonnet, cumpliendo con su ciclo de actualizaciones trimestrales. Este lanzamiento, anunciado recientemente, destaca mejoras significativas en la capacidad de codificación, el seguimiento de instrucciones y el uso de computadoras, áreas clave para la adopción y aplicación de la IA.
+
+Sonnet 4.6, que se convertirá en el modelo predeterminado para los usuarios de los planes gratuitos y Pro, introduce una ventana de contexto de 1 millón de tokens en su versión beta. Esta ampliación, el doble de la capacidad anterior, permite procesar conjuntos de datos mucho más extensos, como bases de código completas, contratos legales largos o docenas de trabajos de investigación en una sola solicitud.
+
+El lanzamiento se produce solo dos semanas después de la presentación de Opus 4.6 y anticipa una actualización del modelo Haiku en las próximas semanas, lo que demuestra el compromiso de Anthropic con la innovación constante. Sonnet 4.6 ha demostrado su mejora con nuevos récords en evaluaciones de referencia, incluyendo OS World para uso de computadoras y SWE-Bench para ingeniería de software. Sin embargo, el logro más notable es su puntuación del 60.4% en ARC-AGI-2, una prueba diseñada para evaluar habilidades específicas de la inteligencia humana, superando a la mayoría de los modelos comparables. Si bien aún no alcanza los niveles de Opus 4.6, Gemini 3 Deep Think, y una versión refinada de GPT 5.2, el progreso es evidente.
+
+Conocé más en este enlace: https://techcrunch.com/2026/02/17/anthropic-releases-sonnet-4-6/
+
+---
+
+### Adobe Firefly Simplifica la Edición de Video con la Creación Automática de Borradores
+
+![Adobe Firefly Simplifica la Edición de Video con la Creación Automática de Borradores](https://techcrunch.com/wp-content/uploads/2026/02/QuickCut4.jpeg?resize=1200,522)
+
+## Adobe Firefly Simplifica la Edición de Video con la Creación Automática de Borradores
+
+En un movimiento que redefine la eficiencia en la edición de video, Adobe Firefly introduce una nueva función impulsada por inteligencia artificial llamada "Quick Cut". Esta herramienta innovadora permite a los usuarios **generar automáticamente un primer borrador de un video a partir de metraje y material B-roll**, simplificando significativamente el flujo de trabajo de edición.
+
+Tradicionalmente, la edición de video implica la importación manual de archivos y la disposición laboriosa de transiciones. Quick Cut, en cambio, **permite a los usuarios describir el video deseado en lenguaje natural**, y la IA se encarga de eliminar automáticamente las partes irrelevantes del metraje, ensamblando las diferentes tomas y utilizando material B-roll adecuado para crear transiciones fluidas. Los usuarios pueden incluso **seleccionar fotogramas del material B-roll y utilizar los modelos de video disponibles en Firefly para generar transiciones cortas**.
+
+La función ofrece un alto grado de personalización, permitiendo a los usuarios especificar ajustes como la relación de aspecto y el ritmo entre las transiciones, así como añadir material B-roll opcional.  Adobe enfatiza que Quick Cut está diseñado para generar un primer borrador, lo que significa que los editores aún deberán realizar ajustes finales y perfeccionar las transiciones para completar el video. El objetivo principal es **acelerar el proceso creativo**, permitiendo a los creadores y profesionales del marketing acceder rápidamente a su visión. Según Mike Folgner, líder de producto para IA y herramientas de video de próxima generación, la función aborda la necesidad de los usuarios de técnicas que ahorren tiempo y les permitan concretar sus ideas de manera más eficiente.
+
+Conocé más en este enlace: https://techcrunch.com/2026/02/25/adobe-fireflys-video-editor-can-now-automatically-create-a-first-draft-from-footage/
+
+---
+
+### Google Integra Generación Musical Impulsada por IA en la Aplicación Gemini
+
+![Google Integra Generación Musical Impulsada por IA en la Aplicación Gemini](https://techcrunch.com/wp-content/uploads/2026/02/Lyria-feature.jpg?resize=1200,675)
+
+## Google Integra Generación Musical Impulsada por IA en la Aplicación Gemini
+
+Google anunció el miércoles la integración de una función de generación musical en su aplicación Gemini, marcando un paso significativo en la democratización del acceso a herramientas de creación de audio asistidas por inteligencia artificial. La compañía está empleando el modelo Lyria 3 de DeepMind para impulsar esta nueva funcionalidad, que actualmente se encuentra en fase beta.
+
+La herramienta permite a los usuarios crear pistas musicales de hasta 30 segundos de duración simplemente describiendo la canción deseada. Por ejemplo, se puede solicitar a Gemini que genere un tema musical específico y el sistema se encargará de crear la melodía junto con la letra. Además, la aplicación ofrece la posibilidad de generar arte visual para acompañar la canción. Los usuarios también podrán cargar fotos o videos, permitiendo que la IA genere música que coincida con el ambiente del archivo multimedia.
+
+Lyria 3, según Google, representa una mejora sustancial respecto a las generaciones anteriores de modelos, ofreciendo una mayor complejidad y realismo en las pistas musicales generadas. Los usuarios tendrán la capacidad de ajustar y controlar diversos elementos, como el estilo, las voces y el tempo de la composición. Además, Google está expandiendo la disponibilidad global de Dream Track, una herramienta para creadores de YouTube que utiliza el modelo Lyria 3.
+
+Para evitar la imitación directa de artistas, Google ha implementado filtros y restricciones. Si un usuario menciona a un artista específico en su solicitud, Gemini se inspirará en su estilo, pero no intentará replicarlo de manera idéntica. Es importante destacar que todas las canciones creadas con Lyria 3 incluirán una marca de agua SynthID para identificar el contenido generado por IA. Conocé más en este enlace: https://techcrunch.com/2026/02/18/google-adds-music-generation-capabilities-to-the-gemini-app/
+
+---
+
+### **Sarvam, Laboratorio Indio de IA, Revela Nuevos Modelos Open Source: Un Desafío a los Gigantes del Sector**
+
+![**Sarvam, Laboratorio Indio de IA, Revela Nuevos Modelos Open Source: Un Desafío a los Gigantes del Sector**](https://techcrunch.com/wp-content/uploads/2026/02/sarvam-launch.jpg?resize=1200,800)
+
+**Sarvam, Laboratorio Indio de IA, Revela Nuevos Modelos Open Source: Un Desafío a los Gigantes del Sector**
+
+El laboratorio indio de inteligencia artificial Sarvam presentó el martes una nueva generación de modelos de lenguaje de gran escala, apostando por la viabilidad de modelos de IA de código abierto, más pequeños y eficientes, para competir con los sistemas más costosos ofrecidos por sus rivales estadounidenses y chinos. El lanzamiento, anunciado en la Cumbre de Impacto de IA de la India en Nueva Delhi, coincide con el esfuerzo del gobierno indio por disminuir la dependencia de plataformas de IA extranjeras y adaptar los modelos a los idiomas y casos de uso locales.
+
+La nueva línea de modelos de Sarvam incluye modelos de 30 mil millones y 105 mil millones de parámetros; un modelo de texto a voz; un modelo de voz a texto; y un modelo de visión para analizar documentos. Estos modelos representan una mejora significativa en comparación con el modelo Sarvam 1 de 2 mil millones de parámetros lanzado en octubre de 2024. Los modelos de 30B y 105B utilizan una arquitectura de mezcla de expertos, que activa solo una fracción de sus parámetros totales a la vez, reduciendo significativamente los costos de computación. El modelo 30B soporta una ventana de contexto de 32,000 tokens para uso conversacional en tiempo real, mientras que el modelo más grande ofrece una ventana de 128,000 tokens para tareas de razonamiento complejas y de múltiples pasos.
+
+Sarvam destacó que los nuevos modelos de IA fueron entrenados desde cero, en lugar de ser ajustados en sistemas de código abierto existentes. El modelo 30B fue pre-entrenado en aproximadamente 16 billones de tokens de texto, mientras que el modelo 105B fue entrenado en billones de tokens que abarcan múltiples idiomas indios. Estos modelos están diseñados para soportar aplicaciones en tiempo real, incluyendo asistentes de voz y sistemas de chat en idiomas indios. La startup también indicó que el entrenamiento de los modelos se realizó utilizando recursos computacionales proporcionados bajo la Misión IndiaAI, respaldada por el gobierno indio, con soporte de infraestructura de Yotta y soporte técnico de Nvidia. Los ejecutivos de Sarvam planean un enfoque medido para escalar sus modelos, enfocándose en aplicaciones del mundo real en lugar del tamaño bruto.
+
+Conocé más en este enlace: https://techcrunch.com/2026/02/18/indian-ai-lab-sarvams-new-models-are-a-major-bet-on-the-viability-of-open-source-ai/
+
+---
+
+### **Multiverse Computing: La Startup Española que Comprime Modelos de IA para Democratizar el Acceso**
+
+![**Multiverse Computing: La Startup Española que Comprime Modelos de IA para Democratizar el Acceso**](https://techcrunch.com/wp-content/uploads/2026/02/Multiverse-Computing-Founders-Logo.jpg?resize=1200,800)
+
+**Multiverse Computing: La Startup Española que Comprime Modelos de IA para Democratizar el Acceso**
+
+El campo de la Inteligencia Artificial se enfrenta a un desafío crucial: el tamaño descomunal de los modelos de lenguaje. Multiverse Computing, una startup española posicionada como "soonicorn", está abordando esta problemática con el lanzamiento de modelos comprimidos, buscando reducir la brecha entre las capacidades de los modelos más avanzados y la viabilidad de su implementación para las empresas.
+
+La clave de su innovación reside en CompactifAI, una tecnología de compresión inspirada en la computación cuántica, aplicada a modelos de OpenAI. Actualmente, los desarrolladores pueden acceder gratuitamente a una nueva versión del modelo HyperNova 60B de Multiverse en la plataforma Hugging Face. La compañía planea liberar más modelos comprimidos en código abierto durante 2026, con el objetivo de facilitar su uso en una amplia gama de aplicaciones.
+
+Según Multiverse, estos modelos comprimidos mantienen un rendimiento cercano a los modelos originales, pero con una reducción significativa en el tamaño y la latencia. HyperNova 60B, con un tamaño de 32GB, es aproximadamente la mitad del tamaño del modelo gpt-oss-120b de OpenAI del que deriva, ofreciendo además un menor consumo de memoria. La versión actualizada, HyperNova 60B 2602, mejora el soporte para la llamada a herramientas y la codificación agencial, áreas donde los costos de inferencia pueden ser elevados.
+
+Multiverse afirma que HyperNova 60B supera a modelos como Mistral Large 3, desarrollado por la francesa Mistral AI. Además de esta rivalidad tecnológica, ambas compañías europeas de IA comparten similitudes, como su expansión internacional y la atención a clientes empresariales, entre ellos Iberdrola, Bosch y el Banco de Canadá, en el caso de Multiverse. La startup, que se encuentra en conversaciones para una nueva ronda de financiación de 500 millones de euros, con una valoración superior a los 1.500 millones de euros, demuestra el creciente interés y potencial en el ámbito de la IA comprimida.
+
+Conocé más en este enlace: https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/
+
+---
+
+### La Memoria, el Nuevo Campo de Batalla en la Carrera por la IA
+
+![La Memoria, el Nuevo Campo de Batalla en la Carrera por la IA](https://techcrunch.com/wp-content/uploads/2009/01/samsung_50nm_dram.jpg?w=425)
+
+## La Memoria, el Nuevo Campo de Batalla en la Carrera por la IA
+
+El auge de la inteligencia artificial y el desarrollo de modelos cada vez más complejos están transformando la infraestructura tecnológica subyacente. Si bien la atención se centra a menudo en las GPUs de empresas como Nvidia, el costo y la gestión de la memoria RAM se están convirtiendo en un factor crucial. El precio de los chips DRAM, esenciales para el funcionamiento de estos modelos, ha experimentado un aumento significativo, llegando a multiplicarse por siete en el último año, mientras los hiperescaladores se preparan para invertir miles de millones de dólares en nuevos centros de datos.
+
+Este escenario impulsa una disciplina emergente en la orquestación de la memoria. Las empresas que logren optimizar el uso de la memoria, garantizando que los datos correctos lleguen al agente adecuado en el momento oportuno, tendrán una ventaja competitiva. Esto se traduce en la capacidad de realizar las mismas consultas con menos "tokens", un factor determinante en la eficiencia y la rentabilidad de las operaciones de IA.
+
+Un análisis de Doug O’Laughlin, en colaboración con Val Bercovici, director de IA en Weka, revela la creciente complejidad de este desafío. El ejemplo de Anthropic y su página de precios de caché de prompts ilustra esta tendencia. Lo que comenzó como una simple recomendación para usar caché se ha transformado en una guía detallada sobre la pre-compra de almacenamiento en caché, con opciones de diferentes intervalos de tiempo y oportunidades de arbitraje en función del uso. La clave radica en la optimización del tiempo que un modelo como Claude guarda los prompts en la memoria caché, y cómo gestionar la adición de nuevos datos para evitar la sobrecarga y el desplazamiento de información.
+
+Seguí leyendo en este enlace: https://techcrunch.com/2026/02/17/running-ai-models-is-turning-into-a-memory-game/
+
+---
+
+### Gemini de Google Automatiza Tareas Multi-paso en Android: Una Nueva Frontera de la IA Móvil
+
+![Gemini de Google Automatiza Tareas Multi-paso en Android: Una Nueva Frontera de la IA Móvil](https://techcrunch.com/wp-content/uploads/2026/02/0.-Header-2.png?resize=1200,677)
+
+## Gemini de Google Automatiza Tareas Multi-paso en Android: Una Nueva Frontera de la IA Móvil
+
+Google anunció recientemente una serie de actualizaciones significativas para las funcionalidades de Gemini, su inteligencia artificial (IA) integrada en el sistema operativo Android. La novedad más destacada es la capacidad de Gemini para automatizar tareas complejas que involucran múltiples pasos, como solicitar un Uber o pedir comida a domicilio. Esta innovación se suma a otras mejoras, como la expansión de la detección de estafas en llamadas telefónicas y actualizaciones de "Circle to Search" para identificar todos los elementos en la pantalla del teléfono.
+
+La automatización, según Google, permite a los usuarios delegar sus tareas pendientes a Gemini. Sin embargo, aunque prometedora, la funcionalidad inicial está limitada en cuanto a los tipos de acciones que puede gestionar. La característica, actualmente en fase beta, se lanzará inicialmente en Estados Unidos y Corea, y será compatible con aplicaciones específicas de las categorías de comida, supermercado y transporte. En Estados Unidos y Corea, esto incluye aplicaciones como DoorDash, Grubhub, Instacart, Lyft, McDonald’s, Starbucks, Uber y Uber Eats, además de Kaemin y Kakao T en Corea.
+
+El despliegue inicial estará restringido a la aplicación Gemini en dispositivos seleccionados, como los Pixel 10, Pixel 10 Pro y la serie Samsung Galaxy S26. Reconociendo los posibles riesgos asociados a la automatización impulsada por IA, Google ha implementado medidas de seguridad. Las automatizaciones solo se iniciarán mediante un comando explícito del usuario y se pueden monitorear en tiempo real, permitiendo detener la tarea si se detectan errores o bloqueos. Además, operan en una ventana virtual segura, con acceso limitado a las aplicaciones, protegiendo así el resto de la información del dispositivo.
+
+Esta funcionalidad se alinea con la creciente tendencia de utilizar la IA para automatizar tareas en la vida personal de los usuarios, un campo donde competidores como ChatGPT ya han establecido presencia.
+
+Conocé más en este enlace: https://techcrunch.com/2026/02/25/gemini-can-now-automate-some-multi-step-tasks-on-android/
+
+---
+
+### **Sarvam de India Busca Desplegar Modelos de IA en Dispositivos de Baja Gama y Específicos**
+
+![**Sarvam de India Busca Desplegar Modelos de IA en Dispositivos de Baja Gama y Específicos**](https://techcrunch.com/wp-content/uploads/2026/02/sarvam-launch.jpg?resize=1200,800)
+
+**Sarvam de India Busca Desplegar Modelos de IA en Dispositivos de Baja Gama y Específicos**
+
+La empresa india de inteligencia artificial (IA), Sarvam, ha revelado sus planes para integrar sus modelos de IA recientemente lanzados en una amplia gama de dispositivos. La iniciativa, anunciada en la Cumbre India AI Impact en Nueva Delhi, se centra en la implementación de estos modelos en teléfonos básicos de Nokia y HMD, automóviles y sus propios lentes inteligentes.
+
+El enfoque de Sarvam se basa en el uso de modelos de IA de "borde" (edge), diseñados para ser compactos, ocupando solo unos pocos megabytes de espacio. Esta optimización permite que los modelos funcionen en la mayoría de los teléfonos con procesadores existentes, incluso sin conexión a internet. La compañía está colaborando con HMD para llevar un asistente de IA conversacional a los teléfonos Nokia y HMD. Una demostración en video mostró a un usuario interactuando con este asistente a través de un botón dedicado, recibiendo información sobre programas gubernamentales y mercados locales en su idioma nativo.
+
+Además de los teléfonos básicos, Sarvam está trabajando con Bosch para integrar asistentes de IA en automóviles. La empresa también presentó sus lentes inteligentes Sarvam Kaze, fabricados en India, que se describen como un dispositivo para desarrolladores. La colaboración con Qualcomm es clave, ya que Sarvam ha optimizado sus modelos para los chipsets de Qualcomm. La compañía de semiconductores está desarrollando una "Sovereign AI Experience Suite" que funcionará en diversos dispositivos, incluyendo teléfonos, computadoras, automóviles y dispositivos IoT. Esta estrategia de llevar la IA al "borde" busca ofrecer inteligencia artificial accesible y funcional en una variedad de entornos y dispositivos, desde los más básicos hasta los más innovadores.
+
+Conocé más en este enlace: https://techcrunch.com/2026/02/18/indias-sarvam-wants-to-bring-its-ai-models-to-feature-phones-cars-and-smart-glasses/
+
+---
+
+### **IA y Satélites: Una Nueva Era para el Control de Armas Nucleares en un Mundo sin Tratados**
+
+![**IA y Satélites: Una Nueva Era para el Control de Armas Nucleares en un Mundo sin Tratados**](https://media.wired.com/photos/69861351b845608c2949e960/191:100/w_1280,c_limit/sec-nuclear-ai-1278095166.jpg)
+
+**IA y Satélites: Una Nueva Era para el Control de Armas Nucleares en un Mundo sin Tratados**
+
+El colapso de los tratados internacionales sobre armas nucleares, pilares durante décadas para la reducción de arsenales, ha abierto un vacío en el control de estas armas de destrucción masiva. Ante la expiración de acuerdos clave como el New START y el aumento de la tensión geopolítica, investigadores proponen una solución audaz: el uso de inteligencia artificial (IA) y satélites para monitorear las armas nucleares a nivel global.
+
+Matt Korda, director asociado de la Federación de Científicos Americanos, junto a Igor Morić, han publicado un informe que detalla este nuevo enfoque, denominado “medios técnicos cooperativos”. La idea central es reemplazar a los inspectores humanos con tecnología de teledetección, principalmente satélites, para detectar y analizar actividades sospechosas. La IA jugaría un papel crucial en este proceso, gracias a su capacidad para el reconocimiento de patrones.  Según Korda, con datos suficientemente amplios y precisos, los modelos de IA podrían identificar cambios mínimos en ubicaciones específicas, incluso reconocer sistemas de armas individuales.
+
+El contexto actual es crítico. La inversión en nuevas armas nucleares por parte de potencias como Estados Unidos, Rusia y China, junto con el creciente interés de otros países por desarrollar sus propios arsenales, subraya la urgencia de encontrar nuevas formas de verificación. Este contexto, marcado por la desconfianza entre naciones, hace que la propuesta de Korda y Morić sea aún más relevante.  La solución propuesta busca utilizar la infraestructura existente para negociar y establecer acuerdos de verificación, adaptándose a un panorama global en constante cambio.
+
+Conocé más en este enlace: https://www.wired.com/story/satellites-ai-nuclear-treaties/
+
+---
+
+### **Los Juegos Olímpicos de Invierno 2026: Una Revolución Tecnológica Impulsada por la IA**
+
+![**Los Juegos Olímpicos de Invierno 2026: Una Revolución Tecnológica Impulsada por la IA**](https://media.wired.com/photos/698655d97cbb83907b42da12/191:100/w_1280,c_limit/Technologies-Changing-How-Youll-Watch-Winter-Olympic-Games-Gear-2259908698.jpg)
+
+**Los Juegos Olímpicos de Invierno 2026: Una Revolución Tecnológica Impulsada por la IA**
+
+En los Juegos Olímpicos de Verano de 2024 en París, la tecnología 5G y la resolución 4K marcaron un hito para muchos espectadores. Si bien la inteligencia artificial (IA) ya jugaba un papel, su impacto se limitaba principalmente al beneficio de los atletas. Sin embargo, para los Juegos de Invierno Milán-Cortina 2026, se anticipa una transformación tecnológica sin precedentes, que beneficiará tanto a los deportistas como a los aficionados.
+
+Yiannis Exarchos, director general de Olympic Broadcasting Services y director ejecutivo de Olympic Channel Services, destaca que muchas de las tecnologías que se implementarán son innovadoras en el contexto olímpico. La producción de la cobertura televisiva, radial y digital, así como el contenido en Olympics.com, estará a cargo de ambas organizaciones.
+
+Entre las innovaciones, los drones de vista en primera persona (FPV) ofrecerán perspectivas dinámicas de las pistas de competición en tiempo real. Además, los juegos de 2026 contarán con repeticiones en 360 grados en tiempo real, gracias a la colaboración con Alibaba. Este sistema, que emplea sistemas de repetición multicámara y análisis estroboscópico, permitirá vistas desde múltiples ángulos, congelaciones y cámaras lentas de las actuaciones atléticas.
+
+Otra primicia será el nuevo sistema de seguimiento para las piedras de curling, que permitirá a los espectadores visualizar la trayectoria, velocidad y rotación de cada piedra en tiempo real. Las cámaras suspendidas sobre raíles y las vistas a nivel del hielo, junto con gráficos detallados de la trayectoria de las piedras y datos en tiempo real, enriquecerán la experiencia. Finalmente, Olympic GPT, una herramienta de IA especializada en contenido olímpico, brindará resultados e información en tiempo real, incluyendo la capacidad de interactuar con preguntas sobre los resultados de las competiciones en curso.
+
+Conocé más en este enlace: https://www.wired.com/story/the-technologies-changing-how-youll-watch-the-2026-winter-olympic-games/
+
+---
+
+### Google Expande el Acceso a Herramientas de Imagen Impulsadas por IA con Nano Banana 2
+
+## Google Expande el Acceso a Herramientas de Imagen Impulsadas por IA con Nano Banana 2
+
+Google está expandiendo el acceso a sus avanzadas capacidades de generación de imágenes impulsadas por inteligencia artificial con el lanzamiento de Nano Banana 2 (también conocido como Gemini 3.1 Flash Image). Esta actualización, que ya está desplegándose en la aplicación Gemini y otras plataformas de IA de Google, democratiza el acceso a características de generación y conocimiento que anteriormente estaban restringidas a la versión Pro del modelo Nano Banana. El objetivo principal es ofrecer la "inteligencia de alta velocidad de Gemini Flash a la generación visual", haciendo que la creación de imágenes complejas sea más rápida, económica y accesible para todos los usuarios.
+
+Nano Banana 2 aprovecha la información en tiempo real, las imágenes de búsqueda web y la base de conocimiento de Gemini, similar a su predecesor Pro. Según Naina Raisinghani, gerente de producto de Google DeepMind, esto permite generar datos más relevantes para la creación de infografías y diagramas, y renderizar "sujetos específicos" con mayor precisión. El modelo también hereda la capacidad de generar imágenes con texto legible y traducción localizada, funcionalidades que antes requerían una suscripción de pago a Google AI Plus, Pro o Ultra.
+
+Además de las mejoras en el acceso, Nano Banana 2 introduce un mayor control creativo sobre las imágenes generadas. Las mejoras visuales incluyen una iluminación más vibrante, texturas más ricas y detalles más nítidos. Los usuarios ahora pueden mantener la consistencia en la apariencia de hasta cinco personajes y catorce objetos en un solo flujo de trabajo, y tienen "control total" sobre las relaciones de aspecto y la resolución de la imagen, que puede alcanzar hasta 4K.
+
+Conocé más en este enlace: https://www.theverge.com/tech/885275/google-nano-banana-2-ai-image-model-gemini-launch
+
+---
+
+### **IA Revela la Autoimagen: "Espejos" Inteligentes Ofrecen Descripciones Faciales a Personas Ciegas**
+
+![**IA Revela la Autoimagen: "Espejos" Inteligentes Ofrecen Descripciones Faciales a Personas Ciegas**](https://ichef.bbci.co.uk/news/1024/branded_mundo/44d8/live/c89b4130-fc95-11f0-a071-7b44ae0c1d3e.png)
+
+**IA Revela la Autoimagen: "Espejos" Inteligentes Ofrecen Descripciones Faciales a Personas Ciegas**
+
+En un avance significativo para la accesibilidad, la inteligencia artificial (IA) está transformando la forma en que las personas con discapacidad visual interactúan con su propia imagen. La aplicación "Be My Eyes" ha integrado una nueva funcionalidad que permite a los usuarios ciegos obtener descripciones detalladas de sus rostros a través de un sistema de IA. Este "espejo de IA" analiza fotos subidas por los usuarios y proporciona retroalimentación sobre aspectos como la hidratación de la piel, la presencia de poros y otros detalles estéticos.
+
+El sistema, que se asemeja a un ritual matutino para algunos usuarios, funciona como un sustituto de la visión, ofreciendo una experiencia sensorial que antes era inaccesible. Los usuarios pueden solicitar a la IA una evaluación numérica de su apariencia, junto con descripciones detalladas que van más allá del simple reconocimiento facial. Un usuario relata cómo, después de perder la vista, ha recuperado la capacidad de "tener una opinión" sobre su rostro, gracias a la capacidad de la IA para proporcionar una retroalimentación precisa y descriptiva. Este desarrollo representa un paso importante hacia la autonomía y la inclusión, permitiendo a las personas ciegas participar plenamente en actividades diarias relacionadas con la autoimagen y el cuidado personal. La tecnología no solo describe, sino que también ofrece una forma de interactuar con la propia imagen, un aspecto crucial para la autoestima y la confianza.
+
+Conocé más en este enlace: https://www.bbc.com/mundo/articles/cd6wev9822jo
+
+---
+
+### **Ataque a Agente de IA Revela Vulnerabilidad Crítica en Seguridad de Software**
+
+**Ataque a Agente de IA Revela Vulnerabilidad Crítica en Seguridad de Software**
+
+La creciente dependencia de herramientas de inteligencia artificial (IA) para automatizar tareas, incluyendo la programación, está abriendo nuevas vías para ataques cibernéticos sofisticados. Un reciente incidente, que involucra el agente de codificación de código abierto Cline, pone de manifiesto una preocupante vulnerabilidad conocida como "prompt injection".
+
+El ataque, llevado a cabo por un hacker, explotó una debilidad en el flujo de trabajo de Cline, que utiliza el modelo de lenguaje Claude de Anthropic. Mediante la manipulación de las instrucciones ("prompts") proporcionadas a Claude, el atacante logró que el agente instalara, de forma encubierta, el agente de IA de código abierto OpenClaw en los ordenadores de los usuarios. Aunque OpenClaw no fue activado inmediatamente, la posibilidad de instalar cualquier software malicioso subraya la gravedad del riesgo.
+
+Este incidente es un claro ejemplo de cómo las inyecciones de prompts pueden comprometer la seguridad de los sistemas, especialmente a medida que los agentes de IA ganan mayor autonomía. La vulnerabilidad explotada, descubierta y advertida previamente por el investigador de seguridad Adnan Khan, ilustra la importancia de abordar rápidamente las fallas de seguridad. Empresas como OpenAI están implementando medidas, como el "Modo de Bloqueo" para ChatGPT, para mitigar el riesgo, pero la protección contra las inyecciones de prompts sigue siendo un desafío significativo.
+
+Conocé más en este enlace: https://www.theverge.com/ai-artificial-intelligence/881574/cline-openclaw-prompt-injection-hack
+
+---
+
+### **Explotando la Credulidad de la IA: Una Investigación Revela Vulnerabilidades en ChatGPT y Google**
+
+![**Explotando la Credulidad de la IA: Una Investigación Revela Vulnerabilidades en ChatGPT y Google**](https://ichef.bbci.co.uk/news/1024/branded_mundo/fc93/live/ee7bed60-0d06-11f1-b5e2-dd58fc65f0f6.jpg)
+
+**Explotando la Credulidad de la IA: Una Investigación Revela Vulnerabilidades en ChatGPT y Google**
+
+La creciente sofisticación de los modelos de lenguaje basados en inteligencia artificial, como ChatGPT y los de Google, ha generado una ola de entusiasmo y expectativas. Sin embargo, un reciente experimento ha arrojado luz sobre las vulnerabilidades inherentes a estos sistemas, demostrando la facilidad con la que pueden ser manipulados para generar información falsa.
+
+El experimento consistió en "hackear" a ambas IA en tan solo veinte minutos. La estrategia empleada se basó en introducir información falsa y, al mismo tiempo, solicitar la verificación de la misma. El resultado fue sorprendente: tanto ChatGPT como la IA de Google corroboraron la información inventada, incluso cuando involucraba detalles absurdos como una supuesta afición a comer perritos calientes de un periodista. El investigador se autoproclamó campeón en una inexistente competición, y las IA generaron listados de periodistas, incluyendo nombres reales, supuestamente avalando esta afirmación inventada.
+
+Este hallazgo subraya la vulnerabilidad de las IA ante la desinformación y la importancia de la verificación de la información. Si bien algunos modelos buscan información en internet para complementar sus respuestas, no siempre es claro cuándo lo hacen, lo que abre la puerta a la manipulación. Estos sistemas, en su afán por generar respuestas coherentes y relevantes, pueden caer en la trampa de la credulidad, amplificando datos falsos y propagando información errónea. La investigación pone de manifiesto la necesidad urgente de fortalecer las capacidades de verificación y el filtro de la información en los modelos de lenguaje, para evitar su uso indebido y la creación de campañas de desinformación.
+
+Conocé más en este enlace: https://www.bbc.com/mundo/articles/c4g02k43n6no
+
+---
+
+### La Intensificación Laboral en el Sector de IA: Un Debate sobre Horas y Ambición
+
+![La Intensificación Laboral en el Sector de IA: Un Debate sobre Horas y Ambición](https://ichef.bbci.co.uk/news/1024/branded_mundo/0646/live/b4435c80-0916-11f1-a882-79e5fd8f6638.jpg)
+
+## La Intensificación Laboral en el Sector de IA: Un Debate sobre Horas y Ambición
+
+El auge de la inteligencia artificial (IA) está generando una intensa competencia en el mercado laboral tecnológico, con algunas empresas adoptando estrategias controvertidas para asegurar su dominio. La noticia destaca la creciente tendencia, especialmente en startups de IA, de exigir jornadas laborales de hasta 70 horas semanales, una práctica que ha generado debate sobre la sostenibilidad y el bienestar de los empleados.
+
+El artículo pone en relieve la cultura laboral extrema que promueven algunas empresas, donde la dedicación a tiempo completo se considera un requisito fundamental para el éxito. Este enfoque se ejemplifica con declaraciones como "No te unas a nosotros si no te entusiasma... trabajar unas 70 horas a la semana...", revelando una mentalidad que prioriza la productividad por encima de la salud mental y el equilibrio entre la vida laboral y personal. Un ejemplo es la empresa Rilla, donde su director de crecimiento, argumentó que sus empleados no veían estas largas jornadas como algo negativo, aunque sus comentarios sobre el bienestar de los empleados generaron controversia y, eventualmente, su salida de la empresa.
+
+La justificación subyacente a esta exigencia radica en la feroz competencia del sector de IA. La velocidad de innovación y la necesidad de superar a los competidores impulsan a las empresas a buscar empleados que estén dispuestos a dedicar la mayor parte de su tiempo y energía al trabajo. La declaración de un inversor sobre la expectativa de 70-80 horas semanales para los fundadores en etapa inicial subraya cómo esta cultura se está extendiendo, impactando la forma en que se evalúa el compromiso y la inversión en el sector.
+
+Conocé más en este enlace: https://www.bbc.com/mundo/articles/c5yk3115qpno
+
+---
+
+### **Video de IA en la Casa Blanca genera controversia en el ámbito deportivo**
+
+![**Video de IA en la Casa Blanca genera controversia en el ámbito deportivo**](https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/535e/live/8519fd30-13b4-11f1-9ab4-edb1bbd74a92.jpg)
+
+**Video de IA en la Casa Blanca genera controversia en el ámbito deportivo**
+
+Un video manipulado con inteligencia artificial (IA), publicado en la cuenta oficial de TikTok de la Casa Blanca, ha generado un revuelo considerable en el mundo del deporte. El video, que emplea una técnica de generación de audio y video, muestra al jugador de hockey sobre hielo estadounidense Brady Tkachuk, supuestamente hablando en términos ofensivos contra los canadienses. El incidente ocurrió tras la victoria de Estados Unidos sobre Canadá en los Juegos Olímpicos de Invierno, donde el equipo estadounidense ganó la medalla de oro.
+
+El video, claramente marcado como generado por IA, utiliza un clip de una conferencia de prensa de Tkachuk del torneo 4 Nations Face-Off del año anterior. En el clip modificado, Tkachuk aparentemente expresa comentarios despectivos en respuesta a los abucheos al himno nacional estadounidense por parte de la afición canadiense. Sin embargo, el propio Tkachuk, capitán de los Ottawa Senators, ha negado rotundamente la autenticidad del video. Después de jugar en el primer partido de la NHL del equipo canadiense desde los Olímpicos, declaró que la manipulación era evidente, señalando que la voz y los movimientos labiales no coincidían con su persona.
+
+Este incidente pone de manifiesto la creciente preocupación sobre el uso indebido de la IA en la creación de contenido falso y su potencial para desinformar y generar conflictos. La capacidad de recrear voces y rostros con una fidelidad cada vez mayor plantea desafíos significativos en la verificación de la información y la defensa de la reputación individual. La Casa Blanca ha sido contactada para dar una respuesta oficial sobre el tema.
+
+Conocé más en este enlace: https://www.bbc.com/sport/ice-hockey/articles/cqj9w4xz1l0o
+
+---
+
+### Macron Insta a Europa a Actuar con Decisión en el Escenario Global de la IA
+
+![Macron Insta a Europa a Actuar con Decisión en el Escenario Global de la IA](https://ichef.bbci.co.uk/news/1024/branded_news/4846/live/9de81f70-067d-11f1-b7e1-afb6d0884c18.jpg)
+
+## Macron Insta a Europa a Actuar con Decisión en el Escenario Global de la IA
+
+En un contexto de creciente competencia geopolítica y avances exponenciales en inteligencia artificial, el presidente francés, Emmanuel Macron, ha instado a Europa a fortalecer su posición en el ámbito tecnológico y económico, actuando con la determinación de una potencia mundial. La reciente declaración del mandatario subraya la necesidad de que el continente europeo se posicione estratégicamente en un sector dominado por Estados Unidos y China, donde la innovación y el desarrollo en IA están transformando radicalmente las dinámicas de poder.
+
+Macron ha destacado la importancia crítica de un "estado de derecho democrático" como un faro para la inversión global, contrastándolo con las tendencias autoritarias de China y la creciente divergencia de Estados Unidos de los principios legales. Esta llamada a la acción se produce en un momento crucial, donde la carrera por el liderazgo en IA está redefiniendo sectores clave como la manufactura, la salud y la defensa. La visión de Macron sugiere la necesidad de invertir en investigación y desarrollo, establecer marcos regulatorios sólidos y promover la colaboración entre países europeos para competir eficazmente en el mercado global. El objetivo es asegurar que Europa no solo sea un consumidor de tecnología, sino también un impulsor de la innovación, protegiendo sus valores y garantizando su autonomía estratégica.
+
+Conocé más en este enlace: https://www.bbc.com/news/articles/ce8n1zdnpd3o
+
+---
+
+¿Querés seguir leyendo más? Volvemos el mes que viene con un nuevo resumen.
