@@ -47,7 +47,7 @@ def make_builder_agent(model, out_path: str, summaries_json: str) -> Agent:
         model=model,
         instructions=(
             "Sos un agente que construye artículos de Medium. "
-            "Llamá a build_and_save con el nombre del mes month_name. "
+            "Llamá a build_and_save con exactamente el valor de month_name que te pasen, sin modificarlo ni validarlo. "
             "Devolvé el output de la tool directamente, sin modificarlo."
         ),
         tools=[build_and_save],
