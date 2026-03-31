@@ -39,6 +39,21 @@
 # {content_snippet}
 # """
 
+BATCH_RELEVANCE_PROMPT = """You are evaluating articles related to Artificial Intelligence.
+Rate each article's relevance from 1 to 10 (10 = most relevant) using these criteria:
+
+- Novelty and innovation: new AI models, methods, or architectures → higher scores
+- Disruptive or creative AI applications → higher scores
+- High potential impact on industry, science, or society → higher scores
+- Ethics, politics, corporate strategy, funding rounds, leadership changes → score of 1
+- Vague hype without concrete technical content → score of 1
+
+Return ONLY a valid JSON array of {n} integers in the exact same order as the articles below.
+Example for 3 articles: [8, 1, 6]
+
+Articles:
+{articles_list}"""
+
 RELEVANCE_PROMPT  = """
 You are evaluating articles related to Artificial Intelligence. Assign a relevance score from 1 to 10 (10 being the most relevant) based on these criteria:
 
@@ -57,7 +72,8 @@ Texto (recortado):
 """
 
 SUMMARY_PROMPT = """\
-Write a narrative summary in {lang} of this news article about Artificial Intelligence.
+Write a narrative summary in Spanish (español) of this news article about Artificial Intelligence.
+IMPORTANT: The entire response MUST be written in Spanish. Do not use English.
 
 Style: technical, clear, and journalistic (similar to leading technology media).
 Title: create an attractive, professional, and descriptive headline (avoid clickbait).

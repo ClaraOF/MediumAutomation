@@ -1,12 +1,15 @@
 # ai_news_digest/pipeline.py
+import time
 import pandas as pd
 from ai_news_digest.config import Settings
 from ai_news_digest.scraping.techcrunch import scrape_techcrunch_ai
 from ai_news_digest.scraping.newsapi_fetch import fetch_newsapi_articles  # <- reactivado
+from ai_news_digest.llm.base import BaseLLMClient
+from ai_news_digest.llm.openai_client import OpenAIClient
 from ai_news_digest.llm.openrouter import OpenRouterClient
+from ai_news_digest.llm.azure_client import AzureOpenAIClient
 from ai_news_digest.builder.images import og_image
 from ai_news_digest.builder.medium import build_medium_article
-from ai_news_digest.llm.openai_client import OpenAIClient
 
 def collect_articles(settings, days: int = 30):
     print("Collecting articles with NewsAPI...")
@@ -37,10 +40,22 @@ def _heuristic_score(title: str, content: str) -> int:
     # Normalizamos a 0..10 (cap a 10)
     return min(10, hits // 2 + (1 if hits > 0 else 0))
 
-def _get_llm(settings: Settings):
-    """Devuelve instancia de LLM: OpenAI si hay key, si no OpenRouter si hay key, si no None."""
-    # Intenta OpenAIClient primero
-    if settings.has_llm:
+def _get_llm(settings: Settings) -> BaseLLMClient | None:
+    """Devuelve un LLM client. Orden de prioridad: Azure → OpenAI → OpenRouter → None."""
+    if settings.has_azure:
+        try:
+            print("Trying AzureOpenAIClient...")
+            return AzureOpenAIClient(
+                api_key=settings.azure_api_key,
+                endpoint=settings.azure_endpoint,
+                deployment_relevance=settings.azure_deployment_relevance,
+                deployment_summary=settings.azure_deployment_summary,
+                api_version=settings.azure_api_version,
+            )
+        except Exception as e:
+            print(f"Error initializing AzureOpenAIClient: {e}")
+
+    if settings.has_openai:
         try:
             print("Trying OpenAIClient...")
             return OpenAIClient(
@@ -50,12 +65,8 @@ def _get_llm(settings: Settings):
             )
         except Exception as e:
             print(f"Error initializing OpenAIClient: {e}")
-            print("Continuando con OpenRouterClient...")
-    else:
-        print("No OpenAI key found, trying OpenRouterClient...")
 
-    # Si falla OpenAIClient o no hay key, intenta OpenRouterClient
-    if getattr(settings, "openrouter_api_key", None):
+    if settings.openrouter_api_key:
         try:
             print("Trying OpenRouterClient...")
             return OpenRouterClient(
@@ -65,29 +76,66 @@ def _get_llm(settings: Settings):
             )
         except Exception as e:
             print(f"Error initializing OpenRouterClient: {e}")
-            return None
+
     return None
 
-def rank_and_select(df: pd.DataFrame, settings: Settings, top_n: int = 15, ensure_source=None) -> pd.DataFrame:
+def rank_and_select(df: pd.DataFrame, settings: Settings, top_n: int = 15, ensure_source=None, llm_client=None) -> pd.DataFrame:
     ensure_source = ensure_source or []
     print("ensure_source:", ensure_source)
-    client = _get_llm(settings)
+    client = llm_client if llm_client is not None else _get_llm(settings)
     print(f"Using LLM: {type(client).__name__ if client else 'None (heuristic only)'}")
     print('client:', client)
-    scores = []
-    for _, row in df.iterrows():
-        title = row.get("titulo", "") or row.get("title", "")
-        content = row.get("contenido", "") or row.get("content", "")
-        if client:
-             try:
-                 score = client.score_relevance(title, content)
-             except Exception as e:
-                 print(f"Error scoring relevance with LLM: {e}")
-                 score = _heuristic_score(title, content)
-        else:
-             print("No LLM client available, using heuristic scoring.")
-             score = _heuristic_score(title, content)
-        scores.append(score)
+    n = len(df)
+    if client and hasattr(client, "score_relevance_batch"):
+        BATCH_SIZE = 20
+        articles_list = [
+            (row.get("titulo", "") or row.get("title", "") or "",
+             row.get("contenido", "") or row.get("content", "") or "")
+            for _, row in df.iterrows()
+        ]
+        n_batches = (n + BATCH_SIZE - 1) // BATCH_SIZE
+        print(f"   Batch LLM scoring: {n} artículos en {n_batches} batches de {BATCH_SIZE}...")
+        all_scores = []
+        llm_count = 0
+        heuristic_count = 0
+        for i in range(n_batches):
+            batch = articles_list[i * BATCH_SIZE: (i + 1) * BATCH_SIZE]
+            print(f"   Batch {i + 1}/{n_batches}...")
+            try:
+                batch_scores = client.score_relevance_batch(batch)
+                if all(s == 0 for s in batch_scores):
+                    batch_scores = [_heuristic_score(t, c) for t, c in batch]
+                    heuristic_count += len(batch)
+                else:
+                    llm_count += len(batch)
+            except Exception as e:
+                print(f"   Error en batch {i + 1}: {e}")
+                batch_scores = [_heuristic_score(t, c) for t, c in batch]
+                heuristic_count += len(batch)
+            all_scores.extend(batch_scores)
+        print(f"   Scoring: {llm_count} con LLM, {heuristic_count} con heurística")
+        scores = all_scores
+    elif client:
+        scores = []
+        llm_count = 0
+        heuristic_count = 0
+        for _, row in df.iterrows():
+            title = row.get("titulo", "") or row.get("title", "")
+            content = row.get("contenido", "") or row.get("content", "")
+            try:
+                scores.append(client.score_relevance(title, content))
+                llm_count += 1
+            except Exception as e:
+                print(f"Error scoring relevance with LLM: {e}")
+                scores.append(_heuristic_score(title, content))
+                heuristic_count += 1
+        print(f"   Scoring: {llm_count} con LLM, {heuristic_count} con heurística")
+    else:
+        print("No LLM client available, usando heurística para todos.")
+        scores = [_heuristic_score(
+            row.get("titulo", "") or row.get("title", ""),
+            row.get("contenido", "") or row.get("content", "")
+        ) for _, row in df.iterrows()]
 
     df = df.assign(relevancia=scores)
 
@@ -112,18 +160,23 @@ def rank_and_select(df: pd.DataFrame, settings: Settings, top_n: int = 15, ensur
     df_top = df_limited.sort_values("relevancia", ascending=False).head(top_n).reset_index(drop=True)
     return df_top
 
-def summarize_and_build(df_top: pd.DataFrame, settings: Settings, month_name: str, lang: str = "es"):
-    client = _get_llm(settings)
+def summarize_and_build(df_top: pd.DataFrame, settings: Settings, month_name: str, lang: str = "es", llm_client=None):
+    client = llm_client if llm_client is not None else _get_llm(settings)
     print(f"Using LLM for summarization: {type(client).__name__ if client else 'None (no summaries)'}")
     rows = []
-    for _, row in df_top.iterrows():
+    n = len(df_top)
+    for i, (_, row) in enumerate(df_top.iterrows(), 1):
         title = row.get("titulo", "") or row.get("title", "")
         url = row.get("url", "")
         content = row.get("contenido", "") or row.get("content", "")
+        print(f"   [{i}/{n}] Resumiendo: {title[:70]}...")
         if client:
             try:
                 summ = client.summarize(title, url, content, lang=lang)
-            except Exception:
+                print(f"   [{i}/{n}] OK")
+                time.sleep(8)
+            except Exception as e:
+                print(f"Error summarizing '{title[:60]}': {e}")
                 summ = {"titulo_sugerido": title, "resumen": f"(Sin LLM) {content[:400]}...\nSeguí leyendo: {url}"}
         else:
             summ = {"titulo_sugerido": title, "resumen": f"(Sin LLM) {content[:400]}...\nSeguí leyendo: {url}"}
