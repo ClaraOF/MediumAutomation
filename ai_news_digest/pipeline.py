@@ -1,5 +1,8 @@
 # ai_news_digest/pipeline.py
+import csv
 import time
+from datetime import datetime
+from pathlib import Path
 import pandas as pd
 from ai_news_digest.config import Settings
 from ai_news_digest.scraping.techcrunch import scrape_techcrunch_ai
@@ -196,3 +199,29 @@ def summarize_and_build(df_top: pd.DataFrame, settings: Settings, month_name: st
     df_res = pd.DataFrame(rows)
     article = build_medium_article(df_res, month_name=month_name)
     return article, df_res
+
+
+def log_token_usage(llm_client, run_id: str, articles_ranked: int, articles_summarized: int, log_path: str = "outputs/token_usage.csv"):
+    """Agrega una fila al log de uso de tokens. Crea el archivo si no existe."""
+    if llm_client is None or not hasattr(llm_client, "total_prompt_tokens"):
+        return
+    Path(log_path).parent.mkdir(parents=True, exist_ok=True)
+    log_file = Path(log_path)
+    write_header = not log_file.exists()
+    total = llm_client.total_prompt_tokens + llm_client.total_completion_tokens
+    row = {
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "run_id": run_id,
+        "llm_client": type(llm_client).__name__,
+        "articles_ranked": articles_ranked,
+        "articles_summarized": articles_summarized,
+        "prompt_tokens": llm_client.total_prompt_tokens,
+        "completion_tokens": llm_client.total_completion_tokens,
+        "total_tokens": total,
+    }
+    with open(log_file, "a", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=row.keys())
+        if write_header:
+            writer.writeheader()
+        writer.writerow(row)
+    print(f"   Token usage guardado en {log_path}")
