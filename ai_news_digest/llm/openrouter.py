@@ -26,6 +26,8 @@ class OpenRouterClient:
         self.api_key = api_key
         self.model_relevance = model_relevance
         self.model_summary = model_summary
+        self.total_prompt_tokens = 0
+        self.total_completion_tokens = 0
 
     def _headers(self):
         return {
@@ -34,6 +36,19 @@ class OpenRouterClient:
             "HTTP-Referer": "https://local-script",
             "X-Title": "AI News Digest"
         }
+
+    def _track_usage(self, response_json: dict):
+        usage = response_json.get("usage", {})
+        self.total_prompt_tokens += usage.get("prompt_tokens", 0)
+        self.total_completion_tokens += usage.get("completion_tokens", 0)
+
+    def token_summary(self) -> str:
+        total = self.total_prompt_tokens + self.total_completion_tokens
+        return (
+            f"Tokens usados — prompt: {self.total_prompt_tokens:,} | "
+            f"completion: {self.total_completion_tokens:,} | "
+            f"total: {total:,}"
+        )
 
     @backoff.on_exception(backoff.expo, (requests.exceptions.RequestException,), max_tries=3)
     def score_relevance(self, title: str, content: str) -> int:
@@ -46,7 +61,6 @@ class OpenRouterClient:
         payload = {
             "model": self.model_relevance,
             "messages": [
-                #{"role":"system","content":"Respondé con un entero 0..10. Sin comentarios."},
                 {"role":"system","content":"Sos un analista de IA que clasifica artículos por relevancia."},
                 {"role":"user","content": prompt}
             ],
@@ -54,7 +68,9 @@ class OpenRouterClient:
         }
         r = requests.post(OPENROUTER_ENDPOINT, headers=self._headers(), json=payload, timeout=60)
         r.raise_for_status()
-        msg = r.json()["choices"][0]["message"]["content"].strip()
+        data = r.json()
+        self._track_usage(data)
+        msg = data["choices"][0]["message"]["content"].strip()
         digits = "".join(ch for ch in msg if ch.isdigit())
         return int(digits[:2]) if digits else 0
 
@@ -82,7 +98,9 @@ class OpenRouterClient:
         try:
             r = requests.post(OPENROUTER_ENDPOINT, headers=self._headers(), json=payload, timeout=60)
             r.raise_for_status()
-            msg = r.json()["choices"][0]["message"]["content"].strip()
+            data = r.json()
+            self._track_usage(data)
+            msg = data["choices"][0]["message"]["content"].strip()
             scores = _parse_batch_scores(msg, len(articles))
             if scores is not None:
                 return scores
@@ -90,7 +108,7 @@ class OpenRouterClient:
             pass
         return [0] * len(articles)
 
-    @backoff.on_exception(backoff.expo, (requests.exceptions.RequestException,), max_tries=3)
+    @backoff.on_exception(backoff.expo, (requests.exceptions.RequestException,), max_tries=5, max_time=120)
     def summarize(self, title: str, url: str, content: str, lang: str = "es"):
         if not self.api_key:
             return {
@@ -113,7 +131,9 @@ class OpenRouterClient:
         }
         r = requests.post(OPENROUTER_ENDPOINT, headers=self._headers(), json=payload, timeout=120)
         r.raise_for_status()
-        txt = r.json()["choices"][0]["message"]["content"].strip()
+        data = r.json()
+        self._track_usage(data)
+        txt = data["choices"][0]["message"]["content"].strip()
         lines = [l.strip() for l in txt.splitlines() if l.strip()]
         title_guess = lines[0].strip("#:- ")[:140] if lines else title
         return {"titulo_sugerido": title_guess, "resumen": txt}

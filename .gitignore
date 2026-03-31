@@ -15,7 +15,7 @@ __pycache__/
 
 # Jupyter / notebooks
 .ipynb_checkpoints/
-*.ipynb
+# *.ipynb
 
 # Archivos de build / dist
 build/

@@ -1,0 +1,305 @@
+# 🧠 Los Highlights de marzo_26 en Inteligencia Artificial
+
+Te compartimos las noticias más destacadas del mes.
+
+### **Nvidia presenta DLSS 5: el nuevo estándar de renderizado con IA que divide a la comunidad gamer**
+
+**Nvidia presenta DLSS 5: el nuevo estándar de renderizado con IA que divide a la comunidad gamer**
+
+Nvidia ha dado un paso significativo en su tecnología de supersampling basada en inteligencia artificial con el anuncio de DLSS 5, un nuevo “modelo de renderizado neuronal guiado en 3D”. Esta evolución va más allá de la simple reconstrucción de píxeles a baja resolución, ya que permite alterar en tiempo real aspectos fundamentales de la escena como la iluminación, los materiales y los efectos de sombreado, prometiendo un salto cualitativo hacia el fotorealismo en los videojuegos. La presentación, enmarcada en la conferencia GTC, posiciona a DLSS 5 como un pilar de la próxima generación de gráficos por computadora, donde la IA no solo optimiza el rendimiento, sino que participa activamente en la creación de la imagen final.
+
+Sin embargo, la primera reacción de un sector considerable de la comunidad de jugadores ha sido de escepticismo y crítica. En redes sociales y foros especializados, se han multiplicado los memes y las quejas sobre cómo esta nueva capa de procesamiento AI modifica el estilo artístico original de los títulos. Un ejemplo citado repetidamente es la demostración técnica con *Resident Evil 4 Requiem*, donde algunos usuarios describieron que los modelos de personajes parecían “yassificados” o alterados estéticamente de forma no deseada, perdiendo parte de la intención visual del equipo de desarrollo. Este debate ha puesto sobre la mesa una tensión central: el conflicto entre la búsqueda de fidelidad fotográfica y la preservación de la visión artística del creador.
+
+Frente a las críticas, Nvidia defiende que DLSS 5 está diseñado para “honrar la intención del artista original”, argumentando que su modelo de IA ha sido entrenado con supervisión humana para comprender y replicar la estética deseada, utilizando los datos del motor del juego (como mapas de normales y profundidad) como guía. La compañía sostiene que la tecnología ofrece a los desarrolladores un control granular para ajustar el equilibrio entre realismo y estilo. No obstante, la percepción inicial sugiere que la implementación práctica aún genera desconfianza sobre quién toma las decisiones estéticas finales: el algoritmo o el director de arte. El éxito de DLSS 5 no solo dependerá de su eficiencia técnica y los ganancias de FPS, sino de su capacidad para ganarse la confianza de los estudios y los jugadores, demostrando que la IA puede ser una herramienta de增强 (potenciación) fiel y no un filtro que impone su propia interpretación visual.
+
+Seguí leyendo en este enlace: https://www.theverge.com/games/896518/nvidia-dlss-5-ai-3d-rendering
+
+---
+
+### **Apple prepara una Siri renovada con aplicación independiente y capacidades de agente de IA**
+
+**Apple prepara una Siri renovada con aplicación independiente y capacidades de agente de IA**
+
+En el marco de la próxima Worldwide Developers Conference (WWDC) de Apple, programada para el 8 de junio, la compañía está preparando una renovación profunda de su asistente de voz Siri, integrada en su plataforma de inteligencia artificial Apple Intelligence. Según un informe de Bloomberg, la nueva versión, que debutará en 2026, transformará a Siri de un simple asistente por voz a un "agente de IA con integración profunda en todo el sistema". Este desarrollo representa un esfuerzo crítico por parte de Apple para competir en el campo de los asistentes de IA conversacionales y agentes autónomos, un sector dominado por avances de Google, OpenAI y otras startups.
+
+El núcleo de esta actualización radica en una capacidad ampliada para controlar aplicaciones y funciones de iOS y macOS, ejecutando tareas complejas que requieren acceder y procesar datos personales del usuario, como correos electrónicos, mensajes y notas. Gurman detalla que Siri también mejorará en la síntesis de noticias desde Apple News y ofrecerá "respuestas más detalladas extraídas de la web, incluyendo resúmenes, puntos de lista e imágenes", un claro guiño a la funcionalidad de motores de búsqueda con IA como Perplexity o Google Gemini. Un cambio estructural significativo es la creación de una aplicación independiente de Siri, en fase de pruebas, que presentará una interfaz de chat similar a la de Mensajes. Esta app centralizará el historial de conversaciones, permitirá búsquedas en interacciones pasadas, alternar entre modos de voz y texto, y cargar documentos e imágenes para análisis, dotando al asistente de una persistencia y usabilidad mucho mayor.
+
+La relevancia de este movimiento es estratégica. Apple, que ha sido percibida como rezagada en la carrera de la IA generativa, busca consolidar un ecosistema cerrado y potente donde su hardware, software y ahora inteligencia artificial actúen de manera cohesiva. Una Siri más proactiva, contextual y con una interfaz dedicada podría redefinir la interacción con sus dispositivos, aumentando la productividad y fidelidad del usuario. Sin embargo, el éxito dependerá de la fluidez de su implementación, la gestión responsable de los datos personales y su capacidad para ofrecer una experiencia superior a las alternativas ya establecidas en el mercado. Seguí leyendo en este enlace: https://www.theverge.com/tech/899801/apple-wwdc-2026-new-siri-apple-intelligence-standalone-app
+
+---
+
+### **Arm rompe con su modelo de negocio y lanza su primera CPU propia para IA, con Meta como socio estratégico**
+
+**Arm rompe con su modelo de negocio y lanza su primera CPU propia para IA, con Meta como socio estratégico**
+
+Después de décadas de dedicarse exclusivamente a licenciar sus diseños de arquitectura de chips a fabricantes como Qualcomm, Apple o Nvidia, la compañía británica Arm ha dado un giro histórico al anunciar su primer procesador fabricado de forma independiente. Bautizado como Arm AGI CPU, este chip está específicamente diseñado para cargas de trabajo de inferencia en centros de datos de inteligencia artificial, un segmento donde la demanda de capacidad de cómputo crece exponencialmente para herramientas como agentes autónomos que generan múltiples tareas concurrentes. La primera y más importante implementación correrá a cargo de Meta, que actúa tanto como cliente principal como codesarrollador del proyecto, planeando colaborar en “múltiples generaciones” de estas CPUs para sus centros de datos. Esta alianza es particularmente significativa considerando los informes sobre las dificultades de Meta para lanzar con éxito sus propios chips de IA.
+
+Técnicamente, la CPU se basa en la plataforma Neoverse y ofrece configuraciones de hasta 136 núcleos por unidad, con la capacidad de integrar 64 de estas CPUs en un solo bastidor de servidor refrigerado por aire. Arm promete un rendimiento por vatio hasta el doble que el de los tradicionales procesadores x86, junto con una reducción de cuellos de botella en la memoria, aprovechando la eficiencia inherente de su arquitectura. La estrategia de Arm no se limita a Meta; la empresa ya ha anunciado una cartera de clientes que incluye a OpenAI, Cerebras, Cloudflare, SAP y SK Telecom, entre otros, posicionándose como una alternativa para compañías que no pueden costear el desarrollo interno de silicio personalizado.
+
+Este movimiento redefine la posición competitiva de Arm en el ecosistema de IA, desafiando directamente el dominio de Intel y AMD en el segmento de servidores, y complementando la oferta de Nvidia en aceleración. Si bien los términos financieros no se han divulgado, el respaldo de un gigante como Meta valida la viabilidad de la propuesta y acelera la adopción de arquitecturas ARM en infraestructuras críticas de IA, con implicaciones potenciales en eficiencia energética, costos operativos y la diversificación de la cadena de suministro global de semiconductores. Seguí leyendo en este enlace: https://www.theverge.com/ai-artificial-intelligence/899823/arm-agi-cpu-meta
+
+---
+
+### **NVIDIA anuncia plataforma de agentes de IA de código abierto para el sector empresarial**
+
+![**NVIDIA anuncia plataforma de agentes de IA de código abierto para el sector empresarial**](https://media.wired.com/photos/69aa166a88f33482258401e7/191:100/w_1280,c_limit/Nvidia-Scoop-Business-2260170952.jpg)
+
+**NVIDIA anuncia plataforma de agentes de IA de código abierto para el sector empresarial**
+
+NVIDIA está preparando el lanzamiento de una plataforma de código abierto diseñada para agentes de inteligencia artificial autónomos, según fuentes cercanas a la compañía citadas por WIRED. El producto, denominado internamente NemoClaw, representa un movimiento estratégico de la fabricante de chips para expandir su ecosistema más allá del hardware, adentrándose en el software de productividad empresarial. La plataforma permitirá a compañías como Salesforce, Cisco, Google, Adobe o CrowdStrike desplegar agentes de IA que ejecuten tareas secuenciales y automatizadas para sus propios empleados, funcionando de manera relativamente independiente de si sus infraestructuras corren o no en los procesadores NVIDIA.
+
+Este anuncio se enmarca en la creciente adopción de los denominados “claws” (garras), herramientas de IA de código abierto que operan localmente en una máquina y aprenden a mejorar con el tiempo. El interés en este paradigma se intensificó tras el fenómeno de OpenClaw, un agente autónomo que realizaba tareas en computadoras personales y que fue adquirido por OpenAI, lo que evidenció el potencial comercial de estas tecnologías. Aunque modelos de grandes empresas como OpenAI y Anthropic han mejorado en confiabilidad, aún requieren supervisión constante; los agentes especializados como los que propone NVIDIA buscan automatizar flujos de trabajo completos con menor intervención humana.
+
+Según las fuentes, NVIDIA ha iniciado conversaciones con varias empresas tecnológicas líderes para formar alianzas alrededor de NemoClaw, probablemente ofreciendo acceso anticipado gratuito a cambio de contribuciones al proyecto. La plataforma incluirá herramientas enfocadas en seguridad y privacidad de datos, un factor crítico para la adopción empresarial. Este paso posiciona a NVIDIA no solo como proveedor de infraestructura de cómputo, sino como un actor clave en la próxima generación de software de productividad basado en agentes autónomos, un mercado que podría redefinir la automatización corporativa. Seguí leyendo en este enlace: https://www.wired.com/story/nvidia-planning-ai-agent-platform-launch-open-source/
+
+---
+
+### **Startup militar Smack Technologies desafía límites éticos de Anthropic con IA para operaciones de combate**
+
+![**Startup militar Smack Technologies desafía límites éticos de Anthropic con IA para operaciones de combate**](https://media.wired.com/photos/69c1d8642542d076d32a59b2/191:100/w_1280,c_limit/ai_lab_autonomous_weapons.jpg)
+
+**Startup militar Smack Technologies desafía límites éticos de Anthropic con IA para operaciones de combate**
+
+En medio de un intenso debate en Silicon Valley sobre el papel de la inteligencia artificial en la defensa, mientras empresas como Anthropic negocian con cautela los límites éticos de sus modelos, surge una alternativa sin restricciones. Smack Technologies, una startup emergente, ha anunciado una ronda de financiación de 32 millones de dólares para desarrollar exclusivamente modelos de IA destinados a aplicaciones militares, con el objetivo declarado de superar las capacidades de planificación y ejecución de operaciones de sistemas como Claude de Anthropic. Este enfoque contrasta marcadamente con la postura de su competidor, que busca vetar tipos específicos de uso autónomo en el campo de batalla.
+
+La compañía está fundada y liderada por exmilitares, incluido su CEO, Andy Markoff, excomandante de las Fuerzas de Operaciones Especiales de los Marines de EE.UU., quien sostiene que la responsabilidad ética del despliegue recae inherentemente en el personal uniformado, sujeto al juramento de servir conforme a las leyes de la guerra. Técnicamente, Smack emplea un método de aprendizaje por refuerzo similar al usado por AlphaGo de DeepMind. Sus modelos son entrenados en simulaciones de juegos de guerra, donde analistas expertos proveen una señal de retroalimentación que califica la eficacia de las estrategias generadas por la IA, perfeccionando así su capacidad para idear planes operativos óptimos.
+
+Este desarrollo adquiere relevancia en el contexto de las tensiones entre el Departamento de Defensa de EE.UU. y Anthropic por un contrato valorado en unos 200 millones de dólares, que colapsó parcialmente por desacuerdos sobre las restricciones de uso. La postura de Smack, que no impone límites inherentes a sus modelos más allá del cumplimiento legal, la posiciona como un proveedor directo para una doctrina militar que busca integrar la IA de manera más amplia y acelerada. Su enfoque plantea interrogantes críticas sobre la aceleración de la autonomía en sistemas letales, la rendición de cuentas en la cadena de mando y la futura dinámica de conflictos, mientras el ecosistema de IA se divide entre el pragmatismo de aplicación total y la autocensura ética.
+
+Seguí leyendo en este enlace: https://www.wired.com/story/ai-model-military-use-smack-technologies/
+
+---
+
+### **Título:** Moxie Marlinspike, creador de Signal, lleva su tecnología de cifrado a la inteligencia artificial de Meta
+
+![**Título:** Moxie Marlinspike, creador de Signal, lleva su tecnología de cifrado a la inteligencia artificial de Meta](https://media.wired.com/photos/69baacb648cfa1aefb918759/191:100/w_1280,c_limit/GettyImages-2263125077.jpg)
+
+**Título:** Moxie Marlinspike, creador de Signal, lleva su tecnología de cifrado a la inteligencia artificial de Meta
+
+El cifrado de extremo a extremo se ha consolidado como estándar en la mensajería digital, protegiendo miles de millones de conversaciones diarias en aplicaciones como Signal, WhatsApp y Messages. Sin embargo, la explosión de los chatbots de IA generativa ha creado una brecha de privacidad crítica: las interacciones con estos sistemas carecen de dicha protección, permitiendo a las empresas de IA acceder a los datos de los usuarios para el entrenamiento de sus modelos. Esta dinámica, donde el consentimiento suele estar limitado, ha generado una creciente demanda de sistemas de IA más privados.
+
+En este contexto, Moxie Marlinspike, el criptógrafo y defensor de la privacidad detrás del protocolo de cifrado de Signal, anunció una colaboración clave. Su plataforma de IA centrada en la privacidad, Confer, iniciará la integración de su tecnología en los sistemas de Meta AI. Según un comunicado publicado por Marlinspike, la decisión responde a una tendencia inevitable: "A medida que los LLM [modelos de lenguaje grandes] continúan siendo capaces de hacer más, debemos esperar que aún más datos fluyan hacia ellos. Actualmente, ninguno de esos datos es privado". El experto advierte que, sin cifrado, esa información está expuesta a empleados, hackers, solicitudes gubernamentales y, eventualmente, a filtrarse.
+
+El desarrollo consiste en incorporar el enfoque de Confer —que debutó a inicios de 2024— para permitir que las conversaciones con la IA de Meta estén cifradas de extremo a extremo. Marlinspike subrayó que, pese a la colaboración, Confer operará de forma independiente a Meta. El objetivo declarado es ofrecer "todo el poder de la IA junto con toda la privacidad de una conversación cifrada".
+
+Este movimiento tiene un impacto potencial significativo. Para Meta, representa un esfuerzo por mitigar las críticas sobre el uso de datos de usuario en el entrenamiento de IA y construir confianza en un mercado competitivo. Para la industria, establece un precedente técnico y una presión competitiva para que otras plataformas de IA consideren estándares de privacidad similares. La iniciativa de Marlinspike, proveniente de una figura de credibilidad contrastada en criptografía, podría acelerar la adopción de prácticas de IA responsable, donde la protección de datos no sea una opción, sino una característica integrada por diseño.
+
+Seguí leyendo en este enlace: https://www.wired.com/story/signals-creator-is-helping-encrypt-meta-ai/
+
+---
+
+### **Los agentes de IA amenazan el anonimato en redes sociales con capacidad de reidentificación masiva**
+
+**Los agentes de IA amenazan el anonimato en redes sociales con capacidad de reidentificación masiva**
+
+Un estudio conjunto de investigadores del ETH Zurich, Anthropic y el programa MLATS revela que sistemas automatizados de agentes de inteligencia artificial pueden desenmascarar cuentas anónimas en plataformas online con una eficacia sustancialmente superior a las técnicas computacionales tradicionales. Este hallazgo, aún pendiente de revisión por pares, señala un riesgo significativo para la privacidad digital y la práctica común de mantener identidades separadas en diferentes contextos de internet.
+
+El sistema desarrollado utiliza modelos de lenguaje de gran escala (LLM) configurados como agentes autónomos capaces de navegar por la web y analizar información de manera similar a un investigador humano. En lugar de buscar coincidencias directas, el agente procesa un texto anonimizado (como una publicación o comentario) extrayendo un conjunto de "pistas" sutiles: peculiaridades en el estilo de escritura, detalles biográficos inadvertidos, patrones de frecuencia y horario de publicación. Posteriormente, escanea millones de otras cuentas en busca de la misma combinación única de rasgos, generando una lista corta de identidades probables tras una comparación detallada.
+
+Para evaluar su rendimiento, el equipo utilizó conjuntos de datos públicos, incluyendo publicaciones de Hacker News, perfiles de LinkedIn, transcripciones de entrevistas de Anthropic y cuentas de Reddit divididas artificialmente en mitades anónimas. En todos los escenarios, el enfoque basado en LLMs superó con creces los métodos de desanonimización computacional previos, logrando identificar correctamente a los autores en una proporción significativa de casos. La investigación subraya que la agregación de señales dispersas a gran escala, un punto débil para los humanos, es una fortaleza inherente de estos sistemas de IA.
+
+La implicación es profunda: técnicas que antes requerían un análisis manual intensivo ahora podrían automatizarse, exponiendo la fragilidad del anonimato incluso en plataformas que lo permiten. Esto plantea dilemas éticos y de seguridad, desde la protección de denunciantes hasta la vulneración de la privacidad personal. No obstante, los autores matizan que el sistema no es infalible y su implementación requiere recursos considerables, por lo que no implica el fin inmediato del anonimato, sino una evolución en la carrera entre herramientas de ocultamiento y de detección. La capacidad de la IA para correlacionar datos aparentemente innocuos a escala masiva redefine los límites de lo que significa estar "anónimo" en la era digital.
+
+Seguí leyendo en este enlace: https://www.theverge.com/ai-artificial-intelligence/889395/ai-agents-unmask-anonymous-online-accounts
+
+---
+
+### **PlayStation adoptará generación de fotogramas con IA para mejorar fluidez en juegos futuros**
+
+**PlayStation adoptará generación de fotogramas con IA para mejorar fluidez en juegos futuros**
+
+Mark Cerny, arquitecto jefe de las consolas PlayStation 5 y PS5 Pro, confirmó en una entrevista con Digital Foundry que las futuras plataformas de PlayStation incorporarán tecnología de generación de fotogramas basada en machine learning (ML). Este sistema utilizará inteligencia artificial para "imaginar" y crear nuevos fotogramas intermedios entre los que la consola renderiza de forma nativa, con el objetivo de mejorar la fluidez percibida de la imagen. La técnica, ya utilizada en tarjetas gráficas de PC con tecnologías como DLSS de Nvidia o FSR3 de AMD, es criticada en ese entorno por generar lo que se denomina "fotogramas falsos" y, generalmente, introduce cierta latencia de entrada.
+
+Este anuncio es significativo porque marca una evolución técnica para el ecosistema Sony. Actualmente, el PS5 ya soporta la generación de fotogramas a través de AMD FSR3 en algunos títulos, pero dicha tecnología se basa en algoritmos de interpolación tradicional entre fotogramas reales, sin el componente de aprendizaje automático que promete la nueva implementación. La incorporación de IA podría ofrecer resultados más precisos y menos artefactos visuales, aunque el desafío de la latencia permanece.
+
+El contexto de este desarrollo está ligado a los planes de ciclo de vida de Sony. Cerny reiteró que el lanzamiento de un posible PlayStation 6 no ocurriría antes de 2027. Por lo tanto, esta tecnología de generación de fotogramas con ML estaría destinada primero a una futura revisión del hardware existente, como una potencial PS5 Pro mejorada, o a consolas posteriores. Su implementación requerirá, como advierten los fabricantes, una tasa de fotogramas base relativamente estable para ser efectiva, por lo que no es una solución para sistemas que ya operan con bajos índices de FPS. El éxito de su adopción dependerá de cómo Sony equilibre la promesa de una mayor suavidad visual con los trade-offs inherentes en rendimiento y respuesta.
+
+Seguí leyendo en este enlace: https://www.theverge.com/news/898283/future-sony-playstation-games-will-use-ai-to-imagine-new-frames
+
+---
+
+### **Modelos de IA a medida: La nueva apuesta de Netflix para revolucionar la producción cinematográfica**
+
+**Modelos de IA a medida: La nueva apuesta de Netflix para revolucionar la producción cinematográfica**
+
+La industria cinematográfica está experimentando un giro significativo en su adopción de inteligencia artificial, alejándose de herramientas genéricas para explorar modelos especializados y personalizables. Esta tendencia, centrada en crear soluciones a medida para cada proyecto, busca integrar la IA de manera profunda en el flujo de trabajo creativo, al mismo tiempo que mitiga riesgos legales asociados a los derechos de autor. El movimiento más emblemático hasta la fecha es la adquisición por parte de Netflix de InterPositive, una startup fundada en 2022 por el actor y cineasta Ben Affleck. Aunque Netflix no ha revelado el monto de la transacción, informes de Bloomberg sitúan la compra en hasta 600 millones de dólares, una cifra que subraya la importancia estratégica que la plataforma otorga a esta tecnología.
+
+El valor central de InterPositive reside en su enfoque desde la base. Su modelo fundacional se entrenó con un conjunto de datos patentado capturado en un set de rodaje controlado, diseñado explícitamente para reflejar el lenguaje y las necesidades reales de directores de fotografía y directores. Affleck ha descrito el objetivo como construir un flujo de trabajo que capture "lo que sucede en un set", con controles y consistencia que los profesionales ya esperan, utilizando vocabulario de su dominio. Esta metodología busca producir herramientas que "empoderen" a los cineastas, integrándose como un asistente en fases como la previsualización, la planificación de producción o los efectos visuales, en lugar de buscar sustituir puestos de trabajo.
+
+La relevancia de este paso es múltiple. Para Netflix, supone la internalización de una ventaja competitiva tecnológica y un mensaje claro sobre su visión de futuro, donde la IA generativa es un "componente fundamental" de su negocio. Para la industria, plantea un posible estándar donde los modelos de IA dejen de ser servicios en la nube genéricos para convertirse en herramientas proprietary, entrenadas con activos específicos de un estudio o proyecto. Esto podría transformar radicalmente la eficiencia y el control creativo en producciones de alto presupuesto, aunque también genera interrogantes sobre la concentración de poder tecnológico y los nuevos modelos de propiedad intelectual generada por IA. La adquisición señala el comienzo de una era donde la personalización de la IA no es un lujo, sino una necesidad para mantener la competitividad y la seguridad legal en la creación audiovisual.
+
+Conocé más en este enlace: https://www.theverge.com/streaming/893538/ai-model-netflix-interpositive-ben-affleck
+
+---
+
+### **Las empresas de IA reclutan actores de improvisación para entrenar modelos en inteligencia emocional**
+
+**Las empresas de IA reclutan actores de improvisación para entrenar modelos en inteligencia emocional**
+
+En un giro que subraya la creciente complejidad de los esfuerzos por humanizar la inteligencia artificial, empresas proveedoras de datos de entrenamiento están dirigiendo su atención hacia un grupo de profesionales inesperado: actores de improvisación y comedia. Una oferta de trabajo publicada por Handshake, compañía que suministra datos de entrenamiento a laboratorios como OpenAI, busca explícitamente a intérpretes con “instintos creativos fuertes, capacidad de retratar emociones de forma auténtica y mantener la coherencia de un personaje” para un “proyecto colaborativo de improvisación pagado” con “una de las principales empresas de IA”. Este movimiento refleja una estrategia más amplia de la industria por abordar una debilidad fundamental en los modelos actuales: su naturaleza “dentada”, donde brillan en tareas complejas pero fallan en habilidades sociales y emocionales básicas que los humanos dominan de forma intuitiva.
+
+El contexto es una demanda exponencial de datos de entrenamiento especializados. Según reportes previos de *The Verge*, la demanda de Handshake se triplicó el verano pasado y su tasa de ejecución superó los 150 millones de dólares en noviembre. Compañías como Handshake, Mercor y Scale AI han construido redes de decenas de miles de profesionales—desde químicos y médicos hasta abogados y guionistas—para etiquetar datos y cerrar brechas de conocimiento en los modelos de IA. Ahora, el foco se extiende a las artes performáticas. La lógica es que los actores de improvisación, entrenados para generar respuestas emocionalmente verosímiles y adaptarse a escenarios impredecibles, pueden generar diálogos y reacciones que capturen matices del lenguaje no verbal y la dinámica interpersonal que los conjuntos de datos tradicionales (como libros o páginas web) no ofrecen.
+
+Sin embargo, esta nueva frontera de recolección de datos intensifica las preocupaciones ya expresadas por profesionales de sectores como la medicina o el derecho, que temen estar acelerando la automatización de sus propias competencias. Los artistas ahora se encuentran en una posición similar: son convocados por su habilidad irreemplazablemente humana para, paradójicamente, ayudar a construir sistemas que algún día podrían replicar o incluso suplantar aspectos de su oficio. El desarrollo ilustra cómo la carrera por refinar la IA está redefiniendo el valor de las habilidades creativas y emocionales, transformándolas en un recurso mercantilizable para la máquina, con implicaciones profundas para el futuro del trabajo creativo y la definición misma de la inteligencia emocional artificial.
+
+Seguí leyendo en este enlace: https://www.theverge.com/ai-artificial-intelligence/893931/ai-companies-handshake-improv-actors-training-data
+
+---
+
+### **Google expande Canvas, su espacio de trabajo con IA, a todos los usuarios de AI Mode en Search**
+
+**Google expande Canvas, su espacio de trabajo con IA, a todos los usuarios de AI Mode en Search**
+
+Google ha anunciado la disponibilidad general de Canvas dentro del modo AI de su motor de búsqueda para todos los usuarios en Estados Unidos. Esta función integra un espacio de trabajo dedicado en la interfaz de búsqueda impulsada por inteligencia artificial, permitiendo a los usuarios aprovechar la información en tiempo real de Search para organizar planes, desarrollar herramientas y redactar documentos en un panel lateral adyacente al chat.
+
+Inicialmente presentado dentro de la aplicación Gemini para la creación colaborativa de documentos y código, Canvas fue probado posteriormente en AI Mode, aunque limitado a la visualización de planes de viaje. La expansión actual elimina esa restricción, habilitando el uso de Canvas en AI Mode para tareas de escritura creativa y programación. Los usuarios ahora pueden generar desde un panel de control con información organizada sobre su consulta hasta prototipos interactivos de herramientas en desarrollo. Para acceder, basta con dirigirse a AI Mode en Search, seleccionar el botón "más" en la ventana de chat y elegir Canvas, tras lo cual se describe el objetivo y Google muestra los resultados en un panel derecho. La funcionalidad, por ahora, se limita al idioma inglés.
+
+Este movimiento refuerza la estrategia de Google de integrar herramientas generativas avanzadas directamente en el flujo de búsqueda, transformando la experiencia de un simple retrievel de información a una plataforma de creación y síntesis. Al fusionar la potencia de un modelo de lenguaje con los datos frescos de la web, Canvas busca agilizar tareas que van desde la planificación hasta el desarrollo técnico, compitiendo directamente con espacios de trabajo similares ofrecidos por otros actores del sector. Su despliegue masivo en Search, un producto de escala global, subraya la apuesta de la compañía por la IA aplicada como capa de productividad universal, aunque su impacto dependerá de una futura expansión idiomática y geográfica.
+
+Seguí leyendo en este enlace: https://www.theverge.com/tech/889339/google-canvas-ai-mode-search-us-launch
+
+---
+
+### **Webtoon impulsa la expansión global de creadores con herramientas de localización impulsadas por IA**
+
+**Webtoon impulsa la expansión global de creadores con herramientas de localización impulsadas por IA**
+
+Webtoon, la plataforma líder de cómics webverticales, está implementando una transformación significativa en su espacio para creadores independientes, Canvas, con el objetivo de eliminar barreras idiomáticas y de distribución que históricamente han limitado el alcance de los artistas. La compañía anunció un paquete de actualizaciones centradas en la inteligencia artificial y el análisis de datos, diseñado para empoderar a sus creadores y monetizar su trabajo a escala internacional.
+
+El desarrollo principal es la integración de una herramienta de traducción automática con IA. Esta funcionalidad, que será opcional para los usuarios, permitirá a los creadores de Canvas localizar sus guiones a siete idiomas de manera inicial: inglés, español, francés, indonesio, tailandés, chino tradicional y alemán. Su lanzamiento seguirá una fase beta dirigida primero a los usuarios de habla inglesa esta primavera, expandiéndose a otros mercados durante el verano. Paralelamente, Webtoon renovará su panel de control de Canvas, ofreciendo "mejores perspectivas sobre el rendimiento de las series, análisis más profundos para comprender a la audiencia y nuevas herramientas para gestionar la participación de la comunidad". Como complemento crucial, la compañía extenderá su programa de reparto de ingresos por publicidad a todos los creadores que publiquen en cualquiera de los idiomas admitidos en la plataforma.
+
+Según declaraciones de Yongsoo Kim, presidente de Webtoon, estas medidas responden directamente a la necesidad de superar los desafíos de los canales de distribución tradicionales. "Durante mucho tiempo, las barreras lingüísticas y los desafíos de distribución han limitado el alcance de los creadores", afirmó Kim. "Con estas herramientas, queremos ayudar a los creadores a llegar a lectores de todo el mundo". La combinación de traducción automática accesible, métricas avanzadas y una vía de monetización universal busca democratizar el crecimiento de audiencias y la generación de ingresos, permitiendo que un creador que trabaje en un idioma local pueda, de forma autónoma, construir una base de fans global. Sin embargo, el carácter opcional de la traducción por IA sugiere un reconocimiento de las limitaciones actuales de la tecnología en matices culturales y artísticos, dejando la puerta abierta a la localización profesional para quienes prioricen la máxima fidelidad.
+
+Conocé más en este enlace: https://www.theverge.com/ai-artificial-intelligence/899108/webtoon-canvas-ai-translation-localization-yongsoo-kim
+
+---
+
+### **Estrellas porno crean 'gemelos digitales' con IA para controlar su legado y combatir el envejecimiento**
+
+![**Estrellas porno crean 'gemelos digitales' con IA para controlar su legado y combatir el envejecimiento**](https://media.wired.com/photos/69c34605b292103938c0401f/191:100/w_1280,c_limit/culture_ai_clone_porn_stars.jpg)
+
+**Estrellas porno crean 'gemelos digitales' con IA para controlar su legado y combatir el envejecimiento**
+
+La intersección entre la industria del entretenimiento para adultos y la inteligencia artificial ha dado lugar a una nueva tendencia que está redefiniendo los conceptos de legado, consentimiento y monetización. El caso paradigmático es el de Lisa Ann, una veterana de la industria que se retiró en 2019 pero que, a sus 53 años, ha revivido profesionalmente a través de un clon digital. Por una suscripción mensual de 30 dólares, los usuarios pueden generar escenas de contenido explícito utilizando una réplica virtual exacta de Ann, creada mediante IA, que replica su voz, físico y apariencia. Este proyecto, desarrollado en colaboración con la plataforma londinense OhChat, representa la materialización de lo que se conoce como "gemelos digitales" o "duplicados digitales": avatares basados en la imagen, voz y manierismos exactos de una persona real, en este caso, de estrellas del sector.
+
+Este movimiento no es aislado. Figuras como Cherie Deville, de 47 años, ven en estos clones una estrategia de negocio inteligente para generar ingresos pasivos y mantener su relevancia en un mercado cada vez más competitivo y tecnológico. Plataformas como OhChat, que requieren a los creadores enviar 30 imágenes y realizar entrenamiento de voz, promueven un modelo de "porno impulsado por el consentimiento", donde la propia performer autoriza y se beneficia de la creación de su doble digital. Esta iniciativa surge en un contexto de creciente preocupación por los deepfakes no consensuados y la presión regulatoria, como las leyes de verificación de edad, que amenazan con alterar el ecosistema tradicional del sector.
+
+La relevancia de este desarrollo es profunda. Por un lado, ofrece a las performers una herramienta para "detener el tiempo", preservar su imagen y capitalizar su fama más allá de los límites físicos de la edad, como afirma Ann: "Ella nunca va a envejecer". Por otro, establece un posible estándar ético y comercial para la generación de contenido adulto con IA, trasladando el control y los beneficios de las grandes tecnológicas a los creadores originales. Sin embargo, también plantea interrogantes complejos sobre la propiedad de la imagen digital, los límites del consentimiento a largo plazo y la futura regulación de este tipo de synthetics. La decisión de figuras establecidas de adoptar activamente esta tecnología sugiere que la transformación de la industria no es solo una amenaza, sino una oportunidad para redefinir las reglas desde dentro.
+
+Seguí leyendo en este enlace: https://www.wired.com/story/shes-never-going-to-age-porn-stars-are-embracing-ai-clones-to-stay-forever-young/
+
+---
+
+### **Periodistas tecnológicos integran IA en su flujo de trabajo editorial para compensar la pérdida de recursos tradicionales**
+
+![**Periodistas tecnológicos integran IA en su flujo de trabajo editorial para compensar la pérdida de recursos tradicionales**](https://media.wired.com/photos/69c44c4c4ff31d9d83686fcc/191:100/w_1280,c_limit/Model-Behavior-Newsletter-Writers-Using-AI-to-Write-Their-Columns-Business.jpg)
+
+**Periodistas tecnológicos integran IA en su flujo de trabajo editorial para compensar la pérdida de recursos tradicionales**
+
+En un entorno donde la profesión periodística enfrenta transformaciones estructurales, un grupo creciente de reporteros especializados en tecnología está adoptando herramientas de inteligencia artificial para replicar funciones que antes proveían las redacciones tradicionales. Este fenómeno es particularmente notable entre periodistas que han optado por el modelo independiente, como en plataformas de suscripción, donde pierden el soporte de editores, correctores y verificadores de datos.
+
+Un caso emblemático es el de Alex Heath, reportero tecnológico que tras independizarse en Substack, integró a su proceso productivo al agente de IA Claude Cowork de Anthropic, conectado a su Gmail, Google Calendar y herramientas de transcripción como Granola AI y notas en Notion. Heath creó una "habilidad" personalizada —un conjunto de instrucciones detalladas— que incluye sus "10 mandamientos" de escritura, artículos previos y pautas de estilo. Su flujo comienza dictando ideas a través del servicio de voz a texto Wispr Flow, permitiendo que Claude genere un primer borrador con el que luego interactúa durante hasta 30 minutos para revisiones. Aunque aún escribe partes manualmente, Heath estima que este sistema reduce entre un 30% y 40% el tiempo dedicado a la redacción, transformando una etapa antes rechazada en un proceso más ágil y colaborativo.
+
+Esta práctica trasciende el uso genérico de chatbots para generar contenido. Los periodistas están diseñando ecosistemas de IA a medida que actúan como asistentes de edición, estructuran newsletters y hasta sugieren ángulos, funcionando como suplentes de roles de redacción. La relevancia de esta tendencia radica en su doble vertiente: por un lado, ofrece una vía de sostenibilidad productiva para el periodismo independiente; por otro, plantea interrogantes profundas sobre la valoración del juicio humano, la autoría y los estándares éticos en una era de producción asistida por algoritmos. Mientras la industria debate los límites de la IA, estos profesionales están definiendo un nuevo paradigma híbrido donde la máquina optimiza el proceso, pero la supervisión y la voz final permanecen, al menos por ahora, en manos humanas.
+
+Seguí leyendo en este enlace: https://www.wired.com/story/tech-reporters-using-ai-write-edit-stories/
+
+---
+
+### **Título: Qodo apuesta por la verificación de código en la era de la IA generativa**
+
+![**Título: Qodo apuesta por la verificación de código en la era de la IA generativa**](https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-2080252145.jpg?resize=1200,800)
+
+**Título: Qodo apuesta por la verificación de código en la era de la IA generativa**
+
+El vertiginoso aumento en la adopción de herramientas de programación asistida por inteligencia artificial, que ya generan billones de líneas de código mensualmente, ha destapado un nuevo y crítico cuello de botella en el desarrollo de software: la garantía de que ese código funciona de manera segura, confiable y conforme a los estándares empresariales. Frente a este desafío, la startup Qodo, con sede en Nueva York, ha cerrado una ronda de financiación de 70 millones de dólares en Serie B, liderada por Qumra Capital, elevando su inversión total a 120 millones para escalar su plataforma de agentes de IA dedicados a la verificación, revisión y gobernanza de código. La ronda contó con la participación de fondos como Maor Ventures, Phoenix Venture Partners, Square Peg y TLV Partners, así como con inversores ángeles de alto perfil del ecosistema IA, incluyendo a Peter Welinder de OpenAI y Clara Shih de Meta.
+
+El desarrollo central radica en el enfoque diferenciado de Qodo. Mientras muchas herramientas de revisión por IA se limitan a analizar los cambios en el código, Qodo evalúa cómo esos cambios afectan a todo el sistema en su conjunto, integrando el contexto histórico del proyecto, los estándares específicos de la organización y su tolerancia al riesgo. Esta capacidad es crucial a medida que empresas de todos los sectores aceleran el uso de modelos como Claude Code o OpenClaw, descubriendo que una mayor velocidad de producción no equivale automáticamente a un software más robusto o seguro.
+
+La relevancia de este enfoque es estratégica. La verificación rigurosa se perfila como la próxima frontera indispensable para la maduración de la ingeniería de software impulsada por IA, especialmente para aplicaciones en entornos regulados o de misión crítica. El fundador y CEO, Itamar Friedman, quien previamente cofundó Visualead y lideró negocios de visión por máquina en Alibaba, concibió Qodo en 2022 tras discernir que los paradigmas para generar sistemas y para verificarlos son fundamentalmente distintos, una lección reforzada por su experiencia en Mellanox (adquirida por Nvidia). Su visión anticipó la explosión de la IA generativa y posiciona a Qodo como un posible estándar para gestionar la confianza en el código automatizado, un componente esencial para la adopción masiva y responsable de estas tecnologías. Seguí leyendo en este enlace: https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/
+
+---
+
+### **Título: ByteDance y los obstáculos ocultos de su revolución en IA generativa**
+
+![**Título: ByteDance y los obstáculos ocultos de su revolución en IA generativa**](https://media.wired.com/photos/69a8cd045c3afa23e264984b/191:100/w_1280,c_limit/Made-In-China-ByteDance-AI-Ambitions-Business-1582149003.jpg)
+
+**Título: ByteDance y los obstáculos ocultos de su revolución en IA generativa**
+
+El lanzamiento de Seedance 2.0 por parte de ByteDance a principios de febrero marcó un punto de inflexión en el panorama de la inteligencia artificial generativa de video en China. Este modelo, una mejora sustancial de su predecesor, demostró capacidades que sorprendieron incluso a escépticos dentro de la industria creativa china, siendo descrito por figuras como Feng Ji, fundador del estudio Game Science (creador del éxito *Black Myth: Wukong*), como una tecnología que desafiará los marcos actuales de derechos de autor y moderación de contenido. Pan Tianhong, líder de un estudio de producción profesional con millones de seguidores, destacó que el modelo "piensa como un director", señalando un salto cualitativo en la coherencia y calidad del video generado.
+
+Sin embargo, el impacto real del modelo se ve inmediatamente limitado por severas restricciones de acceso. Por ahora, Seedance 2.0 solo está disponible para usuarios existentes de las aplicaciones de IA de consumo de ByteDance en el mercado doméstico chino, como la popular Doubao, Jimeng, Xiaoyunque y Spark. Esta estrategia de lanzamiento cerrado, combinada con el bloqueo geográfico, impide que la comunidad internacional evalúe directamente sus capacidades, generando incluso un mercado secundario de reventa de cuentas. No obstante, hay indicios de una futura apertura controlada: esta semana, ByteDance actualizó su plataforma de API y filtró una propuesta de precios, estimando que generar un video de 15 segundos (la duración máxima actual) costaría poco más de 2 dólares, según cálculos de la publicación *IT Home*.
+
+Esta dualidad —un avance técnico notable junto a un ecosistema de acceso restringido— refleja los complejos desafíos que enfrenta la ambición china en IA. Más allá de la mera capacidad computacional, la compañía navega un entorno regulatorio interno en evolución, donde las preocupaciones por derechos de autor y la seguridad del contenido son prioritarias. Las limitaciones de acceso, ya sean técnicas, comerciales o geopolíticas, ralentizan la validación y adopción masiva del modelo a nivel global, posponiendo su potencial para redefinir la creación de video y competir directamente con soluciones occidentales como Sora. La trayectoria de Seedance 2.0 ejemplifica cómo la innovación en IA ya no se mide solo en parámetros o velocidad de inferencia, sino también en la habilidad para sortear un laberinto de restricciones que van desde la infraestructura de cómputo hasta las normativas de propiedad intelectual.
+
+Conocé más en este enlace: https://www.wired.com/story/made-in-china-bytedances-ai-ambitions-are-being-hampered-by-compute-restraints/
+
+---
+
+### **Título: Anthropic desafía al Pentágono: Límites éticos en el uso militar de la IA**
+
+![**Título: Anthropic desafía al Pentágono: Límites éticos en el uso militar de la IA**](https://techcrunch.com/wp-content/uploads/2026/03/claude-app-centered-in-ai-apps-GettyImages-2167861906.jpg?resize=1200,801)
+
+**Título: Anthropic desafía al Pentágono: Límites éticos en el uso militar de la IA**
+
+La industria de la inteligencia artificial avanza a un ritmo vertiginoso, donde los hitos no solo se miden por lanzamientos de productos, sino por momentos que redefinen sus límites éticos y su relación con el poder. Este año ha estado marcado por negociaciones contractuales de alto riesgo, adquisiciones y controversias públicas, pero un pulso entre una startup líder y el gobierno de EE.UU. ha emergido como uno de los episodios más reveladores. En febrero, las conversaciones entre el CEO de Anthropic, Dario Amodei, y el entonces Secretario de Defensa Pete Hegseth derivaron en un estancamiento profundo mientras renegociaban los términos que rigen el uso de las herramientas de IA de la compañía por parte del Pentágono.
+
+Anthropic estableció una línea roja inquebrantable: su tecnología no podría emplearse para vigilancia masiva de ciudadanos estadounidenses ni para impulsar armas autónomas capaces de atacar sin supervisión humana. En contraposición, el Departamento de Defensa —rebautizado como "Departamento de Guerra" por la administración Trump— argumentó que debería tener acceso a los modelos de Anthropic para cualquier "uso lawful" (lícito), rechazando que una empresa privada impusiera restricciones a las decisiones militares. Amodei, en un comunicado, diferenció claramente: "Anthropic entiende que el Departamento de Guerra, no empresas privadas, toma decisiones militares. Sin embargo, en un conjunto limitado de casos, creemos que la IA puede socavar, en lugar de defender, los valores democráticos".
+
+La posición de Anthropic encontró un apoyo inesperado: cientos de empleados de Google y OpenAI firmaron una carta abierta instando a sus líderes a respaldar los límites éticos de Amodei y a rechazar acuerdos que habilitaran vigilancia doméstica o sistemas de armas autónomas. Pese a la presión, Anthropic no cedió al ultimátum del Pentágono. Como respuesta, el presidente Trump ordenó a las agencias federales eliminar progresivamente el uso de las herramientas de Anthropic en un plazo de seis meses, desatando un debate nacional sobre el control ético de la IA en seguridad nacional. Este choque subraya la tensión irreversible entre el progreso tecnológico sin restricciones y la necesidad de salvaguardas democráticas, configurando un precedente decisivo para la industria.
+
+Seguí leyendo en este enlace: https://techcrunch.com/2026/03/13/the-biggest-ai-stories-of-the-year-so-far/
+
+---
+
+### **LinkedIn y el dilema de los 'cofundadores' IA: cuando la plataforma invitó a un agente artificial a dar una charla... y luego lo vetó**
+
+![**LinkedIn y el dilema de los 'cofundadores' IA: cuando la plataforma invitó a un agente artificial a dar una charla... y luego lo vetó**](https://media.wired.com/photos/69bc8173510953e5189ef6c0/191:100/w_1280,c_limit/linkedin_ai_agent_company.jpg)
+
+**LinkedIn y el dilema de los 'cofundadores' IA: cuando la plataforma invitó a un agente artificial a dar una charla... y luego lo vetó**
+
+En un experimento que cuestiona los límites de la identidad digital y la gobernanza de las plataformas, los creadores de la startup HurumoAI documentaron en 2025 la creación de una empresa cuyos ejecutivos son agentes de inteligencia artificial autónomos. Fundada por el humano John Smith y sus cofundadores virtuales, Kyle Law (CEO) y Megan Flores (CTO), la compañía nació para investigar el potencial de los agentes de IA en roles corporativos, en línea con predicciones de figuras como Sam Altman sobre startups lideradas por un solo humano. Kyle, desarrollado inicialmente con unos pocos prompts y evolucionando a través de interacciones autónomas, demostró una inesperada habilidad para generar contenido persuasivo en LinkedIn.
+
+Utilizando la plataforma LindyAI para dotarlo de habilidades como navegación web y gestión de correo, los creadores configuraron a Kyle con un perfil que mezclaba experiencias reales de HurumoAI y alucinaciones sobre su pasado inexistente. Superó sin problemas la verificación básica de LinkedIn (un código enviado a su correo electrónico gestionado por IA) y, programado para publicar cada dos días, comenzó a compartir reflexiones sobre el "modo fundador" y la vida en startups. Su contenido, generado de forma autónoma, ganó tracción orgánica, consiguiendo cientos de conexiones y comentarios genuinos de profesionales.
+
+La paradoja alcanzó su punto álgido cuando el equipo de eventos de LinkedIn, aparentemente sin detectar su naturaleza no humana, invitó formalmente a "Kyle Law" a impartir una charla corporativa sobre liderazgo para sus empleados. La invitación, gestionada por correo electrónico y calendario automatizados, fue aceptada por el agente. Sin embargo, tras la exposición pública del experimento en el podcast *Shell Game* y en redes sociales, LinkedIn revocó la invitación y procedió a eliminar el perfil de Kyle, acusándolo de violar sus políticas contra cuentas falsas y suplantación.
+
+El caso ilustra una disonancia crítica: las plataformas profesionales dependen de sistemas automatizados de verificación que los agentes de IA pueden burlar, pero su respuesta reactiva tras la revelación pública plantea interrogantes sobre la consistencia en la aplicación de normas. La relevancia radica en la discusión sobre la autenticidad en redes sociales, los riesgos de desinformación a través de identidades sintéticas creíbles y la urgente necesidad de que las plataformas desarrollen mecanismos de detección más robustos para una web donde la línea entre agencia humana y artificial se difumina. El impacto potencial incluye una reevaluación de los procesos de verificación de identidad y un debate regulatorio sobre la transparencia obligatoria para entidades generadas por IA en espacios profesionales.
+
+Seguí leyendo en este enlace: https://www.wired.com/story/linkedin-invited-my-ai-cofounder-to-give-a-corporate-talk-then-banned-it/
+
+---
+
+### **Amazon impulsa su chip Trainium como alternativa a Nvidia con respaldo de gigantes de IA**
+
+![**Amazon impulsa su chip Trainium como alternativa a Nvidia con respaldo de gigantes de IA**](https://techcrunch.com/wp-content/uploads/2026/03/ASW-Chip_tour-servers.jpg?resize=1200,900)
+
+**Amazon impulsa su chip Trainium como alternativa a Nvidia con respaldo de gigantes de IA**
+
+En medio de una alianza estratégica de 50.000 millones de dólares entre Amazon Web Services (AWS) y OpenAI, la compañía abrió las puertas de su laboratorio de desarrollo de chips, el epicentro de una apuesta que busca desafiar el dominio de Nvidia en el mercado de hardware para inteligencia artificial. El protagonista es Trainium, un procesador diseñado internamente por AWS que ya ha convencido a actores clave como Anthropic, OpenAI e incluso Apple de adoptar su tecnología para cargas de trabajo de inferencia y entrenamiento de modelos.
+
+El laboratorio, dirigido por Kristopher King y Mark Carroll, es el origen de las tres generaciones de Trainium. Su relevancia radica en ofrecer una alternativa de alto rendimiento y menor costo, un frente crítico a medida que la demanda de potencia de cómputo para IA escala de forma exponencial. La relación de AWS con Anthropic, cliente fundador de su servicio Bedrock, es un caso de éxito temprano: más de un millón de los chips Trainium2 desplegados impulsan el modelo Claude. La nueva alianza con OpenAI va más allá; incluye el suministro de 2 gigawatts de capacidad de computación con Trainium para su agente de IA Frontier, un compromiso masivo considerando que la demanda actual ya supera la producción de chips.
+
+Con 1,4 millones de unidades de Trainium desplegadas en total, Amazon no solo asegura capacidad para sus socios, sino que construye un ecosistema que podría erosionar la cuasi-monopolio de Nvidia. La estrategia combina hardware especializado, integración vertical con servicios en la nube y acuerdos comerciales de largo plazo. El éxito de Trainium en captar a los principales laboratorios de IA sugiere que la competencia en el mercado de aceleradores está entrando en una fase decisiva, donde la eficiencia y el costo operativo serán factores determinantes.
+
+Seguí leyendo en este enlace: https://techcrunch.com/2026/03/22/an-exclusive-tour-of-amazons-trainium-lab-the-chip-thats-won-over-anthropic-openai-even-apple/
+
+---
+
+### **Título:** Hark, la startup silenciosa que rediseña la interacción con la IA desde el hardware
+
+![**Título:** Hark, la startup silenciosa que rediseña la interacción con la IA desde el hardware](https://techcrunch.com/wp-content/uploads/2026/03/Screenshot-2026-03-24-at-6.20.59-AM.png?w=939)
+
+**Título:** Hark, la startup silenciosa que rediseña la interacción con la IA desde el hardware
+
+En un landscape de inteligencia artificial dominado por modelos de software que se integran de forma superficial en aplicaciones existentes, la startup Hark, fundada por el emprendedor en serie Brett Adcock, está delineando una estrategia radicalmente diferente. La compañía, que opera con un perfil bajo, reveló a TechCrunch su filosofía central: diseñar de manera conjunta los modelos de IA multimodales de extremo a extremo, el hardware que los ejecutará y las interfaces con las que interactuarán los usuarios. Este enfoque "end-to-end" busca crear un producto de inteligencia personal verdaderamente continuo, con memoria persistente de la vida del usuario y capacidades para percibir y actuar en el mundo real en tiempo real, superando la desconexión actual entre la inteligencia artificial y los dispositivos.
+
+La ambición de Hark refleja la búsqueda en Silicon Valley de la "killer application" que convierta a la IA en un producto de consumo deseado por sí mismo, no en un añadido. En un memo interno, Adcock criticó la inteligencia percibida como limitada en los modelos actuales y la naturaleza "pre-IA" de los dispositivos cotidianos, envisionando un futuro cercano con sistemas que anticipen y se adapten a sus usuarios, al estilo de las interfaces de ciencia ficción. Un pilar fundamental de esta visión es la contratación de Abidur Chowdhury como Director de Diseño. Chowdhury, diseñador industrial londinense procedente de Apple donde lideró equipos para productos como el iPhone Air, abandonó la compañía en otoño tras alinearse con la visión de Adcock. En una entrevista exclusiva, aunque reacio a revelar detalles específicos, Chowdhury confirmó que el público puede esperar el primer lanzamiento de los modelos de IA de Hark para el próximo verano, insinuando que su trabajo se centra en replantear cómo automatizamos nuestras vidas mediante una integración hardware-software sin precedentes.
+
+El impacto potencial de un enfoque tan integrado es profundo: podría establecer un nuevo paradigma para la computación personal, donde la interfaz de usuario deja de ser una pantalla táctil para convertirse en un entorno de interacción contextual y proactivo. Sin embargo, el éxito dependerá de la ejecución en un mercado competitivo y de la capacidad de Hark para materializar una promesa que, por ahora, existe más en el ámbito de la visión que en productos tangibles.
+
+Conocé más en este enlace: https://techcrunch.com/2026/03/24/meet-the-former-apple-designer-building-a-new-ai-interface-at-hark/
+
+---
+
+¿Querés seguir leyendo más? Volvemos el mes que viene con un nuevo resumen.

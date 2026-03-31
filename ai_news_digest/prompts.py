@@ -72,7 +72,8 @@ Texto (recortado):
 """
 
 SUMMARY_PROMPT = """\
-Write a narrative summary in {lang} of this news article about Artificial Intelligence.
+Write a narrative summary in Spanish (español) of this news article about Artificial Intelligence.
+IMPORTANT: The entire response MUST be written in Spanish. Do not use English.
 
 Style: technical, clear, and journalistic (similar to leading technology media).
 Title: create an attractive, professional, and descriptive headline (avoid clickbait).
