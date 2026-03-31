@@ -1,0 +1,306 @@
+# 🧠 Los Highlights de marzo_26 en Inteligencia Artificial
+
+Te compartimos las noticias más destacadas del mes.
+
+### **Yann LeCun impulsa una apuesta de más de US$1.000 millones para desarrollar IA que entienda el mundo físico**
+
+![**Yann LeCun impulsa una apuesta de más de US$1.000 millones para desarrollar IA que entienda el mundo físico**](https://media.wired.com/photos/69ab547169eb9242c51148d7/191:100/w_1280,c_limit/Yann-LeCun-QA-Business-2198379404.jpg)
+
+**Yann LeCun impulsa una apuesta de más de US$1.000 millones para desarrollar IA que entienda el mundo físico**
+
+Advanced Machine Intelligence (AMI), una nueva startup con sede en París cofundada por Yann LeCun, ex científico jefe de IA de Meta, anunció una ronda de financiamiento superior a los US$1.000 millones para desarrollar modelos de mundo, una línea de investigación que busca llevar la inteligencia artificial más allá del procesamiento de texto. La operación valúa a la compañía en US$3.500 millones y fue co-liderada por Cathay Innovation, Greycroft, Hiro Capital, HV Capital y Bezos Expeditions, con participación de inversores como Mark Cuban, Eric Schmidt y Xavier Niel.
+
+LeCun sostiene que el razonamiento humano se apoya principalmente en la experiencia del mundo físico y no en el lenguaje, por lo que considera insuficiente escalar los grandes modelos de lenguaje para alcanzar una inteligencia de nivel humano. En ese marco, AMI propone construir sistemas capaces de comprender el entorno, conservar memoria persistente, razonar, planificar y operar con mecanismos de control y seguridad. La empresa afirmó además que tendrá una estructura global desde el inicio, con oficinas en París, Montreal, Singapur y Nueva York, donde LeCun continuará vinculado a la Universidad de Nueva York.
+
+El anuncio marca una ruptura estratégica con la tesis dominante en laboratorios como OpenAI, Anthropic y la propia Meta, que apuestan a que el aumento de escala de los LLMs conducirá a capacidades generales más avanzadas. La iniciativa de LeCun representa, en cambio, una inversión de alto perfil en una arquitectura alternativa para la próxima generación de IA, con potencial impacto en robótica, planificación autónoma y sistemas más robustos para interactuar con entornos reales. Seguí leyendo en este link: https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-understands-the-physical-world/
+
+---
+
+### Google amplía su apuesta por la música generada por IA con Lyria 3 Pro
+
+![Google amplía su apuesta por la música generada por IA con Lyria 3 Pro](https://techcrunch.com/wp-content/uploads/2026/03/Lyria-3-Pro_thumbnail.jpeg?resize=1200,675)
+
+# Google amplía su apuesta por la música generada por IA con Lyria 3 Pro
+
+Google anunció el lanzamiento de Lyria 3 Pro, su nuevo modelo de generación musical, apenas un mes después de presentar Lyria 3. La actualización eleva de forma significativa las capacidades del sistema: mientras la versión anterior permitía crear fragmentos de hasta 30 segundos, el nuevo modelo habilita pistas de hasta tres minutos, acercándose a estructuras musicales más completas y útiles para producción creativa.
+
+La compañía señaló que Lyria 3 Pro no solo extiende la duración de los temas, sino que también mejora el control sobre el resultado final. En las instrucciones, los usuarios pueden detallar elementos como introducciones, versos, estribillos y puentes, ya que el modelo entiende mejor la estructura de una canción que su antecesor. Esa mayor granularidad apunta a un uso más profesional, con aplicaciones que van desde la composición asistida hasta la generación de piezas para contenido audiovisual.
+
+Google ya había incorporado la generación musical a la app Gemini con Lyria 3, y ahora la versión Pro también llega a ese entorno, aunque restringida a suscriptores pagos. Además, se integra en Google Vids, su herramienta de edición de video, y en Producer AI, un producto de producción musical con IA generativa que Google adquirió el mes pasado. La expansión no se limita al consumo: también se suma a Vertex AI, en vista previa pública, al Gemini API y a AI Studio.
+
+La empresa afirmó que entrenó el modelo con datos de socios y con material permitido de YouTube y Google. También indicó que no imita a artistas específicos, aunque puede tomar “amplia inspiración” si el usuario los menciona en el prompt. Todos los temas generados con Lyria 3 y Lyria 3 Pro llevan SynthID para identificar que fueron creados con IA, en un contexto de mayor presión de la industria por la atribución y detección de contenido sintético. Seguí leyendo en este enlace: https://techcrunch.com/2026/03/25/google-launches-lyria-3-pro-music-generation-model/
+
+---
+
+### Gimlet Labs recauda US$80 millones para atacar el cuello de botella de inferencia con una nube “multi-silicio”
+
+![Gimlet Labs recauda US$80 millones para atacar el cuello de botella de inferencia con una nube “multi-silicio”](https://techcrunch.com/wp-content/uploads/2026/03/Gimlet_Labs_CEO_Zain_Asgar2.jpg?resize=1200,747)
+
+# Gimlet Labs recauda US$80 millones para atacar el cuello de botella de inferencia con una nube “multi-silicio”
+
+Gimlet Labs, una startup fundada por el profesor adjunto de Stanford y emprendedor Zain Asgar, cerró una Serie A de US$80 millones liderada por Menlo Ventures para resolver uno de los principales límites del despliegue de IA: la inferencia. La compañía propone un enfoque poco habitual en el sector, basado en una “nube de inferencia multi-silicio” que permite ejecutar una misma carga de trabajo de IA de forma simultánea sobre distintos tipos de hardware.
+
+La plataforma de Gimlet distribuye tareas entre CPUs tradicionales, GPUs optimizadas para IA y sistemas de alta memoria, con el objetivo de aprovechar mejor los recursos ya instalados en los centros de datos. Según Asgar, hoy muchas aplicaciones solo utilizan la infraestructura disponible entre el 15% y el 30% del tiempo. En ese contexto, la startup sostiene que existe un enorme volumen de capacidad ociosa que podría reducir costos y mejorar la eficiencia sin esperar a una nueva generación de chips.
+
+El planteo apunta especialmente a los flujos de trabajo de agentes de IA, que encadenan varias etapas con necesidades técnicas distintas: inferencia intensiva en cómputo, decodificación limitada por memoria y llamadas a herramientas dependientes de red. Menlo Ventures destacó que ningún chip resuelve por sí solo todas esas exigencias, por lo que la capa de software que coordina el hardware se vuelve crítica.
+
+Gimlet afirma que su tecnología puede acelerar la inferencia entre 3 y 10 veces al mismo costo y consumo energético. La propuesta llega en un momento en que McKinsey proyecta que el gasto en centros de datos podría acercarse a US$7 billones hacia 2030, lo que refuerza la relevancia de soluciones capaces de exprimir mejor la infraestructura existente. Conocé más en este enlace: https://techcrunch.com/2026/03/23/startup-gimlet-labs-is-solving-the-ai-inference-bottleneck-in-a-surprisingly-elegant-way/
+
+---
+
+### Jensen Huang eleva a un billón de dólares las proyecciones de ventas de Blackwell y Vera Rubin
+
+![Jensen Huang eleva a un billón de dólares las proyecciones de ventas de Blackwell y Vera Rubin](https://techcrunch.com/wp-content/uploads/2026/03/jensen-huang-gtc-2026-getty.jpg?resize=1200,800)
+
+# Jensen Huang eleva a un billón de dólares las proyecciones de ventas de Blackwell y Vera Rubin
+
+Durante la apertura de su conferencia anual GTC en San José, California, el CEO de Nvidia, Jensen Huang, combinó anuncios técnicos con una proyección financiera que captó la atención del mercado: la compañía espera alcanzar pedidos por 1 billón de dólares vinculados a sus chips Blackwell y Vera Rubin. La cifra refleja la magnitud de la demanda que está generando la infraestructura para inteligencia artificial y posiciona a Nvidia en el centro del ciclo de inversión más acelerado del sector.
+
+Huang señaló que, el año pasado, Nvidia ya había observado unos 500.000 millones de dólares en demanda acumulada para Blackwell y para Rubin, su arquitectura de próxima generación, con horizonte hasta 2026. Según explicó, esa estimación se ha ampliado con fuerza y ahora la visibilidad comercial se extiende al menos hasta 2027. La referencia no fue menor: el ejecutivo subrayó que pasar de medio billón a un billón de dólares en pedidos en pocos meses evidencia la expansión del negocio de IA a escala industrial.
+
+Rubin, anunciada por primera vez en 2024, fue presentada como la plataforma de hardware más avanzada de Nvidia para cargas de trabajo de inteligencia artificial, superando a Blackwell. En enero, cuando la empresa inició formalmente su producción, afirmó que Rubin ofrecerá un rendimiento 3,5 veces superior al de Blackwell en entrenamiento de modelos y hasta 5 veces más en inferencia, con un máximo de 50 petaflops. Nvidia también prevé acelerar la producción durante la segunda mitad del año, un paso clave para convertir esa demanda proyectada en ingresos efectivos.
+
+Conocé más en este enlace: https://techcrunch.com/2026/03/16/jensen-just-put-nvidias-blackwell-and-vera-rubin-sales-projections-into-the-1-trillion-stratosphere/
+
+---
+
+### **Cohere debuta en voz con Transcribe, su modelo open source para transcripción automática**
+
+![**Cohere debuta en voz con Transcribe, su modelo open source para transcripción automática**](https://techcrunch.com/wp-content/uploads/2026/03/260325_TranscribeLaunch_Hero.jpeg?resize=1200,600)
+
+**Cohere debuta en voz con Transcribe, su modelo open source para transcripción automática**
+
+Cohere, empresa de inteligencia artificial enfocada en el mercado corporativo, presentó este jueves su primer modelo de voz: Transcribe, una solución de reconocimiento automático del habla de código abierto diseñada para tareas como toma de notas y análisis de conversaciones. El lanzamiento marca la entrada de la compañía en un segmento en expansión, impulsado por la demanda de herramientas de dictado, documentación y productividad basadas en audio.
+
+El modelo tiene 2.000 millones de parámetros, un tamaño relativamente liviano que, según Cohere, lo hace apto para ejecutarse en GPUs de consumo y facilita su implementación bajo esquemas de autoalojamiento. Transcribe admite 14 idiomas, entre ellos español, inglés, francés, alemán, portugués, chino, japonés, coreano y árabe, lo que amplía su alcance para entornos empresariales multilingües.
+
+La compañía afirmó que el sistema supera a modelos como Zoom Scribe v1, IBM Granite 4.0 1B, ElevenLabs Scribe v2 y Qwen3-ASR-1.7B Speech en el ranking Open ASR de Hugging Face, con una tasa promedio de error de palabras de 5,42, la más baja del benchmark. Además, indicó que obtuvo una tasa media de preferencia del 61% frente a otros modelos en evaluaciones humanas de precisión, coherencia y utilidad. Sin embargo, el desempeño fue más débil en portugués, alemán y español frente a algunos competidores.
+
+Cohere también destacó una velocidad de procesamiento de 525 minutos de audio por minuto, un dato relevante para casos de uso empresariales de alto volumen. El modelo estará disponible gratis vía API, se integrará en North, su plataforma de orquestación de agentes, y también podrá utilizarse en Model Vault, su infraestructura de inferencia gestionada. Seguí leyendo en este enlace: https://techcrunch.com/2026/03/26/cohere-launches-an-open-source-voice-model-specifically-for-transcription/
+
+---
+
+### **Google usa noticias históricas y Gemini para anticipar inundaciones repentinas en 150 países**
+
+![**Google usa noticias históricas y Gemini para anticipar inundaciones repentinas en 150 países**](https://techcrunch.com/wp-content/uploads/2026/03/Screenshot-2026-03-11-at-7.14.04-PM.png?resize=1200,757)
+
+**Google usa noticias históricas y Gemini para anticipar inundaciones repentinas en 150 países**
+
+Las inundaciones repentinas figuran entre los fenómenos meteorológicos más mortales del mundo, con más de 5.000 muertes al año, y también entre los más difíciles de prever por su corta duración y alcance localizado. A diferencia de variables como la temperatura o el caudal de los ríos, este tipo de eventos deja muy pocos datos sistemáticos, lo que limita la capacidad de los modelos de aprendizaje profundo para anticiparlos con precisión.
+
+En ese contexto, investigadores de Google recurrieron a una fuente poco habitual: archivos periodísticos. Usando Gemini, su modelo de lenguaje de gran tamaño, analizaron 5 millones de artículos de noticias de todo el mundo para identificar reportes sobre 2,6 millones de inundaciones distintas. Ese trabajo dio origen a una base de datos georreferenciada y temporal llamada “Groundsource”, presentada públicamente este jueves y considerada por la compañía como la primera vez que emplea modelos de lenguaje para construir un conjunto de datos de este tipo.
+
+A partir de esa referencia real, el equipo entrenó un modelo basado en redes neuronales LSTM que combina pronósticos meteorológicos globales para estimar la probabilidad de inundaciones repentinas en áreas concretas. El sistema ya muestra riesgos para zonas urbanas en 150 países dentro de Flood Hub, la plataforma de Google dedicada al monitoreo de inundaciones, y comparte información con agencias de respuesta a emergencias. Según António José Beleza, funcionario de la Comunidad de Desarrollo de África Austral que probó la herramienta, el modelo permitió acelerar la respuesta ante eventos de inundación.
+
+Pese a estos avances, persisten limitaciones: la resolución es de 20 kilómetros cuadrados y la precisión sigue por detrás del sistema de alertas del Servicio Meteorológico Nacional de Estados Unidos, en parte porque no incorpora datos locales de radar. Conocé más en este enlace: https://techcrunch.com/2026/03/12/google-is-using-old-news-reports-and-ai-to-predict-flash-floods/
+
+---
+
+### **Mistral lanza Voxtral TTS, su modelo open source de voz para competir en el mercado empresarial**
+
+![**Mistral lanza Voxtral TTS, su modelo open source de voz para competir en el mercado empresarial**](https://techcrunch.com/wp-content/uploads/2026/03/GettyImages-2264771189.jpg?resize=1200,800)
+
+**Mistral lanza Voxtral TTS, su modelo open source de voz para competir en el mercado empresarial**
+
+La empresa francesa de inteligencia artificial Mistral presentó este jueves un nuevo modelo de texto a voz de código abierto, diseñado para asistentes de voz y casos de uso corporativos como atención al cliente, ventas y engagement con usuarios. Con este lanzamiento, la compañía amplía su estrategia en tecnologías de voz y entra a competir de forma más directa con actores como ElevenLabs, Deepgram y OpenAI en un segmento cada vez más disputado.
+
+El modelo, llamado **Voxtral TTS**, admite **nueve idiomas**: inglés, francés, alemán, español, neerlandés, portugués, italiano, hindi y árabe. Según explicó Pierre Stock, vicepresidente de operaciones científicas de Mistral AI, la propuesta apunta a un modelo “pequeño” que pueda ejecutarse en dispositivos de borde como relojes inteligentes, teléfonos, laptops y otros equipos con recursos limitados, manteniendo un costo inferior al de otras alternativas del mercado pero con rendimiento de última generación.
+
+Entre sus capacidades técnicas, Mistral destacó que el sistema puede clonar una voz personalizada con **menos de cinco segundos de muestra** y reproducir rasgos como acentos, inflexiones e irregularidades naturales del habla. Además, está basado en **Ministral 3B** y puede cambiar de idioma sin perder la identidad vocal, una función especialmente útil para doblaje y traducción en tiempo real. La empresa afirmó que el objetivo es lograr una voz más humana y menos robótica.
+
+En términos de rendimiento, Voxtral TTS ofrece un **time-to-first-audio de 90 ms** para una muestra de 10 segundos y 500 caracteres, y un **real-time factor de 6x**, lo que permite generar un clip de 10 segundos en aproximadamente 1,6 segundos. Tras haber lanzado este año modelos de transcripción, Mistral parece avanzar hacia una plataforma integral de productos de voz para empresas. Seguí leyendo en este link: https://techcrunch.com/2026/03/26/mistral-releases-a-new-open-source-model-for-speech-generation/
+
+---
+
+### Teens sue Elon Musk’s xAI over Grok’s AI-generated CSAM
+
+(Sin LLM) is a news writer who covers the streaming wars, consumer tech, crypto, social media, and much more. Previously, she was a writer and editor at MUO.
+
+Posts from this author will be added to your daily email digest and your homepage feed.
+
+Three Tennessee teens are suing Elon Musk’s xAI over claims that the company’s Grok AI chatbot generated sexualized images and videos of themselves as minors, as ...
+Seguí leyendo: https://www.theverge.com/ai-artificial-intelligence/895639/xai-grok-teens-lawsuit-grok-ai-elon-musk
+
+---
+
+### **Waymo acelera su negocio de robotaxis: 500.000 viajes pagos por semana y expansión en 10 ciudades de EE. UU.**
+
+![**Waymo acelera su negocio de robotaxis: 500.000 viajes pagos por semana y expansión en 10 ciudades de EE. UU.**](https://techcrunch.com/wp-content/uploads/2026/03/waymo-chart2.png?resize=1200,837)
+
+**Waymo acelera su negocio de robotaxis: 500.000 viajes pagos por semana y expansión en 10 ciudades de EE. UU.**
+
+Waymo, la compañía de vehículos autónomos de Alphabet, informó que ya realiza 500.000 viajes pagos en robotaxi por semana en 10 ciudades estadounidenses, una cifra que refleja la rápida maduración de su operación comercial. El dato, difundido en una publicación en X, confirma la escala que está alcanzando el servicio, pero el indicador más relevante es la velocidad de crecimiento: en menos de dos años, los viajes semanales pagos pasaron de 50.000 en mayo de 2024 a 500.000 en la actualidad, un salto de diez veces.
+
+Ese avance estuvo acompañado por una expansión territorial acelerada. Waymo consolidó su presencia en sus mercados iniciales —Phoenix, San Francisco y Los Ángeles— y luego sumó Austin, Atlanta, Miami, Dallas, Houston, San Antonio y Orlando. Las siete ciudades del cinturón del sol se incorporaron todas en el último año, lo que muestra una estrategia de despliegue más agresiva que en etapas anteriores.
+
+La flota también creció, aunque la empresa mantiene esos números bajo reserva. Un informe remitido en diciembre de 2025 a la Administración Nacional de Seguridad del Tráfico en las Carreteras de Estados Unidos indicaba 3.067 robotaxis equipados con su sistema autónomo de quinta generación, una cifra que Waymo sigue redondeando en “más de 3.000”. La próxima actualización tecnológica podría modificar ese panorama con la llegada de su sistema de sexta generación, que debutará en la minivan Zeekr, llamada Ojai, y en el Hyundai Ioniq 5.
+
+El aumento de viajes con una flota relativamente estable sugiere una mejora en la utilización de cada vehículo, un factor clave para la rentabilidad en robotaxis. Sin embargo, la expansión también trae más escrutinio regulatorio, con investigaciones de NHTSA y la Junta Nacional de Seguridad en el Transporte por conductas frente a autobuses escolares, además de preocupaciones en San Francisco por unidades inmovilizadas. Seguí leyendo en este enlace: https://techcrunch.com/2026/03/27/waymo-skyrocketing-ridership-in-one-chart/
+
+---
+
+### **ByteDance lleva Dreamina Seedance 2.0 a CapCut y acelera su apuesta por la generación de video con IA**
+
+![**ByteDance lleva Dreamina Seedance 2.0 a CapCut y acelera su apuesta por la generación de video con IA**](https://techcrunch.com/wp-content/uploads/2026/03/imgi_30_7d51e3a4c1434d7f9b2708a619f3783ftplv-2zwwjm3azk-image.webp?resize=1200,853)
+
+**ByteDance lleva Dreamina Seedance 2.0 a CapCut y acelera su apuesta por la generación de video con IA**
+
+ByteDance confirmó el despliegue de su nuevo modelo multimodal de audio y video, **Dreamina Seedance 2.0**, dentro de **CapCut**, su plataforma de edición de video de uso masivo. La llegada del sistema se produce en un momento en que el mercado de generación audiovisual con inteligencia artificial atraviesa una fase de reajuste: mientras OpenAI reduce el impulso de Sora con el cierre de su aplicación, ByteDance avanza con una integración directa en una herramienta ya consolidada entre creadores y editores.
+
+Según la compañía, el modelo permite **redactar, editar y sincronizar contenido de video y audio mediante prompts, imágenes o videos de referencia**. El lanzamiento será gradual y comenzará en **Brasil, Indonesia, Malasia, México, Filipinas, Tailandia y Vietnam**, con más mercados previstos en etapas posteriores. La disponibilidad limitada sugiere una estrategia prudente, en línea con el escrutinio reciente sobre posibles conflictos de propiedad intelectual que llevaron a pausar su expansión global. En China, el modelo ya está disponible en la app **Jianying**.
+
+ByteDance destaca que Seedance 2.0 puede generar escenas incluso **sin imágenes de referencia**, solo con una breve descripción textual, y que mejora el renderizado de **texturas, movimiento e iluminación** desde distintos ángulos. Además, puede servir para **corregir o enriquecer material propio**, así como para probar conceptos antes del rodaje. La empresa apunta a usos en recetas, rutinas de fitness, presentaciones de productos y contenido con movimiento, uno de los terrenos más exigentes para estos modelos. En esta primera fase, admite clips de hasta **15 segundos** en **seis relaciones de aspecto**. En CapCut, se integrará en funciones como **AI Video** y **Video Studio**. Seguí leyendo en este enlace: https://techcrunch.com/2026/03/26/bytedances-new-ai-video-generation-model-dreamina-seedance-2-0-comes-to-capcut/
+
+---
+
+### **Qodo capta US$70 millones para verificar código en la era del desarrollo asistido por IA**
+
+![**Qodo capta US$70 millones para verificar código en la era del desarrollo asistido por IA**](https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-2080252145.jpg?resize=1200,800)
+
+**Qodo capta US$70 millones para verificar código en la era del desarrollo asistido por IA**
+
+A medida que las herramientas de programación con inteligencia artificial generan miles de millones de líneas de código por mes, el sector empieza a enfrentar un nuevo cuello de botella: comprobar que ese software realmente funcione como se espera. En ese contexto, Qodo, una startup con sede en Nueva York enfocada en agentes de IA para revisión de código, pruebas y gobernanza, busca posicionarse como una capa de verificación crítica para la próxima etapa del desarrollo de software.
+
+La compañía anunció una ronda Serie B de US$70 millones liderada por Qumra Capital, con la que eleva su financiamiento total a US$120 millones. También participaron Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder, de OpenAI, y Clara Shih, de Meta. El objetivo de Qodo es reforzar la confianza en el código generado por IA, en un momento en que empresas de distintos sectores aceleran la adopción de herramientas como OpenClaw y Claude Code.
+
+La propuesta de la startup se diferencia de otros sistemas de revisión porque no se limita a identificar qué cambió en un fragmento de código, sino que evalúa cómo esas modificaciones impactan en sistemas completos. Para ello, incorpora estándares organizacionales, contexto histórico y tolerancia al riesgo, con el fin de ayudar a las compañías a gestionar con mayor seguridad el software producido por IA.
+
+Qodo fue fundada en 2022 por Itamar Friedman, excofundador de Visualead y antiguo responsable del negocio de visión por मशीन en Alibaba. Friedman explicó que su experiencia en Mellanox, donde trabajó en automatización de verificación de hardware mediante machine learning, y en Alibaba lo llevó a concluir que generar sistemas y verificarlos exige enfoques distintos. En un mercado donde la velocidad ya no es suficiente, la verificación emerge como una pieza central para escalar el uso empresarial de la IA. Seguí leyendo en este link: https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/
+
+---
+
+### Smack Technologies apuesta por una IA militar entrenada para planificar operaciones de combate
+
+![Smack Technologies apuesta por una IA militar entrenada para planificar operaciones de combate](https://media.wired.com/photos/69c1d8642542d076d32a59b2/191:100/w_1280,c_limit/ai_lab_autonomous_weapons.jpg)
+
+# Smack Technologies apuesta por una IA militar entrenada para planificar operaciones de combate
+
+Mientras Anthropic mantiene reservas sobre el acceso irrestricto de sus modelos por parte del Ejército de Estados Unidos, una nueva generación de startups está diseñando inteligencia artificial específicamente orientada a usos militares. En ese escenario aparece Smack Technologies, que esta semana anunció una ronda de financiamiento de 32 millones de dólares y sostiene que sus modelos pronto superarán a Claude en tareas de planificación y ejecución de operaciones bélicas.
+
+La compañía fue fundada por Andy Markoff, excomandante del US Marine Forces Special Operations Command, junto con Clint Alanis, también exmarine, y Dan Gould, un exejecutivo de tecnología en Tinder. Esa trayectoria marca una diferencia relevante respecto de otros actores del sector: Smack no solo desarrolla IA para defensa, sino que defiende abiertamente su integración en contextos militares, bajo la premisa de que quienes la operen deben ser miembros de las fuerzas armadas y actuar conforme a las reglas de la guerra.
+
+Su enfoque técnico se basa en aprendizaje por prueba y error, similar al método que Google utilizó para entrenar AlphaGo en 2017. En lugar de depender únicamente de datos estáticos, Smack somete sus modelos a simulaciones y juegos de guerra, donde analistas expertos evalúan si la estrategia elegida tendrá resultados favorables. Según Markoff, la empresa está invirtiendo millones en el entrenamiento de sus primeros modelos, aun sin contar con el presupuesto de un laboratorio de frontera tradicional.
+
+El avance cobra relevancia en medio del debate en Silicon Valley sobre el uso militar de la IA, intensificado por el conflicto entre el Departamento de Defensa y Anthropic por un contrato cercano a los 200 millones de dólares. El caso expone una tendencia más amplia: la carrera por construir sistemas capaces de asistir en decisiones tácticas, con implicancias directas para la industria, la defensa y la regulación tecnológica. Seguí leyendo en este enlace: https://www.wired.com/story/ai-model-military-use-smack-technologies/
+
+---
+
+### Nvidia prepara una plataforma abierta de agentes de IA para empresas y apunta a consolidar el mercado “claw”
+
+![Nvidia prepara una plataforma abierta de agentes de IA para empresas y apunta a consolidar el mercado “claw”](https://media.wired.com/photos/69aa166a88f33482258401e7/191:100/w_1280,c_limit/Nvidia-Scoop-Business-2260170952.jpg)
+
+# Nvidia prepara una plataforma abierta de agentes de IA para empresas y apunta a consolidar el mercado “claw”
+
+Nvidia está trabajando en el lanzamiento de una plataforma de código abierto para agentes de inteligencia artificial, según personas familiarizadas con sus planes. El proyecto, conocido internamente como NemoClaw, busca llevar estas herramientas a entornos corporativos para que los agentes puedan ejecutar tareas de forma autónoma dentro de los flujos de trabajo de las empresas. A diferencia de otras ofertas ligadas al hardware, la plataforma estaría disponible incluso para compañías cuyos productos no corren sobre chips de Nvidia.
+
+La iniciativa llega en la antesala de la conferencia anual de desarrolladores de la compañía, que se celebrará la próxima semana en San José, y refleja el creciente interés de la industria por los llamados “claws”: herramientas abiertas de IA que se ejecutan localmente en la máquina del usuario y realizan secuencias de tareas. Nvidia ya contactó a firmas como Salesforce, Cisco, Google, Adobe y CrowdStrike para explorar posibles alianzas, aunque no está claro si esas conversaciones derivaron en acuerdos formales. Al tratarse de un proyecto abierto, los socios podrían recibir acceso temprano y gratuito a cambio de contribuir al desarrollo.
+
+La empresa también prevé incorporar funciones de seguridad y privacidad, un punto clave para la adopción empresarial de agentes capaces de operar con mayor autonomía. El movimiento se produce en un momento en que estos sistemas ganan tracción en Silicon Valley: a comienzos de este año, OpenClaw —antes conocido como Clawdbot y luego Moltbot— llamó la atención por su capacidad de ejecutar tareas de oficina de manera autónoma en computadoras personales, hasta que OpenAI terminó adquiriendo el proyecto.
+
+Aunque modelos como los de OpenAI y Anthropic han mejorado su fiabilidad, los chatbots todavía requieren supervisión constante. Nvidia parece apostar a que una plataforma abierta, orientada a empresas y con soporte de seguridad, puede acelerar la adopción de agentes especializados y ampliar su influencia más allá del negocio de chips. Seguí leyendo en este link: https://www.wired.com/story/nvidia-planning-ai-agent-platform-launch-open-source/
+
+---
+
+### **Palantir afianza su apuesta por la IA militar y acelera su expansión comercial**
+
+![**Palantir afianza su apuesta por la IA militar y acelera su expansión comercial**](https://media.wired.com/photos/69bc605080392585c27a64b6/191:100/w_1280,c_limit/Backchannel-Inside-Mind-of-Palantir-Business-2249768392.jpg)
+
+**Palantir afianza su apuesta por la IA militar y acelera su expansión comercial**
+
+En una conferencia de desarrolladores celebrada en un hotel del Atlántico medio, Palantir exhibió el momento de mayor impulso de su historia reciente, en un contexto marcado por el avance de la inteligencia artificial generativa y por la creciente integración de software de defensa en operaciones militares. La reunión congregó a contratistas, oficiales y ejecutivos que, pese al clima adverso, reflejaron el entusiasmo de una empresa que ha pasado de ser una firma opaca de análisis de datos a un actor central en la transformación tecnológica del Pentágono.
+
+Fundada en 2003 por Peter Thiel y Alex Karp, Palantir ha construido su identidad sobre sistemas capaces de integrar y explotar grandes volúmenes de datos para clientes gubernamentales y corporativos. En los últimos años, su crecimiento más acelerado se produjo fuera del sector público: su director de tecnología, Shyam Sankar, afirmó que el negocio comercial crece un 120% interanual, mientras que el área gubernamental avanza un 60%. Esa expansión se apoya en la IA generativa, que ha reforzado el modelo de “ingenieros desplegados” de la compañía y ha permitido desarrollar productos con mayor capacidad de automatización y soporte operativo.
+
+La noticia adquiere mayor relevancia tras la designación de Palantir por parte del Departamento de Defensa como programa oficial del Pentágono, consolidándola como proveedor de tecnología de puntería para armas. El movimiento confirma que la empresa no solo está capitalizando el auge de la IA en el mercado empresarial, sino también profundizando su papel en la modernización militar estadounidense. Con ello, Palantir se posiciona en la intersección entre defensa, software y automatización avanzada, un espacio cada vez más estratégico para la industria tecnológica. Seguí leyendo en este link: https://www.wired.com/story/palantir-developer-conference-ai-war-alex-karp/
+
+---
+
+### Mantis Biotech apuesta por “gemelos digitales” humanos para resolver la escasez de datos en medicina
+
+![Mantis Biotech apuesta por “gemelos digitales” humanos para resolver la escasez de datos en medicina](https://techcrunch.com/wp-content/uploads/2019/09/brain_pills.jpg?resize=1200,899)
+
+# Mantis Biotech apuesta por “gemelos digitales” humanos para resolver la escasez de datos en medicina
+
+El avance de los modelos de lenguaje de gran tamaño en biomedicina promete acelerar la investigación genómica, mejorar la documentación clínica, apoyar diagnósticos en tiempo real y optimizar la toma de decisiones médicas. Sin embargo, esa ambición choca con un problema estructural: en áreas como enfermedades raras o condiciones poco frecuentes, los datos confiables y representativos son escasos, y los sistemas de IA suelen perder precisión precisamente en esos casos límite.
+
+En ese contexto, la startup neoyorquina Mantis Biotech afirma estar desarrollando una plataforma para cerrar esa brecha de disponibilidad de datos. Su propuesta consiste en integrar fuentes heterogéneas de información para generar conjuntos de datos sintéticos que permitan construir “gemelos digitales” del cuerpo humano: modelos predictivos, basados en física, capaces de representar anatomía, fisiología y comportamiento.
+
+La compañía plantea estos gemelos digitales como una herramienta para agregación y análisis de datos, con aplicaciones que van desde el estudio y prueba de nuevos procedimientos médicos hasta el entrenamiento de robots quirúrgicos y la simulación de eventos clínicos o patrones de comportamiento. Georgia Witchel, fundadora y directora ejecutiva de Mantis, explicó a TechCrunch que un equipo deportivo, por ejemplo, podría estimar la probabilidad de que un jugador de la NFL sufra una lesión en el tendón de Aquiles a partir de variables como rendimiento reciente, carga de entrenamiento, dieta y tiempo de actividad.
+
+Para construir esos modelos, la plataforma recolecta datos de libros de texto, cámaras de captura de movimiento, sensores biométricos, registros de entrenamiento e imágenes médicas. Luego, un sistema basado en LLM clasifica, valida y sintetiza esos flujos, y los procesa mediante un motor de física para producir representaciones de alta fidelidad utilizadas en modelos predictivos. Si logra escalar, el enfoque podría ofrecer una vía para entrenar IA médica con mayor cobertura de casos complejos y menos dependencia de datos clínicos escasos.
+
+Conocé más en este enlace: https://techcrunch.com/2026/03/30/mantis-biotech-is-making-digital-twins-of-humans-to-help-solve-medicines-data-availability-problem/
+
+---
+
+### **El auge de OpenClaw en China impulsa una fiebre por los agentes de IA, pero expone sus límites prácticos**
+
+![**El auge de OpenClaw en China impulsa una fiebre por los agentes de IA, pero expone sus límites prácticos**](https://media.wired.com/photos/69af4032df27a642d70d9a52/191:100/w_1280,c_limit/Made-In-China-China-Going-All-in-on-OpenClaw-Business-2260596359.jpg)
+
+**El auge de OpenClaw en China impulsa una fiebre por los agentes de IA, pero expone sus límites prácticos**
+
+La expansión de OpenClaw en China se convirtió en pocas semanas en un fenómeno que mezcla entusiasmo tecnológico, especulación comercial y una fuerte dosis de experimentación masiva. La herramienta de agente de inteligencia artificial, que ganó visibilidad a través de videos virales en redes sociales, comenzó a ser presentada como una vía para automatizar tareas complejas, desde el análisis de mercado hasta la toma autónoma de decisiones de inversión. En ese contexto, usuarios como George Zhang, un trabajador de comercio electrónico transfronterizo en Xiamen, intentaron instalarla a fines de febrero atraídos por la promesa de rentabilidad rápida.
+
+El interés no quedó limitado a usuarios individuales. En distintas ciudades chinas aparecieron talleres para enseñar su uso, con asistencia de cientos de personas, mientras empresas tecnológicas aceleraron la integración de OpenClaw en sus plataformas. A la vez, gobiernos locales anunciaron subsidios para emprendedores que desarrollen productos basados en esta tecnología. La difusión fue tal que imágenes de personas mayores haciendo fila para instalar el software circularon ampliamente en internet, reforzando la sensación de que la herramienta había entrado en una fase de adopción popular.
+
+Sin embargo, la experiencia de Zhang ilustra las dificultades de llevar estos agentes a un uso cotidiano sin conocimientos técnicos. Tras alquilar un servidor en Tencent y suscribirse al modelo de lenguaje Kimi, logró interactuar con su “lobster”, como muchos usuarios chinos llaman a su agente. Al principio, el sistema generó un análisis bursátil extenso y oportuno, pero luego perdió consistencia, respondió de forma evasiva y terminó sin entregar resultados útiles. Zhang concluyó que OpenClaw no está pensado para personas sin habilidades de programación, ya que requiere configuraciones como el ajuste de puertos API.
+
+El caso refleja tanto el potencial comercial de los agentes de IA como la brecha entre la promesa de automatización y su implementación real en el mercado masivo. Conocé más en este enlace: https://www.wired.com/story/china-is-going-all-in-on-openclaw/
+
+---
+
+### ByteDance acelera en video con IA, pero enfrenta límites de cómputo y tensión regulatoria
+
+![ByteDance acelera en video con IA, pero enfrenta límites de cómputo y tensión regulatoria](https://media.wired.com/photos/69a8cd045c3afa23e264984b/191:100/w_1280,c_limit/Made-In-China-ByteDance-AI-Ambitions-Business-1582149003.jpg)
+
+# ByteDance acelera en video con IA, pero enfrenta límites de cómputo y tensión regulatoria
+
+ByteDance, la matriz de TikTok, volvió a captar la atención del ecosistema de inteligencia artificial en China con el lanzamiento de Seedance 2.0, una actualización mayor de su modelo de generación de video que hasta ahora había permanecido relativamente fuera del radar. Presentado a comienzos de febrero, el sistema sorprendió por la calidad de sus resultados y reavivó el debate sobre el avance de la IA generativa en un mercado donde la producción audiovisual sintética todavía es vista por muchos como una herramienta para generar contenido de baja calidad.
+
+La reacción fue inmediata. Feng Ji, fundador de Game Science —el estudio detrás del éxito global Black Myth: Wukong— afirmó que el modelo lo había “impactado profundamente” y advirtió que podría poner a prueba las normas de copyright y los mecanismos de moderación de contenido en China. En la misma línea, Pan Tianhong, responsable de un estudio profesional de video con más de 15 millones de seguidores en redes sociales, sostuvo que Seedance 2.0 supera ampliamente a los modelos anteriores y que “piensa como un director”.
+
+Sin embargo, el acceso sigue siendo limitado. ByteDance solo permite probarlo a usuarios existentes de sus aplicaciones de consumo en China, como Doubao, Jimeng, Xiaoyunque y Spark, todas restringidas al mercado doméstico. Esa estrategia ha dejado fuera a usuarios internacionales y hasta ha impulsado la reventa de cuentas a interesados en el exterior. Aun así, la empresa dio una señal de apertura al actualizar su plataforma de API y revelar precios preliminares: generar un video de 15 segundos, la duración máxima actual, costaría algo más de 2 dólares, según estimaciones de IT Home. La combinación de capacidad técnica, restricciones de acceso y posibles fricciones regulatorias posiciona a Seedance 2.0 como un actor clave en la próxima fase de la IA de video. Conocé más en este enlace: https://www.wired.com/story/made-in-china-bytedances-ai-ambitions-are-being-hampered-by-compute-restraints/
+
+---
+
+### **Sony prepara la llegada de generación de cuadros con IA a futuras consolas PlayStation**
+
+**Sony prepara la llegada de generación de cuadros con IA a futuras consolas PlayStation**
+
+Mark Cerny, arquitecto principal de PlayStation 5 y PS5 Pro, confirmó en una entrevista con Digital Foundry que Sony trabaja en tecnología de generación de cuadros basada en aprendizaje automático para sus futuras plataformas PlayStation. La función permitirá que la consola use inteligencia artificial para “imaginar” imágenes intermedias entre los fotogramas que realmente renderiza el juego, con el objetivo de ofrecer una percepción de movimiento más fluida. Sin embargo, como ocurre en PC con técnicas similares, este tipo de procesamiento suele introducir cierta latencia y ha sido criticado por algunos usuarios por generar “cuadros falsos”.
+
+El anuncio se produce en un contexto en el que la próxima generación de consolas aún parece lejana. Cerny ya había insinuado que la sucesora de PS5 no llegaría antes de 2027 como mínimo, y en esta ocasión evitó dar detalles concretos sobre calendarios. “No tenemos más lanzamientos previstos para este año”, señaló, aunque adelantó que espera profundizar en el tema más adelante. En paralelo, Sony podría estar buscando extender las capacidades del actual ecosistema PS5 Pro mientras madura su próxima plataforma.
+
+La novedad no sería la primera aproximación de PlayStation a esta clase de tecnología. La PS5 ya incluye en algunos juegos FSR3 de AMD, un sistema de generación de cuadros que interpola imágenes sin apoyo de IA, a diferencia de los métodos basados en aprendizaje automático. Tanto Nvidia como AMD advierten que estas técnicas no resuelven por sí solas el problema del bajo rendimiento: para funcionar bien, necesitan una tasa de cuadros base estable.
+
+La incorporación de IA a este proceso podría mejorar la experiencia visual en títulos compatibles, aunque su impacto real dependerá del equilibrio entre fluidez, precisión y latencia. Seguí leyendo en este enlace: https://www.theverge.com/news/898283/future-sony-playstation-games-will-use-ai-to-imagine-new-frames
+
+---
+
+### **La IA dominó la GDC 2026 como promesa industrial, pero los desarrolladores siguen resistiendo su adopción en los juegos**
+
+**La IA dominó la GDC 2026 como promesa industrial, pero los desarrolladores siguen resistiendo su adopción en los juegos**
+
+La edición de este año del GDC Festival of Gaming mostró hasta qué punto la inteligencia artificial generativa se ha convertido en una prioridad para la industria del videojuego. En los pasillos y salas del evento, los proveedores presentaron herramientas capaces de crear NPCs impulsados por IA, generar mundos completos desde una interfaz de chat y automatizar tareas de producción. Entre las demostraciones destacaron un entorno de fantasía en pixel art generado con tecnología de Tencent y un asistente de IA de Razer que registraba de forma automática incidencias de calidad en un shooter, mientras que una charla de Google DeepMind sobre espacios jugables generados por IA atrajo a un público que desbordó la capacidad de la sala.
+
+Sin embargo, esa presencia masiva de la tecnología contrastó con su escasa aceptación entre quienes realmente desarrollan los juegos. La mayoría de los estudios consultados, en especial los independientes, rechazó incorporar IA en sus proyectos por considerar que resta valor al componente humano del diseño creativo. Gabriel Paquette, de The Melty Way, resumió esa postura al defender la “belleza” de la mente humana como motor de creación. El escepticismo también se refleja en una encuesta reciente de la GDC, según la cual el 52% de los participantes cree que la IA generativa tiene un impacto negativo en la industria, frente al 30% de 2025 y el 18% de 2024.
+
+Aunque el discurso corporativo insiste en beneficios como depuración de errores, control de calidad y generación de ideas, el rechazo de una parte significativa del sector, sumado a críticas como las recibidas por DLSS 5 de Nvidia, sugiere que la adopción de IA en videojuegos seguirá siendo un terreno conflictivo antes que una transición uniforme. Seguí leyendo en este enlace: https://www.theverge.com/games/897982/gdc-2026-ai-game-developer-conference
+
+---
+
+### **La IA ya puede desenmascarar cuentas anónimas con mayor eficacia que los métodos tradicionales**
+
+**La IA ya puede desenmascarar cuentas anónimas con mayor eficacia que los métodos tradicionales**
+
+Una investigación reciente advierte que los sistemas de inteligencia artificial están elevando de forma significativa la capacidad de reidentificar cuentas anónimas en internet, con implicancias directas para la privacidad online. El estudio, aún no revisado por pares, fue desarrollado por investigadores de ETH Zurich, Anthropic y el programa Machine Learning Alignment and Theory Scholars, y plantea que la era de la anonimidad digital podría volverse mucho más frágil.
+
+Para probarlo, el equipo construyó un sistema automatizado de agentes de IA, basado en modelos no especificados, capaz de navegar la web e interactuar con información como si fuera un investigador humano. El objetivo era medir hasta qué punto los modelos de lenguaje pueden asociar textos supuestamente anónimos con identidades reales. Según los autores, esta arquitectura “supera sustancialmente” a las técnicas computacionales convencionales de deanonymización, al analizar grandes volúmenes de texto en busca de detalles personales.
+
+El método funciona como un proceso de rastreo por indicios: examina patrones de escritura, datos biográficos dispersos, frecuencia de publicación y horarios de actividad. Luego compara esos rasgos con millones de cuentas potenciales, prioriza coincidencias probables y reduce el universo de candidatos hasta construir una lista corta de identidades plausibles.
+
+La evaluación no se realizó sobre usuarios desprevenidos, sino con conjuntos de datos públicos de Hacker News, LinkedIn, entrevistas de Anthropic y cuentas de Reddit divididas artificialmente en dos mitades anónimas. En todos los casos, el enfoque basado en LLM logró identificar correctamente a una proporción mayor de cuentas que los métodos previos. El hallazgo refuerza la preocupación por la exposición de datos personales en espacios públicos y abre un debate urgente sobre los límites reales del anonimato en plataformas digitales. Conocé más en este enlace: https://www.theverge.com/ai-artificial-intelligence/889395/ai-agents-unmask-anonymous-online-accounts
+
+---
+
+¿Querés seguir leyendo más? Volvemos el mes que viene con un nuevo resumen.
