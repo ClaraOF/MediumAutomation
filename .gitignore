@@ -1,5 +1,6 @@
 # Archivos de entorno y configuración sensible
 ai_news_digest/config_keys.py
+.env
 
 # Entornos virtuales
 venv/
