@@ -121,7 +121,7 @@ MediumAutomation/
 │   ├── builder/
 │   │   ├── medium.py           # Arma el artículo final en Markdown
 │   │   └── images.py           # Extrae imagen OG de cada URL
-│   └── main_test.ipynb         # Notebook principal para ejecutar el pipeline
+│   └── run_pipeline.ipynb      # Notebook principal para ejecutar el pipeline
 ├── pyproject.toml
 └── outputs/                    # Archivos generados (ignorados por git)
 ```
@@ -168,7 +168,7 @@ pip install -e .
 
 ## Cómo ejecutar
 
-Abrir `ai_news_digest/main_test.ipynb` en Jupyter y configurar los parámetros:
+Abrir `ai_news_digest/run_pipeline.ipynb` en Jupyter y configurar los parámetros:
 
 ```python
 DAYS = 28               # Rango de búsqueda en días hacia atrás
