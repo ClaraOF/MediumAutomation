@@ -1,6 +1,10 @@
+import json as _json
+import re as _re
 from typing import Dict
+
 from openai import OpenAI
-from ai_news_digest.prompts import RELEVANCE_PROMPT, SUMMARY_PROMPT
+
+from ai_news_digest.prompts import BATCH_RELEVANCE_PROMPT, RELEVANCE_PROMPT, SUMMARY_PROMPT
 
 class OpenAIClient:
     def __init__(self, api_key: str, model_relevance: str, model_summary: str):
@@ -25,6 +29,34 @@ class OpenAIClient:
         msg = resp.choices[0].message.content.strip()
         digits = "".join(ch for ch in msg if ch.isdigit())
         return int(digits[:2]) if digits else 0
+
+    def score_relevance_batch(self, articles: list[tuple[str, str]]) -> list[int]:
+        """Puntúa una lista de (titulo, contenido) en una sola llamada al LLM."""
+        if not articles:
+            return []
+        articles_text = "\n".join(
+            f"{i + 1}. Title: {(title or '')[:120]}\n   Snippet: {(snippet or '')[:200]}"
+            for i, (title, snippet) in enumerate(articles)
+        )
+        prompt = BATCH_RELEVANCE_PROMPT.format(n=len(articles), articles_list=articles_text)
+        try:
+            resp = self.client.chat.completions.create(
+                model=self.model_relevance,
+                messages=[
+                    {"role": "system", "content": "You are an AI content analyst. Respond only with a JSON array of integers."},
+                    {"role": "user", "content": prompt},
+                ],
+                temperature=0.0,
+            )
+            msg = resp.choices[0].message.content.strip()
+            match = _re.search(r'\[[\d\s,]+\]', msg)
+            if match:
+                scores = _json.loads(match.group(0))
+                if len(scores) == len(articles):
+                    return [max(1, min(10, int(s))) for s in scores]
+        except Exception:
+            pass
+        return [0] * len(articles)
 
     def summarize(self, title: str, url: str, content: str, lang: str = "es") -> Dict[str, str]:
         prompt = SUMMARY_PROMPT.format(

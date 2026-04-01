@@ -1,5 +1,9 @@
+# Logs de ejecución
+outputs/token_usage.csv
+
 # Archivos de entorno y configuración sensible
 ai_news_digest/config_keys.py
+.env
 
 # Entornos virtuales
 venv/
@@ -15,7 +19,7 @@ __pycache__/
 
 # Jupyter / notebooks
 .ipynb_checkpoints/
-*.ipynb
+# *.ipynb
 
 # Archivos de build / dist
 build/

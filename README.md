@@ -12,8 +12,9 @@ El pipeline se ejecuta en 4 pasos secuenciales:
 
 ```
 [1] Recolección      [2] Ranking          [3] Resúmenes         [4] Guardado
- NewsAPI (EN/ES)  →   Score LLM (0-10) →   LLM narrativo    →   .txt (Markdown)
- TechCrunch scraper    Filtros de fuente     imagen OG           .csv (metadata)
+ NewsAPI (EN/ES)  →   Score LLM (1-10) →   LLM narrativo    →   .txt (Markdown)
+ TechCrunch scraper    Batches de 20        imagen OG           .csv (metadata)
+                       Fallback heurístico
 ```
 
 ### Paso 1 — Recolección de artículos (`collect_articles`)
@@ -43,6 +44,8 @@ Cada artículo recibe un **score de relevancia (1-10)** evaluado por el LLM seg�
 - Score = 1 si trata principalmente de ética, política, funding o estrategia corporativa
 - Score = 1 si usa lenguaje vago o promocional sin avances técnicos concretos
 
+El scoring se hace en **batches de 20 artículos por llamada LLM** para minimizar el número de requests y evitar rate limits.
+
 Luego se aplican filtros:
 - Se pueden **garantizar artículos de fuentes específicas** (`ensure_sources`), útil para incluir siempre KDnuggets u otras fuentes clave
 - Máximo **10 artículos por fuente** para asegurar diversidad
@@ -58,7 +61,7 @@ Para cada artículo seleccionado, el LLM genera:
 
 Además se extrae la **imagen OG** (`og:image`) de cada URL para incluirla en el artículo.
 
-Con todos los resúmenes se construye el **artículo final en Markdown** con el formato:
+Con todos los resúmenes se construye el **artículo final en Markdown**:
 
 ```markdown
 # 🧠 Los Highlights de [Mes] en Inteligencia Artificial
@@ -83,15 +86,16 @@ Se guardan dos archivos en `outputs/`:
 
 ## Proveedores LLM
 
-El sistema intenta conectarse a los proveedores en este orden:
+El sistema intenta conectarse a los proveedores en este orden de prioridad:
 
-| Prioridad | Proveedor | SDK | Modelos por defecto |
-|---|---|---|---|
-| 1 | **OpenAI** (directo) | `openai` | `gpt-4o-mini` |
-| 2 | **OpenRouter** | `requests` | `google/gemini-2.0-flash-lite-001` |
-| 3 | **Heurístico** | — | Scoring por keywords |
+| Prioridad | Proveedor | Modelos por defecto |
+|-----------|-----------|---------------------|
+| 1 | **Azure OpenAI** | Configurable (ej: `gpt-5.4-mini`) |
+| 2 | **OpenAI** (directo) | `gpt-4o-mini` |
+| 3 | **OpenRouter** | `nvidia/nemotron-3-super-120b-a12b:free` |
+| 4 | **Heurístico** | Scoring por keywords (sin LLM) |
 
-OpenRouter permite usar modelos de Google, Anthropic, Meta, Mistral y otros a través de una sola API key, sin cambiar el código.
+Se puede usar un modelo distinto para scoring de relevancia y para generación de resúmenes, configurando `*_MODEL_RELEVANCE` y `*_MODEL_SUMMARY` por separado.
 
 ---
 
@@ -99,24 +103,25 @@ OpenRouter permite usar modelos de Google, Anthropic, Meta, Mistral y otros a tr
 
 ```
 MediumAutomation/
+├── .env                        # API keys locales (NO commitear — ver .env.example)
+├── .env.example                # Template de configuración
+├── ARCHITECTURE.md             # Documentación de la arquitectura del pipeline
 ├── ai_news_digest/
-│   ├── config_keys.py          # API keys (NO commitear — ver config_keys_example.py)
-│   ├── config_keys_example.py  # Template de configuración
-│   ├── config.py               # Dataclass Settings con todas las keys
+│   ├── config.py               # Dataclass Settings — lee variables de entorno
 │   ├── prompts.py              # Prompts para scoring de relevancia y resúmenes
 │   ├── pipeline.py             # Funciones principales del pipeline
-│   ├── utils.py                # Helpers (extracción de dominios, etc.)
 │   ├── scraping/
 │   │   ├── newsapi_fetch.py    # Fetch de artículos via NewsAPI + newspaper3k
 │   │   └── techcrunch.py       # Scraper de TechCrunch con BeautifulSoup
 │   ├── llm/
-│   │   ├── openai_client.py    # Cliente OpenAI (scoring + resúmenes)
+│   │   ├── base.py             # Clase base para clientes LLM
+│   │   ├── azure_client.py     # Cliente Azure OpenAI (scoring + resúmenes)
+│   │   ├── openai_client.py    # Cliente OpenAI directo (scoring + resúmenes)
 │   │   └── openrouter.py       # Cliente OpenRouter (scoring + resúmenes)
 │   ├── builder/
 │   │   ├── medium.py           # Arma el artículo final en Markdown
 │   │   └── images.py           # Extrae imagen OG de cada URL
-│   └── main_test.ipynb         # Notebook principal para ejecutar el pipeline
-├── IMPROVEMENT_PLAN.md         # Plan de mejoras hacia arquitectura agéntica
+│   └── run_pipeline.ipynb      # Notebook principal para ejecutar el pipeline
 ├── pyproject.toml
 └── outputs/                    # Archivos generados (ignorados por git)
 ```
@@ -125,29 +130,33 @@ MediumAutomation/
 
 ## Configuración
 
-### 1. Copiar el template de keys
+### 1. Crear el archivo `.env`
 
 ```bash
-cp ai_news_digest/config_keys_example.py ai_news_digest/config_keys.py
+cp .env.example .env
 ```
 
-Editar `config_keys.py` con tus credenciales:
+Editar `.env` con tus credenciales. Solo es necesario configurar un proveedor LLM:
 
-```python
-NEWSAPI_KEY = "tu_key_de_newsapi"
+```env
+NEWSAPI_KEY=tu_key_de_newsapi
 
-# Opción A: OpenAI directo
-OPENAI_API_KEY = "sk-..."
-OPENAI_MODEL_RELEVANCE = "gpt-4o-mini"
-OPENAI_MODEL_SUMMARY = "gpt-4o-mini"
+# Opción A: Azure OpenAI (prioridad más alta)
+AZURE_API_KEY=...
+AZURE_ENDPOINT=https://tu-recurso.openai.azure.com/openai/v1
+AZURE_DEPLOYMENT_RELEVANCE=gpt-5.4-mini
+AZURE_DEPLOYMENT_SUMMARY=gpt-5.4-mini
 
-# Opción B: OpenRouter (modelos alternativos, incluye Gemini, Claude, etc.)
-OPENROUTER_API_KEY = "sk-or-..."
-OPENROUTER_MODEL_RELEVANCE = "google/gemini-2.0-flash-lite-001"
-OPENROUTER_MODEL_SUMMARY = "google/gemini-2.0-flash-lite-001"
+# Opción B: OpenAI directo
+OPENAI_API_KEY=sk-...
+OPENAI_MODEL_RELEVANCE=gpt-4o-mini
+OPENAI_MODEL_SUMMARY=gpt-4o-mini
+
+# Opción C: OpenRouter (modelos free disponibles)
+OPENROUTER_API_KEY=sk-or-...
+OPENROUTER_MODEL_RELEVANCE=nvidia/nemotron-3-super-120b-a12b:free
+OPENROUTER_MODEL_SUMMARY=stepfun/step-3.5-flash:free
 ```
-
-No es necesario configurar ambos. Si solo tenés OpenRouter, el sistema lo usará automáticamente.
 
 ### 2. Instalar dependencias
 
@@ -159,37 +168,37 @@ pip install -e .
 
 ## Cómo ejecutar
 
-Abrir `ai_news_digest/main_test.ipynb` en Jupyter y configurar los parámetros en la segunda celda:
+Abrir `ai_news_digest/run_pipeline.ipynb` en Jupyter y configurar los parámetros:
 
 ```python
-DAYS = 30               # Rango de búsqueda en días hacia atrás
+DAYS = 28               # Rango de búsqueda en días hacia atrás
 TOP_N = 20              # Cantidad de artículos a incluir
 ENSURE_SOURCES = ['Kdnuggets.com']  # Fuentes que siempre deben aparecer
-MONTH_NAME = "Febrero_26"           # Nombre del mes para el título y el archivo
-LANG = "es"             # Idioma de los resúmenes ("es" o "en")
+MONTH_NAME = "Marzo_26"             # Nombre del mes para el título y el archivo
+LANG = "es"                         # Idioma de los resúmenes
 ```
 
-Luego ejecutar las celdas en orden. El proceso tarda entre 5 y 15 minutos dependiendo de la cantidad de artículos y el proveedor LLM usado (el paso más lento es el scoring de relevancia, que hace una llamada LLM por artículo).
+Ejecutar las celdas en orden. El proceso tarda entre 5 y 15 minutos dependiendo de la cantidad de artículos y el proveedor LLM.
 
 ---
 
 ## Dependencias principales
 
 | Librería | Uso |
-|---|---|
+|----------|-----|
 | `requests` + `beautifulsoup4` | Scraping de TechCrunch e imágenes OG |
 | `newspaper3k` | Extracción de contenido completo de artículos |
 | `newsapi-python` | Cliente oficial de NewsAPI |
-| `openai` | Cliente para OpenAI y compatible con OpenRouter |
+| `openai` | Cliente para OpenAI y Azure OpenAI |
+| `python-dotenv` | Carga de variables de entorno desde `.env` |
 | `pandas` | Manejo de DataFrames en todo el pipeline |
-| `backoff` | Reintentos automáticos en llamadas a OpenRouter |
-| `marimo` | Interfaz alternativa al notebook (en exploración) |
+| `backoff` | Reintentos automáticos en llamadas a la API |
 
 ---
 
 ## Notas
 
-- `config_keys.py` está en `.gitignore` — nunca commitear API keys
+- `.env` está en `.gitignore` — nunca commitear API keys
 - Los archivos en `outputs/` se generan localmente y no se versionan
-- El scoring de relevancia se hace artículo por artículo (secuencial) — con 200 artículos puede tardar varios minutos
+- El scoring de relevancia usa batches de 20 artículos por llamada — con 200 artículos hace ~10 requests en lugar de 200
 - Si NewsAPI devuelve pocos artículos, revisar que el rango de fechas (`DAYS`) no exceda el límite del plan gratuito (30 días)
